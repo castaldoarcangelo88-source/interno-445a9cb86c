@@ -1,0 +1,2165 @@
+{
+ "versione": 1,
+ "ultimoAggiornamento": "2026-10-16T21:00:00+02:00",
+ "aggiornamento": "due volte al giorno (mattina e sera)",
+ "fontiGenerali": [
+  "quadro/GRAFO_PROGETTI.md",
+  "quadro/ALBERO_VIVO.md",
+  "quadro/STORICO.md"
+ ],
+ "aree": [
+  {
+   "id": "tech-ops",
+   "nome": "Tech Ops",
+   "descrizione": "Server, VPS, VPN, posta, backup e canali Telegram.",
+   "progetti": [
+    {
+     "id": "vps",
+     "nome": "VPS bot Telegram e VPN",
+     "stato": "attivo",
+     "spiegazione": "Server che ospita i bot Telegram e la VPN: sempre operativi, da non interrompere. Il 14/10 preparato l'ambiente per il bot WhatsApp con servizio spento.",
+     "ultimoAggiornamento": "2026-10-14",
+     "cronologia": [
+      {
+       "data": "2026-10-14",
+       "testo": "22:44-22:50 con ok Titolare: backup, Node 18.20.4, utente wabot, codice in /opt/whatsapp-assistenza/app su [indirizzo interno], servizio disabled/inactive, proposta Caddy validata ma non applicata (Caddyfile live invariato); wg-easy e caddy ok",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [
+      {
+       "passo": "Accendere il servizio WhatsApp e l'HTTPS solo dopo il sì",
+       "scadenza": "da verificare"
+      }
+     ],
+     "blocchi": [],
+     "daTitolare": [
+      "Ok ad accendere il servizio e l'HTTPS del bot WhatsApp"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "helpdesk-telegram/VPS_REGISTRO.md"
+     ]
+    },
+    {
+     "id": "posta-devshare",
+     "nome": "Posta @devshare.it",
+     "stato": "bloccato",
+     "spiegazione": "Le caselle @devshare.it non funzionano dopo il trasferimento dei domini da VHosting al nuovo server. Il 15/10 preparato lo script di reimportazione delle mail dal backup.",
+     "ultimoAggiornamento": "2026-10-15",
+     "cronologia": [
+      {
+       "data": "2026-10-15",
+       "testo": "caselle non funzionanti dopo il trasferimento al server di Antonio; script di reimportazione dal backup preparato (17:08); esito M",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [
+      {
+       "passo": "Eseguire e verificare la reimportazione dal backup",
+       "scadenza": "da verificare"
+      }
+     ],
+     "blocchi": [
+      "Caselle ferme dopo il trasferimento; esito della reimportazione da verificare"
+     ],
+     "daTitolare": [
+      "Conferma dell'esito della reimportazione"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "devshare-mail/ripristino/"
+     ]
+    },
+    {
+     "id": "vhosting",
+     "nome": "Backup VHosting",
+     "stato": "bloccato",
+     "spiegazione": "Dopo l'incidente del 05/10 salvati in locale gli export (10 caselle, 4.116 mail, 16 database). Mancano i file dei siti (circa 8 GB) e gli accessi live.",
+     "ultimoAggiornamento": "2026-10-12",
+     "cronologia": [
+      {
+       "data": "2026-10-05",
+       "testo": "incidente: 9 webshell rimosse, export 16 DB e mail; verdetto: non ripubblicare lì",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-10",
+       "testo": "recupero file vshare1 fermato: nessun accesso valido",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-12",
+       "testo": "salvati in locale export JetBackup 05/10 (10 caselle/4.116 mail, 16 DB); accessi live ancora bloccati; rinnovo 26/10",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [
+      {
+       "passo": "Recuperare file dei siti e accessi prima del rinnovo",
+       "scadenza": "2026-10-26"
+      }
+     ],
+     "blocchi": [
+      "Accessi live mancanti (blocco IP, sessioni scadute)"
+     ],
+     "daTitolare": [
+      "Accessi al pannello VHosting prima del 26/10"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "backup-vhosting/REPORT.md"
+     ]
+    },
+    {
+     "id": "grafana",
+     "nome": "Grafana privato via VPN",
+     "stato": "bloccato",
+     "spiegazione": "Accesso al pannello Grafana della rete privata: dalla VPS non c'è una rotta verso quella rete (verifica in sola lettura dell'11/10).",
+     "ultimoAggiornamento": "2026-10-11",
+     "cronologia": [
+      {
+       "data": "2026-10-11",
+       "testo": "dalla VPS nessuna rotta verso 10.11.x, TCP [indirizzo interno] fallito (20:15, sola lettura)",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [
+      "Nessuna rotta verso la rete privata dalla VPS"
+     ],
+     "daTitolare": [
+      "Indicare quale VPN porta alla rete del pannello"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "helpdesk-telegram/VPS_REGISTRO.md"
+     ]
+    },
+    {
+     "id": "telegram",
+     "nome": "Telegram DevShare / NewsFlow / HandiMap News",
+     "stato": "attivo",
+     "spiegazione": "Crescita dei canali Telegram: massimo 2-3 post al giorno. Il 15/10 bozza del piano iscritti e 7 link d'invito: finora 0 ingressi dai link, 2 iscritti nuovi. HandiMap passa sempre dall'ok di Manilla.",
+     "ultimoAggiornamento": "2026-10-15",
+     "cronologia": [
+      {
+       "data": "2026-06-21",
+       "testo": "ultimo commit del codice NewsFlow (8bc25ef)",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-09-24",
+       "testo": "piano crescita canali",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-09-28",
+       "testo": "verificato che può girare come cron senza bot",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-02",
+       "testo": "riaperta (21:21), affidata a Tech Ops",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-07",
+       "testo": "inizio messaggi archiviati (dal 07/10)",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-09",
+       "testo": "zero iscritti nuovi dal 03/10",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-10",
+       "testo": "CSV e DB con 1.175 messaggi (19:58)",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-11",
+       "testo": "pubblicati 4/4 post su @NewsFlow_real (ultimo alle 19:42)",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-12",
+       "testo": "firme post attivate su DevShare; clip inviato a @HandimapNews (msg 100)",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-13",
+       "testo": "clip giorno 1 inviato e fissato (msg 490 @devshareac)",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-13",
+       "testo": "dal 13/10 max 2-3 post al giorno sul canale",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-14",
+       "testo": "pubblicati NF 12:30 (scuola), DS 18:35 (video SMS pacco), HM 19:30 (indennità accompagnamento); una sveglia HM partita con ~15 h di ritardo, recuperata dalla routine",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-15",
+       "testo": "bozza piano iscritti e 7 link d'invito; link finora 0 ingressi, 2 iscritti nuovi; niente inviato",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "post DS 12:30, NF 16:00, HM 17:30 preparati e spostati in pubblicati/ alle 9:42; uscita effettiva non verificata",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "report del venerdì: NewsFlow 5/34, HandiMap News 11/50, DevShare 51/82; 0 ingressi dai link d'invito, compresi i 7 del 15/10; proposta 17-23/10 in attesa di ok",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [
+      {
+       "passo": "Raggiungere gli obiettivi iscritti (al 09/10: NewsFlow 4/34, HandiMap News 11/50, DevShare 51/82)",
+       "scadenza": "2026-10-26"
+      }
+     ],
+     "blocchi": [],
+     "daTitolare": [
+      "Ok al piano iscritti e all'uso dei link d'invito"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "telegram-growth/PIANO_ISCRITTI_1510.md"
+     ]
+    },
+    {
+     "id": "softlab",
+     "nome": "Correzione ricalcolo ticket (SoftlabCA)",
+     "stato": "in-attesa",
+     "spiegazione": "Correzione sul ricalcolo dei ticket prevista per il 12/10; esito da verificare.",
+     "ultimoAggiornamento": "2026-10-12",
+     "cronologia": [
+      {
+       "data": "2026-10-12",
+       "testo": "Correzione prevista (esito da verificare)"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md"
+     ]
+    },
+    {
+     "id": "vpn-blues",
+     "nome": "VPN Blues lenta",
+     "stato": "in-attesa",
+     "spiegazione": "Diagnosi dell'08/10 in sola lettura senza problemi trovati; stato attuale da verificare.",
+     "ultimoAggiornamento": "2026-10-08",
+     "cronologia": [
+      {
+       "data": "2026-10-08",
+       "testo": "Diagnosi in sola lettura: nessun problema trovato"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md"
+     ]
+    },
+    {
+     "id": "dogbet",
+     "nome": "Server DogBet Hetzner",
+     "stato": "attivo",
+     "spiegazione": "Controllo in sola lettura tre volte al giorno (9, 15, 21); si avvisa il Titolare solo se qualcosa si blocca.",
+     "ultimoAggiornamento": "2026-10-15",
+     "cronologia": [
+      {
+       "data": "2026-10-15",
+       "testo": "controllo blocchi [indirizzo interno] attivo alle 9, 15, 21; giro delle 21:07 senza allarmi",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md"
+     ]
+    },
+    {
+     "id": "help-betting",
+     "nome": "Bot help betting",
+     "stato": "chiuso",
+     "spiegazione": "Bot di aiuto nei gruppi: architettura scritta il 07/10 e archivio completato.",
+     "ultimoAggiornamento": "2026-10-11",
+     "cronologia": [
+      {
+       "data": "2026-10-07",
+       "testo": "architettura bot help gruppo",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-07",
+       "testo": "@Help_KronosBetBot in solo ascolto in 4 gruppi; impara solo dagli esperti; da togliere i diritti di admin",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "supporto-gioco-doc/"
+     ]
+    },
+    {
+     "id": "import-telegram",
+     "nome": "Script import export Telegram",
+     "stato": "attivo",
+     "spiegazione": "Script per importare l'export dei gruppi Telegram; il database live non si tocca senza il sì.",
+     "ultimoAggiornamento": "da verificare",
+     "cronologia": [
+      {
+       "data": "2026-10-07",
+       "testo": "inizio messaggi archiviati (dal 07/10)",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-10",
+       "testo": "CSV e DB con 1.175 messaggi (19:58)",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [
+      "Sì prima di toccare il database live"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "archivio-gruppi-telegram/"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "comms",
+   "nome": "Comms",
+   "descrizione": "Social, campagne e comunicazione.",
+   "progetti": [
+    {
+     "id": "appello-handimap",
+     "nome": "HandiMap · appello di Manilla",
+     "stato": "attivo",
+     "spiegazione": "Appello pubblicato su Telegram @HandimapNews il 14/10 (msg 104) con il post del talk EST (msg 106). Esito su Facebook, gruppi, Instagram e TikTok da verificare. Lista di 8 artisti in bozza, nessun invio.",
+     "ultimoAggiornamento": "2026-10-14",
+     "cronologia": [
+      {
+       "data": "2026-10-09",
+       "testo": "zero iscritti nuovi dal 03/10",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-14",
+       "testo": "appello Manilla pubblicato su @HandimapNews alle 12:11 (msg 104)",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-14",
+       "testo": "post talk Open House Napoli a EST (23/10 14:30-16:00) pubblicato su @HandimapNews alle 19:32 (msg 106)",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [
+      "Esito della pubblicazione a mano su Facebook, Instagram e TikTok da verificare"
+     ],
+     "daTitolare": [
+      "Pubblicazione a mano su Facebook, gruppi, Instagram e TikTok (esito da confermare)"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "handimap-campagna/",
+      "scaletta_post_1410.md"
+     ]
+    },
+    {
+     "id": "canzone",
+     "nome": "Canzone «MUOVIAMO LA CITTÀ»",
+     "stato": "attivo",
+     "spiegazione": "Piano di due settimane (13-26/10). Materiali del giorno 2 pronti il 14/10, nulla pubblicato. Pubblica il Titolare a mano.",
+     "ultimoAggiornamento": "2026-10-14",
+     "cronologia": [
+      {
+       "data": "2026-10-12",
+       "testo": "piano 2 settimane «MUOVIAMO LA CITTÀ» approvato",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-13",
+       "testo": "materiali giorno 1 (clip A, didascalie YT/IG/TikTok) pronti in bozza",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-14",
+       "testo": "materiali giorno 2 (clip B meme «Un gradino basta», didascalie IG/TikTok/WA/TG) pronti; nulla pubblicato",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [
+      {
+       "passo": "Proseguire la scaletta del piano",
+       "scadenza": "2026-10-26"
+      }
+     ],
+     "blocchi": [],
+     "daTitolare": [
+      "Pubblicare a mano i contenuti su IG e TikTok"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "devshare-campagne/canzone_youtube/",
+      "scaletta_post_1410.md"
+     ]
+    },
+    {
+     "id": "tiktok-devshare",
+     "nome": "TikTok @dev_share",
+     "stato": "bloccato",
+     "spiegazione": "Account TikTok DevShare con captcha in sospeso dal 16/09.",
+     "ultimoAggiornamento": "2026-10-11",
+     "cronologia": [
+      {
+       "data": "2026-09-16",
+       "testo": "audit: 1.311 follower, 106 video, griglia bloccata da captcha",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-09-16",
+       "testo": "calendario 7 giorni e baseline TikTok",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-09-17",
+       "testo": "gate qualità della coda video",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-09-18",
+       "testo": "piano settimanale 22-28/09 bloccato",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-09-22",
+       "testo": "ok di Manilla e via libera del Titolare per W22r/W23r/W26r; captcha, pacchetto da pubblicare dal telefono",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "piano dal 17/10 e stato in sola lettura (20:24): @dev_share 1.310, @me_medesimo82 3.268, @al_miracolodelmare 1.226, @creazioni.e.fanta_ 60, @arcangelocastaldo7 privato 3; Postiz senza account collegati",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [
+      "Captcha in sospeso"
+     ],
+     "daTitolare": [
+      "Sbloccare il captcha dal telefono"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "devshare-tiktok/AUDIT_dev_share_2026-09-16.md"
+     ]
+    },
+    {
+     "id": "ig-devshare",
+     "nome": "Bozze Instagram DevShare",
+     "stato": "pausa",
+     "spiegazione": "Bozze dei post Instagram DevShare in attesa.",
+     "ultimoAggiornamento": "da verificare",
+     "cronologia": [],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md"
+     ]
+    },
+    {
+     "id": "creazioni-fantasia",
+     "nome": "Creazioni e Fantasia (Anna)",
+     "stato": "attivo",
+     "spiegazione": "Profili social per l'attività artigianale di Anna, nata dalle Ghirlande di Anna: Instagram e TikTok creati; collegamento Facebook da verificare; bio e logo in corso.",
+     "ultimoAggiornamento": "2026-10-14",
+     "cronologia": [
+      {
+       "data": "2026-10-11",
+       "testo": "Ghirlande di Anna: post da 25 € e due grafiche consegnati"
+      },
+      {
+       "data": "2026-10-12",
+       "testo": "creati Instagram @creazioni.e.fantasia e TikTok @creazioni.e.fanta2 (email creazioniefantasia26); Facebook previsto 13/10",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [
+      "Esito del collegamento Facebook (previsto 13/10) da verificare"
+     ],
+     "daTitolare": [],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md"
+     ]
+    },
+    {
+     "id": "miracolo",
+     "nome": "Al Miracolo del Mare / L'Incanto del Mare",
+     "stato": "attivo",
+     "spiegazione": "Menù settimanale per il cliente L'Incanto del Mare S.r.l.: post da martedì a venerdì, promemoria domenica e lunedì. Contratto annuale firmato dal cliente il 13/10.",
+     "ultimoAggiornamento": "2026-10-16",
+     "cronologia": [
+      {
+       "data": "2026-10-11",
+       "testo": "post menù mar-ven preparato e promemoria domenica/lunedì 10:17 creati",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-13",
+       "testo": "contratto annuale firmato dal cliente (PDF); manca firma Titolare; chiariti domini almiracolodelmare.it e lincantodelmare.it",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [
+      {
+       "passo": "Rinnovare il dominio almiracolodelmare.it (Register.it)",
+       "scadenza": "2026-10-17"
+      }
+     ],
+     "blocchi": [
+      "Dominio in scadenza il 17/10",
+      "Menù della settimana 13-17/10 da verificare"
+     ],
+     "daTitolare": [
+      "Rinnovo del dominio entro il 17/10",
+      "Firma del contratto"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "contratti/"
+     ]
+    },
+    {
+     "id": "ufficio-stampa",
+     "nome": "Ufficio stampa Manilla",
+     "stato": "in-attesa",
+     "spiegazione": "Piano media in tre fasi con cartella stampa e 10 redazioni campane; nessun invio.",
+     "ultimoAggiornamento": "da verificare",
+     "cronologia": [
+      {
+       "data": "2026-10-04",
+       "testo": "piano media in tre fasi verso Verissimo, cartella stampa e 10 redazioni campane; nessun invio",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sviluppo-pwa",
+   "nome": "Sviluppo PWA",
+   "descrizione": "Siti e app sviluppati per DevShare.",
+   "progetti": [
+    {
+     "id": "pwa-natale",
+     "nome": "PWA Natale",
+     "stato": "attivo",
+     "spiegazione": "App di Natale con voce e biglietto QR. Ultima consegna nota: n. 33. Il 16/10 parere dell'Avvocato sulla regola delle dichiarazioni della voce: soluzione minima con la frase «Voce generata al computer» e correzione della riga del biglietto QR. Anteprima obbligatoria prima di pubblicare.",
+     "ultimoAggiornamento": "2026-10-16",
+     "cronologia": [
+      {
+       "data": "2026-09-27",
+       "testo": "progetto v2, revisioni Tech Ops, parere legale hosting/consensi",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-04",
+       "testo": "checklist prove iPhone (gate)",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-08",
+       "testo": "consenso e informativa v1",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-10",
+       "testo": "registro decisioni legali",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-12",
+       "testo": "via libera a cornice e biglietto QR; consegna entro 17/10; regole sulla dichiarazione della voce rispettate",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "parere sulla dichiarazione della voce e art. 50: rischio medio-alto; soluzione minima «Voce generata al computer»; nota nel registro decisioni",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "consegna 34: manifest relativo e service worker offline anche sotto /pwa-natale/ (commit 09:39); rischi iOS Safari da rivedere con Tech Ops",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [
+      {
+       "passo": "Consegna e anteprima",
+       "scadenza": "2026-10-17"
+      },
+      {
+       "passo": "Dominio natale.devsharesrl.it e galleria definitiva",
+       "scadenza": "da verificare"
+      }
+     ],
+     "blocchi": [
+      "Serve la decisione sulla soluzione minima indicata dall'Avvocato"
+     ],
+     "daTitolare": [
+      "Sì o no alla soluzione minima («Voce generata al computer»)",
+      "Ok all'anteprima prima della pubblicazione"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "pwa-natale/REGISTRO_DECISIONI_LEGALI_PWA.md",
+      "pwa-natale/"
+     ]
+    },
+    {
+     "id": "landauto",
+     "nome": "Land auto (landauto.it)",
+     "stato": "attivo",
+     "spiegazione": "Sito ufficiale online su www.landauto.it (GitHub Pages, branch «produzione»), con ritorno alla pagina di attesa possibile in un minuto. Fatto il 15/10: solo P.IVA, sede ad Afragola, firma «Realizzato da DevShare SRL», foto non scaricabili, FAQ col testo del cliente.",
+     "ultimoAggiornamento": "2026-10-16",
+     "cronologia": [
+      {
+       "data": "2026-10-12",
+       "testo": "landauto.it online solo con pagina di attesa «Stiamo arrivando»; regola: sito ufficiale solo con sì esplicito",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-12",
+       "testo": "audit go-live in sola lettura: sito ufficiale non pronto (privacy/cookie placeholder, REA, PEC, info@)",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-14",
+       "testo": "ok a mostrare le auto vendute con scritta «Venduta» (mai come disponibili), intermediazione in secondo piano; Carmine disponibile ad aggiungere qualcosa al fee se serve",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-15",
+       "testo": "correzioni testi di Carmine (screenshot 00:34-00:39) applicate sull'anteprima con auto vendute «Venduta» e recensioni (commit 08:49 e 09:06); 3 punti non applicati da confermare",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-15",
+       "testo": "5 vocali: foto delle usate più grandi, Porsche più dinamica, sostituzioni nell'ordine indicato; applicazione M",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [
+      {
+       "passo": "Applicare le correzioni foto dei vocali di Carmine (foto usate più grandi, Porsche più dinamica)",
+       "scadenza": "da verificare"
+      },
+      {
+       "passo": "Attivare info@landauto.it",
+       "scadenza": "da verificare"
+      }
+     ],
+     "blocchi": [
+      "Il sì esplicito al passaggio online non risulta registrato"
+     ],
+     "daTitolare": [
+      "Confermare che il sito ufficiale doveva andare online",
+      "Ok alle correzioni foto di Carmine"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "landauto/PASSI_PRODUZIONE.md",
+      "landauto/AUDIT_GOLIVE_2026-10-12.md"
+     ]
+    },
+    {
+     "id": "vetrina-devsharesrl",
+     "nome": "Vetrina devsharesrl.it",
+     "stato": "attivo",
+     "spiegazione": "Staging del sito ricostruito in locale il 15/10 (65 file, 3 da confrontare con l'originale). Da sistemare: nomi degli asset grafici, contatti (info@, telefono, REA), testi da verificare e residui del vecchio negozio online.",
+     "ultimoAggiornamento": "2026-10-15",
+     "cronologia": [
+      {
+       "data": "2026-10-15",
+       "testo": "staging ricostruito in locale; asset con nomi da rinominare, contatti e testi da sistemare",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "staging: tasti assistenza verso il bot Telegram DevShare_Assistenza_bot (18:47), contatti «Assistenza immediata su Telegram», reCAPTCHA e iubenda solo in produzione (18:53); niente pubblicato",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [
+      {
+       "passo": "Rinominare e sostituire logo, logotipo e immagine principale",
+       "scadenza": "da verificare"
+      },
+      {
+       "passo": "Togliere login, area riservata e residui del negozio",
+       "scadenza": "da verificare"
+      }
+     ],
+     "blocchi": [
+      "Mancano gli asset grafici definitivi"
+     ],
+     "daTitolare": [
+      "Logo definitivo e foto con diritti d'uso",
+      "Conferma dei testi e dei contatti",
+      "Permesso scritto per citare clienti"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "devsharesrl-vetrina/STATO.md",
+      "devsharesrl-vetrina/DA_VERIFICARE.md"
+     ]
+    },
+    {
+     "id": "bar-universal",
+     "nome": "Gestionale Bar Universal",
+     "stato": "attivo",
+     "spiegazione": "Gestionale per il bar: Tappa 1 completata sul dispositivo il 14/10 (magazzino con carico, scarto e inventario; ordini a stecche con ritiri e pagamenti; lista spesa; riepilogo). Solo in locale, nessun contatto col cliente.",
+     "ultimoAggiornamento": "2026-10-14",
+     "cronologia": [
+      {
+       "data": "2026-09-26",
+       "testo": "offerta, preventivo indicativo, MVP e piano tappe",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-09-28",
+       "testo": "analisi completa",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-02",
+       "testo": "ripresa Tappa 1 su ordine del Titolare (22:32), nessun contatto con Pasquale",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-03",
+       "testo": "Prima consegna della Tappa 1: 41 test unitari e 2 end-to-end verdi"
+      },
+      {
+       "data": "2026-10-14",
+       "testo": "Tappa 1 completata sul dispositivo (magazzino, ordini, lista spesa, riepilogo), solo locale; restano sincronizzazione (T6) e decisione «pagamenti e da pagare»",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [
+      {
+       "passo": "Sincronizzazione (T6)",
+       "scadenza": "da verificare"
+      },
+      {
+       "passo": "Ripulire la storia del repository prima di qualsiasi push",
+       "scadenza": "da verificare"
+      }
+     ],
+     "blocchi": [
+      "Storia del repository con dati reali da ripulire"
+     ],
+     "daTitolare": [
+      "Decidere se i pagamenti riducono il «da pagare»"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "bar-universal/consegne/CONSEGNA_2026-10-03.md",
+      "bar-universal/REPORT_RIPRESA_TAPPA1_2026-10-02.md"
+     ]
+    },
+    {
+     "id": "babypepita",
+     "nome": "ilmondodibabypepita.it",
+     "stato": "attivo",
+     "spiegazione": "Pagina «Work in progress» online; anteprima della pagina di Manilla e dei libri pronta ma non pubblicata. Recuperate 637 immagini del blog (2016-2020), 21 mancanti.",
+     "ultimoAggiornamento": "2026-10-13",
+     "cronologia": [
+      {
+       "data": "2026-09-16",
+       "testo": "audit del dump WordPress: dump parziale, nessun SQL",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-11",
+       "testo": "recuperati 637 file di immagini (2016-2020), 21 ancora mancanti; autore e fonte del recupero M",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-12",
+       "testo": "anteprima pagina attesa Manilla/libri pronta (non pubblicata); «Dicono di lei» + Salone Libro Torino 2026",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "«Mandami il tuo disegno!»: regolamento, testi e messaggio WhatsApp per Manilla in bozza (20:58), nulla inviato",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [
+      "Mancano copertina «Oltre il confine…», conferma firmacopie e ritratto",
+      "Ripristino pieno del blog legato agli accessi VHosting"
+     ],
+     "daTitolare": [
+      "Ok alla pubblicazione dell'anteprima"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "babypepita/attesa/",
+      "babypepita-recupero/"
+     ]
+    },
+    {
+     "id": "handimap-staging",
+     "nome": "HandiMap staging",
+     "stato": "attivo",
+     "spiegazione": "Bozza dei siti HandiMap (sito, blog, news, dati) senza mappa sull'account del Titolare. La produzione resta sul repository di Vincenzo, da non toccare.",
+     "ultimoAggiornamento": "2026-10-14",
+     "cronologia": [
+      {
+       "data": "2025 (autunno)",
+       "testo": "rebranding dell'interfaccia in HandiMap",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2025-09",
+       "testo": "nasce il progetto col nome \"Unstoppable\"; prime migrazioni Supabase (12 e 16 set 2025)",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-02-05",
+       "testo": "ultima build pubblicata del sito handimap.it",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-09-20",
+       "testo": "scritta la storia del progetto (docs)",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-02",
+       "testo": "nota: www.handimap.it senza certificato, testo \"Unstoppable\" da sostituire",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-03",
+       "testo": "grafiche con «Progetto sviluppato da DevShare», senza il nome di Manilla (regola fissa)",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-12",
+       "testo": "produzione = solo repo Vincenzo; sull'account Titolare solo staging; struttura senza mappa (sito+blog+news+dati)",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-13",
+       "testo": "bozza locale e anteprime desktop/mobile in anteprime-1310/",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-13",
+       "testo": "appello Manilla: testo base approvato; bozze FB/WA/TG/IG; partenza 14-15/10",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-13",
+       "testo": "lista 8 artisti da contattare + bozze email (nessun invio)",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [
+      "Sì prima di pubblicare sui domini"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "handimap-staging/"
+     ]
+    },
+    {
+     "id": "coffee-jane",
+     "nome": "Coffee Shop Jane",
+     "stato": "attivo",
+     "spiegazione": "Progetto del Titolare, presente nella vetrina DevShare. Stato operativo da verificare.",
+     "ultimoAggiornamento": "2026-10-13",
+     "cronologia": [],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md"
+     ]
+    },
+    {
+     "id": "sdmodart",
+     "nome": "sdmodart.it",
+     "stato": "attivo",
+     "spiegazione": "PWA del Titolare per un barbiere di Afragola, presente nella vetrina DevShare.",
+     "ultimoAggiornamento": "2026-10-13",
+     "cronologia": [
+      {
+       "data": "2026-09-16",
+       "testo": "brief PWA SD Mod Art",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-09-22",
+       "testo": "bozze W22-26 bocciate, nuovi 3 pezzi didattici",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-13",
+       "testo": "confermato come PWA del Titolare",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "devshare",
+   "nome": "DevShare",
+   "descrizione": "La società DevShare SRL: sito, vetrina, assistenza e offerte.",
+   "progetti": [
+    {
+     "id": "wa-bot",
+     "nome": "Bot WhatsApp assistenza DevShare",
+     "stato": "in-attesa",
+     "spiegazione": "Assistenza clienti su WhatsApp in coesistenza con il telefono del Titolare. Codice pronto, server preparato con servizio spento, DNS fatto il 15/10. Serve anche come demo da rivendere.",
+     "ultimoAggiornamento": "2026-10-15",
+     "cronologia": [
+      {
+       "data": "2026-10-07",
+       "testo": "passaggio a chat private con @DevShare_Assistenza_bot",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-14",
+       "testo": "deciso: gira sulla VPS dei bot Telegram (Tech Ops) con sottodominio HTTPS bot.devsharesrl.it (record A → [indirizzo interno] su DNS Omegasus); si attiva solo dopo il collegamento del numero in ufficio; bot Telegram e VPN non vanno toccati",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-14",
+       "testo": "numero 388 696 9100 (WhatsApp Business) da collegare a Meta in coesistenza, senza cambiare numero né perdere chat; valuta SIM personale separata (non confermato); il bot fa anche da demo da rivendere",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-14",
+       "testo": "codice pronto (webhook server.js, menù bot.js, testi.json, test) + guida ufficio e lista «cosa serve dal Titolare»",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-15",
+       "testo": "388 696 9100 in coesistenza; portfolio Meta da intestare a DevShare SRL; record A bot.devsharesrl.it già sulla VPS",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [
+      "Collegamento del numero a Meta da fare in ufficio (QR)"
+     ],
+     "daTitolare": [
+      "Giorno in ufficio per il QR",
+      "Accesso admin Meta e portfolio intestato a DevShare SRL",
+      "Conferma dei testi (orari, FAQ, prezzi)",
+      "Ok ad accendere il servizio e l'HTTPS"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "whatsapp-assistenza-devshare/"
+     ]
+    },
+    {
+     "id": "offerta-wa",
+     "nome": "Offerta WhatsApp per clienti",
+     "stato": "attivo",
+     "spiegazione": "Offerta commerciale «Assistenza clienti WhatsApp» in PDF e analisi costi interna pronte.",
+     "ultimoAggiornamento": "2026-10-14",
+     "cronologia": [
+      {
+       "data": "2026-10-14",
+       "testo": "offerta commerciale «Assistenza clienti WhatsApp» (PDF) e analisi costi interna pronte",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "offerte-whatsapp/"
+     ]
+    },
+    {
+     "id": "sito-devshare",
+     "nome": "devshare.it (WIP e vetrina)",
+     "stato": "attivo",
+     "spiegazione": "Pagina «Work in progress» online con HTTPS; vetrina locale con 14 attività. Manca il CNAME www; il vecchio WordPress compromesso è da spegnere.",
+     "ultimoAggiornamento": "2026-10-14",
+     "cronologia": [
+      {
+       "data": "2026-09-23",
+       "testo": "ultima build live del sito devsharesrl.it (15:21)",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-09-26",
+       "testo": "audit tecnico devsharesrl.it (server Omegasus/Scaleway, dominio OVH scade 22/02/2027)",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-09-28",
+       "testo": "il sorgente della versione con blog non si trova in nessun repo",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-09",
+       "testo": "Supabase del sito in pausa (TLS chiusa), HandiMap attivo",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-09",
+       "testo": "pagina start-up innovativa archiviata",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-13",
+       "testo": "bozza locale griglia 7 attività (devshare-vetrina/); lavoro pubblico da 14/10 8:00",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-13",
+       "testo": "attivita.json ampliato a 14 voci (Coffee Shop Jane, Bar Universal, sdmodart, canzone, canali TG)",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-14",
+       "testo": "confermato: DevShare ha già pagina FB, Meta Business Suite, WA Business, IG Business e TikTok Business",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-15",
+       "testo": "staging ricostruito in locale; asset con nomi da rinominare, contatti e testi da sistemare",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "staging: tasti assistenza verso il bot Telegram DevShare_Assistenza_bot (18:47), contatti «Assistenza immediata su Telegram», reCAPTCHA e iubenda solo in produzione (18:53); niente pubblicato",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [
+      "Esito dell'anteprima privata da verificare"
+     ],
+     "daTitolare": [
+      "Ok alla vetrina dopo l'anteprima"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "devshare-vetrina/",
+      "devshare-sito/"
+     ]
+    },
+    {
+     "id": "csp",
+     "nome": "Computer Senza Paura",
+     "stato": "in-attesa",
+     "spiegazione": "Corso su lezioni.devsharesrl.it: audit fatto, pacchetto di go-live pronto, PDF finale corretto.",
+     "ultimoAggiornamento": "2026-10-10",
+     "cronologia": [
+      {
+       "data": "2026-07-06",
+       "testo": "prima sessione di lavoro registrata e aggiornamento dati vendita",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-10",
+       "testo": "audit lezioni.devsharesrl.it: /vstats/ pubblica, mancano privacy e condizioni",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-10",
+       "testo": "pacchetto go-live HestiaCP e PDF finale",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [
+      "Caricamento sul pannello del server da fare (FTP dal box bloccato)"
+     ],
+     "daTitolare": [
+      "Ok finale al go-live",
+      "Caricamento sul pannello con Antonio (Omegasus)"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "lezioni-audit/REPORT_2026-10-10.md",
+      "computer-senza-paura/docs/"
+     ]
+    },
+    {
+     "id": "claudio",
+     "nome": "Costo Claudio a Biagio",
+     "stato": "in-attesa",
+     "spiegazione": "Comunicare a Biagio il costo totale di Claudio (2.500 €, tasse e cedolini).",
+     "ultimoAggiornamento": "2026-10-15",
+     "cronologia": [
+      {
+       "data": "2026-10-15",
+       "testo": "costo totale Claudio 2.500 € da comunicare a Biagio; promemoria 20 e 22/10",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [
+      {
+       "passo": "Promemoria",
+       "scadenza": "2026-10-20"
+      },
+      {
+       "passo": "Secondo promemoria",
+       "scadenza": "2026-10-22"
+      }
+     ],
+     "blocchi": [],
+     "daTitolare": [
+      "Dire se il costo è mensile o no"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md"
+     ]
+    },
+    {
+     "id": "ga4",
+     "nome": "GA4 contatore visite",
+     "stato": "in-attesa",
+     "spiegazione": "Scelta GA4 per i siti; cartella di preparazione ancora impostata sullo strumento precedente.",
+     "ultimoAggiornamento": "2026-10-15",
+     "cronologia": [
+      {
+       "data": "2026-10-14",
+       "testo": "scelta GA4 (non GoatCounter) per i siti; servono ID G- e banner cookie",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-14",
+       "testo": "cartella preparazione contatore-visite-1410/ (schema ancora GoatCounter da allineare a GA4)",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [
+      "ID «G-» per ogni sito",
+      "Banner cookie"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "contatore-visite-1410/"
+     ]
+    },
+    {
+     "id": "shopify",
+     "nome": "Shopify «sport time online»",
+     "stato": "attivo",
+     "spiegazione": "Uno dei 7 negozi, collegato con il connettore il 15/10. Lavoro richiesto da verificare.",
+     "ultimoAggiornamento": "2026-10-15",
+     "cronologia": [
+      {
+       "data": "2026-10-15",
+       "testo": "negozio «sport time online» collegato al Capo con il connettore",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [
+      "Indicare il lavoro da fare sul negozio"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md"
+     ]
+    },
+    {
+     "id": "devshare-main",
+     "nome": "DEVSHARE-main",
+     "stato": "pausa",
+     "spiegazione": "Progetto in pausa; data e motivo della pausa da verificare.",
+     "ultimoAggiornamento": "da verificare",
+     "cronologia": [],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md"
+     ]
+    },
+    {
+     "id": "startup",
+     "nome": "Pagina start-up innovativa",
+     "stato": "chiuso",
+     "spiegazione": "Pagina archiviata il 09/10.",
+     "ultimoAggiornamento": "2026-10-09",
+     "cronologia": [
+      {
+       "data": "2024-02-28",
+       "testo": "DevShare iscritta nella sezione start-up innovative (dato da visura del 27/04/2026)",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-04-27",
+       "testo": "visura camerale usata come fonte per la pagina start-up",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md"
+     ]
+    },
+    {
+     "id": "rinnovo",
+     "nome": "Rinnovo abbonamento software aziendale",
+     "stato": "chiuso",
+     "spiegazione": "Abbonamento rinnovato il 14/10; data del prossimo rinnovo da verificare.",
+     "ultimoAggiornamento": "2026-10-14",
+     "cronologia": [
+      {
+       "data": "2026-10-14",
+       "testo": "Abbonamento rinnovato"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [
+      "Data del prossimo rinnovo"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ccdl",
+   "nome": "CC Digital Lab",
+   "descrizione": "Società in Polonia: fatture, bilancio e rapporti con Luna.",
+   "progetti": [
+    {
+     "id": "luna",
+     "nome": "Fatture Luna e bilancio 2025",
+     "stato": "in-attesa",
+     "spiegazione": "Bozza v2 del messaggio a Luna (14/10) con fatture aperte, differenza di liquidità e acconti CIT-8 (1.143 PLN). Invio da verificare.",
+     "ultimoAggiornamento": "2026-10-15",
+     "cronologia": [
+      {
+       "data": "2026-09-25",
+       "testo": "controllo \"lista bianca\" polacca",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [
+      "Cifra della differenza di liquidità incerta (3.790 o 3.990,89 PLN)",
+      "Estratti conto mancanti (serve login)",
+      "Protocollo SOCI e codice SMS"
+     ],
+     "daTitolare": [
+      "Cifra giusta della differenza prima del testo a Luna",
+      "Decisione sulla fattura Luna",
+      "Login per gli estratti conto"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "ccdl-mimmo/testo-luna-v2.md"
+     ]
+    },
+    {
+     "id": "erste",
+     "nome": "Erste (conti)",
+     "stato": "in-attesa",
+     "spiegazione": "Versamento previsto il 13/10 (52 PLN e 4,69 €); esito da verificare.",
+     "ultimoAggiornamento": "2026-10-14",
+     "cronologia": [
+      {
+       "data": "2026-10-12",
+       "testo": "promemoria 13/10 9:30: versare 52 PLN e 4,69 €",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [
+      "Esito del versamento del 13/10"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md"
+     ]
+    },
+    {
+     "id": "bilancia",
+     "nome": "Bilancia (bilancia.ccdigitalab.com)",
+     "stato": "in-attesa",
+     "spiegazione": "Bilancia diventa contabilità per partite; consigliato ampliarla invece di un CRM nuovo. Decisione da verificare.",
+     "ultimoAggiornamento": "da verificare",
+     "cronologia": [
+      {
+       "data": "2026-09-26",
+       "testo": "deploy nuova Bilancia approvato: prima su copia di prova, sul sito vero solo con il PIN del Titolare",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-09-30",
+       "testo": "consiglio: ampliare bilancia.ccdigitalab.com invece di un CRM nuovo; decisione del Titolare M",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [
+      "Decidere se ampliare Bilancia invece di un CRM nuovo"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "holding-fisco",
+   "nome": "Holding & Fisco",
+   "descrizione": "Pratiche fiscali della holding.",
+   "progetti": [
+    {
+     "id": "hera",
+     "nome": "PEC Hera",
+     "stato": "in-attesa",
+     "spiegazione": "Bozza di PEC su 1.116,78 € pronta e ferma per ordine, nessun invio. A settembre l'arretrato era 1.072,39 €: differenza da verificare.",
+     "ultimoAggiornamento": "2026-10-11",
+     "cronologia": [
+      {
+       "data": "2026-09-15",
+       "testo": "creato il contesto master v1.1 (contiene Hera/piano di rientro, arretrato 1.072,39 €)",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-11",
+       "testo": "Bozza pronta, ferma per ordine"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [
+      "Via libera all'invio o istruzioni"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md"
+     ]
+    },
+    {
+     "id": "riconciliazione",
+     "nome": "Riconciliazione DevShare",
+     "stato": "attivo",
+     "spiegazione": "Riconciliazione passata a Holding & Fisco: documentati solo 2.967 € su 18.771 €.",
+     "ultimoAggiornamento": "da verificare",
+     "cronologia": [
+      {
+       "data": "2026-09-30",
+       "testo": "Riconciliazione DevShare passata a Holding & Fisco"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fiscalista",
+   "nome": "Fiscalista",
+   "descrizione": "Conti e accordi.",
+   "progetti": [
+    {
+     "id": "conti-claudio",
+     "nome": "Conti Claudio",
+     "stato": "chiuso",
+     "spiegazione": "Chiuso tutto fino a luglio, aperti solo agosto e settembre; saldo agosto-settembre definitivo.",
+     "ultimoAggiornamento": "da verificare",
+     "cronologia": [
+      {
+       "data": "2026-09-25",
+       "testo": "decisione: chiuso tutto fino a luglio, aperti solo agosto e settembre; Mimmo senza IVA",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-09-26",
+       "testo": "saldo agosto-settembre definitivo: Claudio avanti di 2.682,21 €; Fabio, Luigi e Franco «fuori accordo»; Bilancia diventa contabilità per partite",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "commercialista",
+   "nome": "Commercialista",
+   "descrizione": "Buoni pasto e pratiche.",
+   "progetti": [
+    {
+     "id": "edenred",
+     "nome": "Edenred / ticket restaurant",
+     "stato": "in-attesa",
+     "spiegazione": "Bot creato il 16/09 con priorità Edenred; proposta preparata il 16/09 (contenuto da verificare). Nessun lavoro attivo noto.",
+     "ultimoAggiornamento": "da verificare",
+     "cronologia": [
+      {
+       "data": "2026-09-16",
+       "testo": "Creato il bot Commercialista con priorità Edenred"
+      },
+      {
+       "data": "2026-09-16",
+       "testo": "proposta/ordine Edenred preparata",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "avvocato",
+   "nome": "Avvocato",
+   "descrizione": "Pareri legali.",
+   "progetti": [
+    {
+     "id": "legale-csp",
+     "nome": "Revisione legale Computer Senza Paura",
+     "stato": "chiuso",
+     "spiegazione": "Revisione legale completata.",
+     "ultimoAggiornamento": "da verificare",
+     "cronologia": [],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md"
+     ]
+    },
+    {
+     "id": "legale-natale",
+     "nome": "Testi legali PWA Natale",
+     "stato": "in-attesa",
+     "spiegazione": "Registro decisioni legali (10/10) e parere del 16/10 sulla dichiarazione della voce: rischio medio-alto, soluzione minima a rischio medio.",
+     "ultimoAggiornamento": "2026-10-16",
+     "cronologia": [
+      {
+       "data": "2026-09-27",
+       "testo": "progetto v2, revisioni Tech Ops, parere legale hosting/consensi",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-04",
+       "testo": "checklist prove iPhone (gate)",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-08",
+       "testo": "consenso e informativa v1",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-10",
+       "testo": "registro decisioni legali",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-12",
+       "testo": "via libera a cornice e biglietto QR; consegna entro 17/10; regole sulla dichiarazione della voce rispettate",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "parere sulla dichiarazione della voce e art. 50: rischio medio-alto; soluzione minima «Voce generata al computer»; nota nel registro decisioni",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "consegna 34: manifest relativo e service worker offline anche sotto /pwa-natale/ (commit 09:39); rischi iOS Safari da rivedere con Tech Ops",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [
+      "Sì o no alla soluzione minima"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "pwa-natale/REGISTRO_DECISIONI_LEGALI_PWA.md"
+     ]
+    },
+    {
+     "id": "nda",
+     "nome": "NDA SpaceX",
+     "stato": "in-attesa",
+     "spiegazione": "Parere disponibile se il Titolare lo vuole.",
+     "ultimoAggiornamento": "da verificare",
+     "cronologia": [],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [
+      "Dire se serve un parere"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bandi",
+   "nome": "Bandi & Inclusione",
+   "descrizione": "Bandi ed eventi per HandiMap.",
+   "progetti": [
+    {
+     "id": "est",
+     "nome": "Open House Napoli · EST 2026",
+     "stato": "attivo",
+     "spiegazione": "Talk «Napoli Est: tracce di una trasformazione urbana» venerdì 23/10, 14:30-16:00, Fabbrica Italiana dell'Innovazione. Intervento HandiMap di 15 minuti, referente Luisa, posto auto riservato.",
+     "ultimoAggiornamento": "2026-10-14",
+     "cronologia": [
+      {
+       "data": "2026-09-15",
+       "testo": "creato il contesto master v1.1 (contiene Hera/piano di rientro, arretrato 1.072,39 €)",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-07",
+       "testo": "presentazione HandiMap di Manilla per il panel EST",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-14",
+       "testo": "post talk Open House Napoli a EST (23/10 14:30-16:00) pubblicato su @HandimapNews alle 19:32 (msg 106)",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-14",
+       "testo": "referente Luisa; intervento HandiMap 15 min il 23/10; materiali da lun 19/10; posto auto riservato; bio Manilla da condividere col Direttore",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "«Mandami il tuo disegno!»: regolamento, testi e messaggio WhatsApp per Manilla in bozza (20:58), nulla inviato",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [
+      {
+       "passo": "Materiali (roll-up, locandine, braccialetti) portabili",
+       "scadenza": "2026-10-19"
+      },
+      {
+       "passo": "Talk",
+       "scadenza": "2026-10-23"
+      }
+     ],
+     "blocchi": [
+      "Bio di Manilla al Direttore: esito da verificare"
+     ],
+     "daTitolare": [
+      "Bio di Manilla al Direttore",
+      "Chi porta i materiali da lunedì 19/10"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md"
+     ]
+    },
+    {
+     "id": "zenit",
+     "nome": "ZENIT 2026-ZEN-00665",
+     "stato": "chiuso",
+     "spiegazione": "Chiuso il 22/09 dopo la scadenza del 18/09, nessun invio.",
+     "ultimoAggiornamento": "2026-09-22",
+     "cronologia": [
+      {
+       "data": "2026-09-14",
+       "testo": "Giovanna Barbaro (MAP) manda la bozza Smart Academy da approvare entro il 18/09",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-09-16",
+       "testo": "bozze di risposta a Giovanna (linee 75.040 € e 76.640 €), nessun invio",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-09-18",
+       "testo": "scadenze del 18/09 (10:00 e 11:00) passate senza invio; monitor eliminato verso le 11:10",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-09-22",
+       "testo": "dossier CHIUSO per ordine del Titolare (~23:05)",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "zenit-bozza/ARCHIVIO_CHIUSURA_2026-09-22.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "personale",
+   "nome": "Personale",
+   "descrizione": "Famiglia, casa e account personali.",
+   "progetti": [
+    {
+     "id": "lamborghini",
+     "nome": "Lamborghini per Antonio",
+     "stato": "in-attesa",
+     "spiegazione": "Vocale v2 approvato nel testo; il 14/10 cinque alternative con prezzo verificato (13,85-249,99 €). Nessun acquisto.",
+     "ultimoAggiornamento": "2026-10-14",
+     "cronologia": [
+      {
+       "data": "2026-10-09",
+       "testo": "testi 1-7 (poi 8-10 il 10/10)",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-14",
+       "testo": "5 nuove alternative con prezzi verificati (13,85-249,99 €), nessun acquisto",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [
+      "Scelta del modello",
+      "Sì all'invio del vocale"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "personale-famiglia/"
+     ]
+    },
+    {
+     "id": "account-x",
+     "nome": "Ricorso account X",
+     "stato": "in-attesa",
+     "spiegazione": "Bozza di appello del 16/09; stato attuale da verificare.",
+     "ultimoAggiornamento": "2026-09-16",
+     "cronologia": [
+      {
+       "data": "2026-09-16",
+       "testo": "bozza di appello per la sospensione di @castaldoarcang1",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "x-castaldoarcang1/"
+     ]
+    },
+    {
+     "id": "casa",
+     "nome": "Casa al mare / ricerca casa",
+     "stato": "attivo",
+     "spiegazione": "Scansione quotidiana degli annunci: al 16/10 nessun annuncio adatto.",
+     "ultimoAggiornamento": "2026-10-16",
+     "cronologia": [
+      {
+       "data": "2026-09-17",
+       "testo": "verifica affitto Via Romolo Murri 28, Porto Cesareo (550 €/mese)",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-09-17",
+       "testo": "foto Porto Empedocle, Licata, Gela",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-09-28",
+       "testo": "scansioni annunci 28/09, 29/09, 01/10 (01/10: nessun annuncio valido)",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-12",
+       "testo": "scansione 08:57-09:05: nessun annuncio che rispetta i filtri",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-13",
+       "testo": "scansione 08:58-09:05: nessun annuncio adatto",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-14",
+       "testo": "scansione: nessun annuncio adatto",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-15",
+       "testo": "scansione 08:54-09:00: nessun annuncio adatto, nessun cambio",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "scansione 08:51-09:00: nessun annuncio adatto, nessun cambio",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "apartment-scan/"
+     ]
+    },
+    {
+     "id": "mari-monti",
+     "nome": "Mari e Monti (Manilla)",
+     "stato": "in-attesa",
+     "spiegazione": "Candidatura HR Assistant pronta il 09/10; invio ed esito da verificare.",
+     "ultimoAggiornamento": "2026-10-09",
+     "cronologia": [
+      {
+       "data": "2026-10-09",
+       "testo": "CV e candidatura HR Assistant di Manilla preparati",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md"
+     ]
+    },
+    {
+     "id": "rc-auto",
+     "nome": "RC auto",
+     "stato": "chiuso",
+     "spiegazione": "Confronto delle offerte RC auto del 27/09; esito da verificare.",
+     "ultimoAggiornamento": "da verificare",
+     "cronologia": [
+      {
+       "data": "2026-09-27",
+       "testo": "confronto offerte RC auto Fiat Punto",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "personale-auto/"
+     ]
+    },
+    {
+     "id": "pagamenti",
+     "nome": "Pagamenti non riusciti Starlink e Netflix",
+     "stato": "in-attesa",
+     "spiegazione": "Segnalati dal report del Coach il 16/10.",
+     "ultimoAggiornamento": "2026-10-16",
+     "cronologia": [
+      {
+       "data": "2026-10-16",
+       "testo": "Segnalati dal report del Coach"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [
+      "Sistemare i pagamenti"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "virtuali",
+   "nome": "Virtuali & Giochi",
+   "descrizione": "Giochi virtuali: analisi e proposte su Italia e Santo Domingo.",
+   "progetti": [
+    {
+     "id": "margine",
+     "nome": "Margine per valuta Santo Domingo",
+     "stato": "in-attesa",
+     "spiegazione": "Proposta del 14/10 (sola lettura): conti in dollari obiettivo ~8% lordo, conti in pesos ~12%. Ultimi 30 giorni: USD 20,2%, pesos 13,5%. v2 dei file aggiunta il 15/10. Backup e rollback pronti.",
+     "ultimoAggiornamento": "2026-10-15",
+     "cronologia": [
+      {
+       "data": "2026-10-14",
+       "testo": "confermato AMBIORIS-ISLA (1432) e OVAM (1201) in dollari; obiettivo ~8% lordo conti $ e ~12% lordo conti pesos; modifiche solo dopo il sì",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-14",
+       "testo": "sola lettura [indirizzo interno]: % lorda 30 gg USD 20,2%, pesos 13,5%; proposta pesos fasce +1 punto (stima ~12,3%), USD F97 tutto il giorno (stima ~9,7%); da correggere currency 1432 DOP→USD; proposta 13/10 non applicata",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-15",
+       "testo": "v2 dei file schedule aggiunta (20:36)",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [
+      "Valuta di AMBIORIS da correggere da DOP a USD"
+     ],
+     "daTitolare": [
+      "Sì o no alla proposta",
+      "Dire se vale solo per Santo Domingo"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "risultati/proposta-margine-valuta-20261014/"
+     ]
+    },
+    {
+     "id": "quote-alte",
+     "nome": "Schedule «quote alte» Santo Domingo",
+     "stato": "in-attesa",
+     "spiegazione": "Proposta del 13/10 non applicata; due proposte aperte sullo stesso schedule.",
+     "ultimoAggiornamento": "2026-10-14",
+     "cronologia": [
+      {
+       "data": "2026-10-13",
+       "testo": "proposta schedule «quote alte» (sola lettura, da approvare)",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-13",
+       "testo": "15 clienti su 21 senza giocate da inizio ottobre",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [
+      "Scegliere tra le due proposte"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "risultati/proposta-quote-alte-20261013/"
+     ]
+    },
+    {
+     "id": "kss",
+     "nome": "Report KSS e controllo virtuali",
+     "stato": "attivo",
+     "spiegazione": "Report mensile KSS su VG CONTROL (il 2-3 di ogni mese); controlli del database in sola lettura.",
+     "ultimoAggiornamento": "2026-10-13",
+     "cronologia": [
+      {
+       "data": "2026-09-26",
+       "testo": "audit software giochi virtuali: il motore RTP non è nel repository",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-09-29",
+       "testo": "sintesi per il Titolare e dettaglio tecnico",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-09-29",
+       "testo": "accesso server/SQL in sola lettura per verificare l'RTP reale",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-05",
+       "testo": "sessione DB via VPN in sola lettura, export gen-set 2026",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-06",
+       "testo": "revisione sicurezza DB racingdog: nessun audit attivo, password giocatori in chiaro",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-07",
+       "testo": "andamento gen-ott 2026 e griglia schedule",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-12",
+       "testo": "DB [indirizzo interno] in sola lettura (08:15-08:25): giochi ok fino a domenica sera, weekend RTP 0,62, Dog8 fermo dal 2025, nessuna anomalia grave",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-12",
+       "testo": "sessione 13 (09:01): DB racingdog_10_0_7_22 ripristinato il 15/06 da WIN-05BTD6TU6SF; se sia produzione o copia è ancora da chiudere",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-12",
+       "testo": "chiarito: [indirizzo interno] = ITALIA, [indirizzo interno] = SANTO DOMINGO",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-12",
+       "testo": "lunedì sera DB [indirizzo interno]: 388 giocate / 57.240 € / RTP 0,90; FUEGO-SPORT assente",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-14",
+       "testo": "confermato AMBIORIS-ISLA (1432) e OVAM (1201) in dollari; obiettivo ~8% lordo conti $ e ~12% lordo conti pesos; modifiche solo dopo il sì",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [
+      "Ultimo stato del report mensile da verificare"
+     ],
+     "daTitolare": [],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "virtuali-analisi/",
+      "tyche-analisi/"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "barrasso",
+   "nome": "Fotografo Barrasso",
+   "descrizione": "Studio fotografico: fiera Tutto Sposi.",
+   "progetti": [
+    {
+     "id": "ig-fiera",
+     "nome": "Instagram fiera Tutto Sposi",
+     "stato": "attivo",
+     "spiegazione": "Fiera alla Mostra d'Oltremare (Pad. 2, Stand 210) il 17-18 e 24-25/10. Bozza campagna Meta da 50 € del 16/10, non attivata.",
+     "ultimoAggiornamento": "2026-10-16",
+     "cronologia": [
+      {
+       "data": "2026-10-12",
+       "testo": "piano PDF Tutto Sposi consegnato (3 bio, calendario 13-25/10, budget 300/450/600)",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-13",
+       "testo": "deciso: «oltre 40 anni», cellulare, Meta da 50 €; bio scelta dal Capo con anteprima",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-13",
+       "testo": "materiali reel caricati in barrasso-adv/reel/",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-14",
+       "testo": "grafiche conto alla rovescia (Mancano 3/2 giorni, Domani si parte, Padre e figlio) pronte; arrivati foto e video in studio/",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "bozza campagna 50 € (16/10 ore 12 → 25/10), non attivata; servono accesso inserzioni, pagamento e sì",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "audit FB/IG 28 gg (Al Miracolo FB 55.241 visualizzazioni, HandiMap FB 21.787, DevShare FB 633 −79,4% e IG 1.037); segnalati «Verifica necessaria», Business Manager non verificati, account pubblicitario disabilitato",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "email di verifica azienda ricevuta, foto inviata a Tech Ops; quale portfolio: M",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "bozza ritoccata alle 20:57, ancora non attivata; partenza delle 12 saltata",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [
+      {
+       "passo": "Fiera, primo weekend",
+       "scadenza": "2026-10-17"
+      },
+      {
+       "passo": "Fiera, secondo weekend",
+       "scadenza": "2026-10-24"
+      },
+      {
+       "passo": "Fine campagna prevista",
+       "scadenza": "2026-10-25"
+      }
+     ],
+     "blocchi": [
+      "Campagna ferma senza accesso alle inserzioni e metodo di pagamento"
+     ],
+     "daTitolare": [
+      "Sì alla campagna da 50 €",
+      "Accesso a Gestione inserzioni e metodo di pagamento",
+      "Bio e storia «Domani si parte»"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "barrasso-adv/meta/"
+     ]
+    },
+    {
+     "id": "grafiche",
+     "nome": "Grafiche e video fiera",
+     "stato": "in-attesa",
+     "spiegazione": "Totem e bancone pronti in PDF; reel «Domani si parte» con QR, reel con drone e preventivo aggiornato (15/10). Preventivo v3 con acconto 20% consegnato.",
+     "ultimoAggiornamento": "2026-10-15",
+     "cronologia": [
+      {
+       "data": "2026-10-11",
+       "testo": "PDF di totem 80×200, bancone 100×100 e fianchi rifatti alle 10:01 con la foto vera di Simone e Sandro (scontornata, senza badge, B/N); qualità buona solo da 1-3 m",
+       "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-15",
+       "testo": "reel «Domani si parte» con QR, reel HQ con drone e preventivo aggiornato, salvati tra 23:05 e 23:37 (dentro la fascia di stop)",
+       "fonte": "quadro/STORICO.md"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [
+      "Misure del bancone, tipografia e liberatoria aperte"
+     ],
+     "daTitolare": [
+      "Misure del bancone",
+      "Liberatoria"
+     ],
+     "fonti": [
+      "quadro/ALBERO_VIVO.md",
+      "quadro/GRAFO_PROGETTI.md",
+      "barrasso-adv/reel/",
+      "barrasso-adv/preventivi/"
+     ]
+    }
+   ]
+  }
+ ]
+}
