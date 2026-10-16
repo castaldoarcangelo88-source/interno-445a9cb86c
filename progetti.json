@@ -145,7 +145,7 @@
      "nome": "Telegram DevShare / NewsFlow / HandiMap News",
      "stato": "attivo",
      "spiegazione": "Crescita dei canali Telegram: massimo 2-3 post al giorno. Il 15/10 bozza del piano iscritti e 7 link d'invito: finora 0 ingressi dai link, 2 iscritti nuovi. HandiMap passa sempre dall'ok di Manilla.",
-     "ultimoAggiornamento": "2026-10-15",
+     "ultimoAggiornamento": "2026-10-16",
      "cronologia": [
       {
        "data": "2026-06-21",
@@ -221,9 +221,22 @@
        "data": "2026-10-16",
        "testo": "report del venerdì: NewsFlow 5/34, HandiMap News 11/50, DevShare 51/82; 0 ingressi dai link d'invito, compresi i 7 del 15/10; proposta 17-23/10 in attesa di ok",
        "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "Report del venerdì: NewsFlow 5/34, HandiMap News 11/50, DevShare 51/82; dal 26/09 nessun ingresso dai link d'invito; post del giorno preparati, uscita da verificare",
+       "fonte": "resoconti/RESOCONTO_2026-10-16_21.md"
       }
      ],
      "prossimiPassi": [
+      {
+       "passo": "Uno stato WhatsApp al giorno e un messaggio in 1-2 gruppi a giorni alterni (solo con ok dell'admin)",
+       "scadenza": "2026-10-17"
+      },
+      {
+       "passo": "Confronto dei risultati",
+       "scadenza": "2026-10-23"
+      },
       {
        "passo": "Raggiungere gli obiettivi iscritti (al 09/10: NewsFlow 4/34, HandiMap News 11/50, DevShare 51/82)",
        "scadenza": "2026-10-26"
@@ -236,7 +249,8 @@
      "fonti": [
       "quadro/ALBERO_VIVO.md",
       "quadro/GRAFO_PROGETTI.md",
-      "telegram-growth/PIANO_ISCRITTI_1510.md"
+      "telegram-growth/PIANO_ISCRITTI_1510.md",
+      "resoconti/RESOCONTO_2026-10-16_21.md"
      ]
     },
     {
@@ -284,12 +298,17 @@
      "nome": "Server DogBet Hetzner",
      "stato": "attivo",
      "spiegazione": "Controllo in sola lettura tre volte al giorno (9, 15, 21); si avvisa il Titolare solo se qualcosa si blocca.",
-     "ultimoAggiornamento": "2026-10-15",
+     "ultimoAggiornamento": "2026-10-16",
      "cronologia": [
       {
        "data": "2026-10-15",
        "testo": "controllo blocchi [indirizzo interno] attivo alle 9, 15, 21; giro delle 21:07 senza allarmi",
        "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "Controlli delle 9 e delle 15:20 eseguiti; nessuna segnalazione arrivata",
+       "fonte": "resoconti/RESOCONTO_2026-10-16_21.md"
       }
      ],
      "prossimiPassi": [],
@@ -297,7 +316,8 @@
      "daTitolare": [],
      "fonti": [
       "quadro/ALBERO_VIVO.md",
-      "quadro/GRAFO_PROGETTI.md"
+      "quadro/GRAFO_PROGETTI.md",
+      "resoconti/RESOCONTO_2026-10-16_21.md"
      ]
     },
     {
@@ -445,7 +465,7 @@
      "nome": "TikTok @dev_share",
      "stato": "bloccato",
      "spiegazione": "Account TikTok DevShare con captcha in sospeso dal 16/09.",
-     "ultimoAggiornamento": "2026-10-11",
+     "ultimoAggiornamento": "2026-10-16",
      "cronologia": [
       {
        "data": "2026-09-16",
@@ -476,6 +496,11 @@
        "data": "2026-10-16",
        "testo": "piano dal 17/10 e stato in sola lettura (20:24): @dev_share 1.310, @me_medesimo82 3.268, @al_miracolodelmare 1.226, @creazioni.e.fanta_ 60, @arcangelocastaldo7 privato 3; Postiz senza account collegati",
        "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "Stato in sola lettura alle 20:24: @dev_share 1.310 follower, verifica anti-robot ancora attiva",
+       "fonte": "resoconti/RESOCONTO_2026-10-16_21.md"
       }
      ],
      "prossimiPassi": [],
@@ -488,7 +513,8 @@
      "fonti": [
       "quadro/ALBERO_VIVO.md",
       "quadro/GRAFO_PROGETTI.md",
-      "devshare-tiktok/AUDIT_dev_share_2026-09-16.md"
+      "devshare-tiktok/AUDIT_dev_share_2026-09-16.md",
+      "resoconti/RESOCONTO_2026-10-16_21.md"
      ]
     },
     {
@@ -549,6 +575,11 @@
        "data": "2026-10-13",
        "testo": "contratto annuale firmato dal cliente (PDF); manca firma Titolare; chiariti domini almiracolodelmare.it e lincantodelmare.it",
        "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "Il sito risponde; rinnovo del dominio da verificare",
+       "fonte": "resoconti/RESOCONTO_2026-10-16_21.md"
       }
      ],
      "prossimiPassi": [
@@ -568,7 +599,8 @@
      "fonti": [
       "quadro/ALBERO_VIVO.md",
       "quadro/GRAFO_PROGETTI.md",
-      "contratti/"
+      "contratti/",
+      "resoconti/RESOCONTO_2026-10-16_21.md"
      ]
     },
     {
@@ -591,6 +623,101 @@
       "quadro/ALBERO_VIVO.md",
       "quadro/GRAFO_PROGETTI.md"
      ]
+    },
+    {
+     "id": "meta-audit",
+     "nome": "Meta Facebook/Instagram (DevShare e clienti)",
+     "stato": "in-attesa",
+     "spiegazione": "Audit di 28 giorni (18/09-15/10): Al Miracolo del Mare è la pagina che rende di più, HandiMap su Facebook va bene, DevShare è la più debole. Bio DevShare e piano contenuti 19/10-01/11 in bozza.",
+     "ultimoAggiornamento": "2026-10-16",
+     "cronologia": [
+      {
+       "data": "2026-10-16",
+       "testo": "Audit di 28 giorni e piano contenuti in bozza"
+      }
+     ],
+     "prossimiPassi": [
+      {
+       "passo": "Ok al piano contenuti",
+       "scadenza": "2026-10-19"
+      },
+      {
+       "passo": "Tech Ops sistema «Verifica necessaria», Business Manager non verificati e account pubblicitario disabilitato",
+       "scadenza": "da verificare"
+      }
+     ],
+     "blocchi": [
+      "Non è chiaro a quale portfolio si riferisca la verifica Meta ricevuta",
+      "Pagine di Creazioni e Fantasia e «Land auto» da chiarire"
+     ],
+     "daTitolare": [
+      "Ok al piano dal 19/10",
+      "Indicare quale portfolio è stato verificato",
+      "Decidere se sospendere le pagine ferme indicate nel resoconto"
+     ],
+     "fonti": [
+      "resoconti/RESOCONTO_2026-10-16_21.md"
+     ]
+    },
+    {
+     "id": "tiktok-5",
+     "nome": "TikTok · 5 account",
+     "stato": "in-attesa",
+     "spiegazione": "Piano dal 17/10 con 3-5 video a settimana per account. Nessun account è collegato al programmatore dei post: oggi si pubblica solo a mano dall'app.",
+     "ultimoAggiornamento": "2026-10-16",
+     "cronologia": [
+      {
+       "data": "2026-10-16",
+       "testo": "Piano e stato degli account in sola lettura (20:24)"
+      }
+     ],
+     "prossimiPassi": [
+      {
+       "passo": "Partenza appena arrivano materiale e ok",
+       "scadenza": "2026-10-17"
+      }
+     ],
+     "blocchi": [
+      "Nessun collegamento automatico",
+      "Nome dell'account TikTok di Creazioni e Fantasia diverso tra file e memoria: da verificare"
+     ],
+     "daTitolare": [
+      "Ok a rendere pubblico il profilo personale",
+      "Materiale video",
+      "Collegare gli account al programmatore o pubblicare a mano"
+     ],
+     "fonti": [
+      "resoconti/RESOCONTO_2026-10-16_21.md"
+     ]
+    },
+    {
+     "id": "contest-babypepita",
+     "nome": "Contest Baby Pepita «Mandami il tuo disegno!»",
+     "stato": "in-attesa",
+     "spiegazione": "Regolamento, testi Instagram e messaggio WhatsApp per Manilla in bozza. Nessun premio e nessun vincitore, quindi niente pratica da concorso a premi.",
+     "ultimoAggiornamento": "2026-10-16",
+     "cronologia": [
+      {
+       "data": "2026-10-16",
+       "testo": "Regolamento e testi in bozza (20:58); analisi dei canali simili su Telegram"
+      }
+     ],
+     "prossimiPassi": [
+      {
+       "passo": "Messaggio a Manilla solo col sì",
+       "scadenza": "da verificare"
+      }
+     ],
+     "blocchi": [
+      "Mancano account, durata, contatto ufficiale e titolare dei dati"
+     ],
+     "daTitolare": [
+      "Le 4 risposte (account, durata, contatto, titolare dei dati)",
+      "Sì a girare il messaggio a Manilla"
+     ],
+     "fonti": [
+      "resoconti/RESOCONTO_2026-10-16_21.md"
+     ]
     }
    ]
   },
@@ -603,7 +730,7 @@
      "id": "pwa-natale",
      "nome": "PWA Natale",
      "stato": "attivo",
-     "spiegazione": "App di Natale con voce e biglietto QR. Ultima consegna nota: n. 33. Il 16/10 parere dell'Avvocato sulla regola delle dichiarazioni della voce: soluzione minima con la frase «Voce generata al computer» e correzione della riga del biglietto QR. Anteprima obbligatoria prima di pubblicare.",
+     "spiegazione": "App di Natale con voce e biglietto QR. Ultima consegna nota: n. 34 (16/10). Il 16/10 parere dell'Avvocato sulla regola delle dichiarazioni della voce: soluzione minima con la frase «Voce generata al computer» e correzione della riga del biglietto QR. Anteprima obbligatoria prima di pubblicare.",
      "ultimoAggiornamento": "2026-10-16",
      "cronologia": [
       {
@@ -640,6 +767,11 @@
        "data": "2026-10-16",
        "testo": "consegna 34: manifest relativo e service worker offline anche sotto /pwa-natale/ (commit 09:39); rischi iOS Safari da rivedere con Tech Ops",
        "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "Consegna n. 34 alle 9:39: l'app funziona anche offline e sotto il percorso /pwa-natale/, con test automatici",
+       "fonte": "resoconti/RESOCONTO_2026-10-16_21.md"
       }
      ],
      "prossimiPassi": [
@@ -649,6 +781,10 @@
       },
       {
        "passo": "Dominio natale.devsharesrl.it e galleria definitiva",
+       "scadenza": "da verificare"
+      },
+      {
+       "passo": "Revisione Tech Ops dei rischi su iPhone (Safari)",
        "scadenza": "da verificare"
       }
      ],
@@ -663,7 +799,8 @@
       "quadro/ALBERO_VIVO.md",
       "quadro/GRAFO_PROGETTI.md",
       "pwa-natale/REGISTRO_DECISIONI_LEGALI_PWA.md",
-      "pwa-natale/"
+      "pwa-natale/",
+      "resoconti/RESOCONTO_2026-10-16_21.md"
      ]
     },
     {
@@ -697,6 +834,11 @@
        "data": "2026-10-15",
        "testo": "5 vocali: foto delle usate più grandi, Porsche più dinamica, sostituzioni nell'ordine indicato; applicazione M",
        "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "Sito ufficiale verificato online alle 20:58; sì esplicito e correzioni foto ancora da verificare",
+       "fonte": "resoconti/RESOCONTO_2026-10-16_21.md"
       }
      ],
      "prossimiPassi": [
@@ -720,7 +862,8 @@
       "quadro/ALBERO_VIVO.md",
       "quadro/GRAFO_PROGETTI.md",
       "landauto/PASSI_PRODUZIONE.md",
-      "landauto/AUDIT_GOLIVE_2026-10-12.md"
+      "landauto/AUDIT_GOLIVE_2026-10-12.md",
+      "resoconti/RESOCONTO_2026-10-16_21.md"
      ]
     },
     {
@@ -728,7 +871,7 @@
      "nome": "Vetrina devsharesrl.it",
      "stato": "attivo",
      "spiegazione": "Staging del sito ricostruito in locale il 15/10 (65 file, 3 da confrontare con l'originale). Da sistemare: nomi degli asset grafici, contatti (info@, telefono, REA), testi da verificare e residui del vecchio negozio online.",
-     "ultimoAggiornamento": "2026-10-15",
+     "ultimoAggiornamento": "2026-10-16",
      "cronologia": [
       {
        "data": "2026-10-15",
@@ -739,6 +882,11 @@
        "data": "2026-10-16",
        "testo": "staging: tasti assistenza verso il bot Telegram DevShare_Assistenza_bot (18:47), contatti «Assistenza immediata su Telegram», reCAPTCHA e iubenda solo in produzione (18:53); niente pubblicato",
        "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "In prova locale i tasti dell'assistenza aprono il bot Telegram DevShare (18:47); contatti aggiornati (18:53). Online c'è ancora il sito vecchio",
+       "fonte": "resoconti/RESOCONTO_2026-10-16_21.md"
       }
      ],
      "prossimiPassi": [
@@ -749,12 +897,18 @@
       {
        "passo": "Togliere login, area riservata e residui del negozio",
        "scadenza": "da verificare"
+      },
+      {
+       "passo": "Anteprima per il Titolare, poi pubblicazione sul server solo con ok",
+       "scadenza": "da verificare"
       }
      ],
      "blocchi": [
-      "Mancano gli asset grafici definitivi"
+      "Mancano gli asset grafici definitivi",
+      "3 frasi da confermare: «esperienza ventennale», «tecnici certificati Dell, Cisco, HP, Fortinet», «Dopo l'acquisto»"
      ],
      "daTitolare": [
+      "Le 3 frasi: vere o da togliere",
       "Logo definitivo e foto con diritti d'uso",
       "Conferma dei testi e dei contatti",
       "Permesso scritto per citare clienti"
@@ -763,7 +917,8 @@
       "quadro/ALBERO_VIVO.md",
       "quadro/GRAFO_PROGETTI.md",
       "devsharesrl-vetrina/STATO.md",
-      "devsharesrl-vetrina/DA_VERIFICARE.md"
+      "devsharesrl-vetrina/DA_VERIFICARE.md",
+      "resoconti/RESOCONTO_2026-10-16_21.md"
      ]
     },
     {
@@ -826,7 +981,7 @@
      "nome": "ilmondodibabypepita.it",
      "stato": "attivo",
      "spiegazione": "Pagina «Work in progress» online; anteprima della pagina di Manilla e dei libri pronta ma non pubblicata. Recuperate 637 immagini del blog (2016-2020), 21 mancanti.",
-     "ultimoAggiornamento": "2026-10-13",
+     "ultimoAggiornamento": "2026-10-16",
      "cronologia": [
       {
        "data": "2026-09-16",
@@ -847,6 +1002,11 @@
        "data": "2026-10-16",
        "testo": "«Mandami il tuo disegno!»: regolamento, testi e messaggio WhatsApp per Manilla in bozza (20:58), nulla inviato",
        "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "Pagina di attesa verificata online; anteprima della pagina di Manilla non pubblicata",
+       "fonte": "resoconti/RESOCONTO_2026-10-16_21.md"
       }
      ],
      "prossimiPassi": [],
@@ -861,7 +1021,8 @@
       "quadro/ALBERO_VIVO.md",
       "quadro/GRAFO_PROGETTI.md",
       "babypepita/attesa/",
-      "babypepita-recupero/"
+      "babypepita-recupero/",
+      "resoconti/RESOCONTO_2026-10-16_21.md"
      ]
     },
     {
@@ -1062,7 +1223,7 @@
      "nome": "devshare.it (WIP e vetrina)",
      "stato": "attivo",
      "spiegazione": "Pagina «Work in progress» online con HTTPS; vetrina locale con 14 attività. Manca il CNAME www; il vecchio WordPress compromesso è da spegnere.",
-     "ultimoAggiornamento": "2026-10-14",
+     "ultimoAggiornamento": "2026-10-16",
      "cronologia": [
       {
        "data": "2026-09-23",
@@ -1113,6 +1274,11 @@
        "data": "2026-10-16",
        "testo": "staging: tasti assistenza verso il bot Telegram DevShare_Assistenza_bot (18:47), contatti «Assistenza immediata su Telegram», reCAPTCHA e iubenda solo in produzione (18:53); niente pubblicato",
        "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "Online la pagina «Le nostre attività»; mancano il CNAME www e lo spegnimento del vecchio WordPress",
+       "fonte": "resoconti/RESOCONTO_2026-10-16_21.md"
       }
      ],
      "prossimiPassi": [],
@@ -1126,7 +1292,8 @@
       "quadro/ALBERO_VIVO.md",
       "quadro/GRAFO_PROGETTI.md",
       "devshare-vetrina/",
-      "devshare-sito/"
+      "devshare-sito/",
+      "resoconti/RESOCONTO_2026-10-16_21.md"
      ]
     },
     {
@@ -1314,6 +1481,35 @@
       "quadro/ALBERO_VIVO.md",
       "quadro/GRAFO_PROGETTI.md"
      ]
+    },
+    {
+     "id": "primi-10",
+     "nome": "Offerta DevShare «Primi 10»",
+     "stato": "in-attesa",
+     "spiegazione": "Condizioni in bozza: sviluppo a 0 € (web app per prenotazioni o sito vetrina di 2 pagine), primi 6 mesi senza canone, poi 15 € al mese + IVA, 2 modifiche incluse. Posti, durata minima, penale e validità sono ipotesi da decidere.",
+     "ultimoAggiornamento": "2026-10-16",
+     "cronologia": [
+      {
+       "data": "2026-10-16",
+       "testo": "Condizioni dell'offerta in bozza"
+      }
+     ],
+     "prossimiPassi": [
+      {
+       "passo": "Dopo il sì: pagina sul sito e post settimanale con prezzo",
+       "scadenza": "da verificare"
+      }
+     ],
+     "blocchi": [],
+     "daTitolare": [
+      "Numero dei posti",
+      "Durata minima",
+      "Penale di uscita",
+      "Scadenza dell'offerta"
+     ],
+     "fonti": [
+      "resoconti/RESOCONTO_2026-10-16_21.md"
+     ]
     }
    ]
   },
@@ -1427,14 +1623,20 @@
        "testo": "Bozza pronta, ferma per ordine"
       }
      ],
-     "prossimiPassi": [],
+     "prossimiPassi": [
+      {
+       "passo": "Valutare la richiesta di rateizzazione (bozza delle 5 azioni)",
+       "scadenza": "da verificare"
+      }
+     ],
      "blocchi": [],
      "daTitolare": [
       "Via libera all'invio o istruzioni"
      ],
      "fonti": [
       "quadro/ALBERO_VIVO.md",
-      "quadro/GRAFO_PROGETTI.md"
+      "quadro/GRAFO_PROGETTI.md",
+      "/home/box/fiscal-patrimoniale/utenze/"
      ]
     },
     {
@@ -1456,6 +1658,100 @@
       "quadro/ALBERO_VIVO.md",
       "quadro/GRAFO_PROGETTI.md"
      ]
+    },
+    {
+     "id": "dossier-patrimonio",
+     "nome": "Dossier Fisco & Patrimonio",
+     "stato": "attivo",
+     "spiegazione": "Dossier continuativo dal 30/08/2026: ricostruzione di società, liquidità, redditi, investimenti e flussi. Ricostruzione parziale: diversi estratti e dati ancora mancanti.",
+     "ultimoAggiornamento": "2026-09-18",
+     "cronologia": [
+      {
+       "data": "2026-08-30",
+       "testo": "Avvio del dossier"
+      },
+      {
+       "data": "2026-09-15",
+       "testo": "Ultimo aggiornamento dello stato di ricostruzione"
+      },
+      {
+       "data": "2026-09-18",
+       "testo": "Consegna al Capo e accesso in sola lettura a Bilancia"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [
+      "Estratti conto aggiornati mancanti",
+      "Dati su redditi e investimenti mancanti"
+     ],
+     "daTitolare": [
+      "Fornire gli estratti conto aggiornati"
+     ],
+     "fonti": [
+      "/home/box/fiscal-patrimoniale/README.md"
+     ]
+    },
+    {
+     "id": "riorganizzazione",
+     "nome": "Piano di riorganizzazione finanziaria",
+     "stato": "in-attesa",
+     "spiegazione": "Quadro per il Fiscalista (25/09) e bozza di 5 azioni: utenze, rate in corso, fisco DevShare, tagli ai costi e regola di cassa. Piano completo del 28/09.",
+     "ultimoAggiornamento": "2026-09-28",
+     "cronologia": [
+      {
+       "data": "2026-09-25",
+       "testo": "Quadro per il Fiscalista e bozza delle 5 azioni"
+      },
+      {
+       "data": "2026-09-26",
+       "testo": "Analisi fiscale per il commercialista"
+      },
+      {
+       "data": "2026-09-28",
+       "testo": "Piano completo"
+      }
+     ],
+     "prossimiPassi": [
+      {
+       "passo": "Verificare le rate e le quietanze con il commercialista",
+       "scadenza": "da verificare"
+      }
+     ],
+     "blocchi": [],
+     "daTitolare": [
+      "Approvare o modificare le 5 azioni"
+     ],
+     "fonti": [
+      "/home/box/fiscal-patrimoniale/quadro-fiscalista-2026-09-25.md",
+      "/home/box/fiscal-patrimoniale/riorganizzazione/"
+     ]
+    },
+    {
+     "id": "partite-bilancia",
+     "nome": "Contabilità per partite in Bilancia",
+     "stato": "in-attesa",
+     "spiegazione": "Piano del 26/09 per gestire ogni affare come «partita» con la sua regola di divisione; nessuna modifica fatta a codice o dati. Revisione tecnica e di sicurezza di Bilancia del 26/09.",
+     "ultimoAggiornamento": "2026-09-26",
+     "cronologia": [
+      {
+       "data": "2026-09-26",
+       "testo": "Piano partite, revisione tecnica e report sicurezza di Bilancia"
+      }
+     ],
+     "prossimiPassi": [
+      {
+       "passo": "Applicare il piano solo dopo le decisioni del Titolare",
+       "scadenza": "da verificare"
+      }
+     ],
+     "blocchi": [],
+     "daTitolare": [
+      "Decidere le partite ancora aperte"
+     ],
+     "fonti": [
+      "bilancia/PIANO_PARTITE_2026-09-26.md",
+      "bilancia/REVISIONE_TECNICA_BILANCIA_2026-09-26.md"
+     ]
     }
    ]
   },
@@ -1468,17 +1764,17 @@
      "id": "conti-claudio",
      "nome": "Conti Claudio",
      "stato": "chiuso",
-     "spiegazione": "Chiuso tutto fino a luglio, aperti solo agosto e settembre; saldo agosto-settembre definitivo.",
+     "spiegazione": "Chiuso tutto fino a luglio, aperti solo agosto e settembre; saldo agosto-settembre definitivo. Il saldo di riferimento è fissato dal Titolare (26/09) e non si ricalcola.",
      "ultimoAggiornamento": "da verificare",
      "cronologia": [
       {
        "data": "2026-09-25",
-       "testo": "decisione: chiuso tutto fino a luglio, aperti solo agosto e settembre; Mimmo senza IVA",
+       "testo": "Decisione sul periodo dei conti (dettagli nella fonte)",
        "fonte": "quadro/STORICO.md"
       },
       {
        "data": "2026-09-26",
-       "testo": "saldo agosto-settembre definitivo: Claudio avanti di 2.682,21 €; Fabio, Luigi e Franco «fuori accordo»; Bilancia diventa contabilità per partite",
+       "testo": "Saldo agosto-settembre definito dal Titolare (importi nella fonte)",
        "fonte": "quadro/STORICO.md"
       }
      ],
@@ -1487,7 +1783,105 @@
      "daTitolare": [],
      "fonti": [
       "quadro/ALBERO_VIVO.md",
-      "quadro/GRAFO_PROGETTI.md"
+      "quadro/GRAFO_PROGETTI.md",
+      "bilancia/REVISIONE_FISCALISTA_BILANCIA_2026-09-26.md"
+     ]
+    },
+    {
+     "id": "revisione-bilancia",
+     "nome": "Revisione delle logiche economiche di Bilancia",
+     "stato": "in-attesa",
+     "spiegazione": "Revisione indipendente delle regole economiche di Bilancia, chiusa il 16/10 sera con sintesi finale e integrazione dei pareri di Commercialista e Avvocato. Restano aperti i punti da decidere del Titolare e le verifiche con il commercialista e con consulenti legali esterni.",
+     "ultimoAggiornamento": "2026-10-16",
+     "cronologia": [
+      {
+       "data": "2026-09-25",
+       "testo": "Prima stesura della revisione (sola analisi, nessun dato modificato)"
+      },
+      {
+       "data": "2026-09-25",
+       "testo": "Aggiunto il confronto con la revisione tecnica di Tech Ops"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "Revisione chiusa: sintesi finale e integrazione dei pareri"
+      }
+     ],
+     "prossimiPassi": [
+      {
+       "passo": "Validare con il commercialista le scadenze fiscali indicate",
+       "scadenza": "da verificare"
+      }
+     ],
+     "blocchi": [
+      "Decisioni del Titolare aperte (criterio di periodo, riserva imposte, accordo scritto)"
+     ],
+     "daTitolare": [
+      "Decidere i punti elencati nella sezione 8 della revisione",
+      "Incaricare i consulenti esterni indicati nella revisione"
+     ],
+     "fonti": [
+      "bilancia/REVISIONE_FISCALISTA_BILANCIA_2026-09-26.md"
+     ]
+    },
+    {
+     "id": "nota-dichiarazione-2025",
+     "nome": "Nota di rischio sulla dichiarazione dei redditi 2025",
+     "stato": "in-attesa",
+     "spiegazione": "Nota del 16/10 sera (data documento 17/10) sui rischi di una scelta relativa alla dichiarazione 2025. Va rivista con il commercialista e con un legale prima della scadenza.",
+     "ultimoAggiornamento": "2026-10-16",
+     "cronologia": [
+      {
+       "data": "2026-10-16",
+       "testo": "Nota di rischio redatta"
+      }
+     ],
+     "prossimiPassi": [
+      {
+       "passo": "Revisione con commercialista e legale",
+       "scadenza": "2026-11-02"
+      }
+     ],
+     "blocchi": [],
+     "daTitolare": [
+      "Rivedere la decisione con il commercialista e un legale prima del 02/11"
+     ],
+     "fonti": [
+      "/home/box/fiscal-patrimoniale/riorganizzazione/"
+     ]
+    },
+    {
+     "id": "scadenze-fiscali",
+     "nome": "Scadenze fiscali di fine anno",
+     "stato": "in-attesa",
+     "spiegazione": "Scadenze indicate nella revisione di Bilancia, da validare con il commercialista.",
+     "ultimoAggiornamento": "2026-10-16",
+     "cronologia": [
+      {
+       "data": "2026-10-16",
+       "testo": "Scadenze riportate nella sintesi finale della revisione"
+      }
+     ],
+     "prossimiPassi": [
+      {
+       "passo": "Dichiarazioni dei redditi 2025",
+       "scadenza": "2026-11-02"
+      },
+      {
+       "passo": "IVA terzo trimestre",
+       "scadenza": "2026-11-16"
+      },
+      {
+       "passo": "Secondo acconto delle imposte",
+       "scadenza": "2026-11-30"
+      }
+     ],
+     "blocchi": [],
+     "daTitolare": [
+      "Conferma delle scadenze con il commercialista"
+     ],
+     "fonti": [
+      "bilancia/REVISIONE_FISCALISTA_BILANCIA_2026-09-26.md"
      ]
     }
    ]
@@ -1512,6 +1906,10 @@
        "data": "2026-09-16",
        "testo": "proposta/ordine Edenred preparata",
        "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-09-16",
+       "testo": "Parere sui ticket restaurant preparato"
       }
      ],
      "prossimiPassi": [],
@@ -1519,7 +1917,76 @@
      "daTitolare": [],
      "fonti": [
       "quadro/ALBERO_VIVO.md",
-      "quadro/GRAFO_PROGETTI.md"
+      "quadro/GRAFO_PROGETTI.md",
+      "/home/box/fiscal-patrimoniale/endered/"
+     ]
+    },
+    {
+     "id": "buoni-pasto",
+     "nome": "Parere buoni pasto DevShare",
+     "stato": "in-attesa",
+     "spiegazione": "Parere sui buoni pasto per DevShare e domande per il commercialista, del 01/10.",
+     "ultimoAggiornamento": "2026-10-01",
+     "cronologia": [
+      {
+       "data": "2026-10-01",
+       "testo": "Parere e domande per il commercialista preparati"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [
+      "Girare le domande al commercialista (con ok)"
+     ],
+     "fonti": [
+      "/home/box/fiscal-patrimoniale/buoni-pasto/"
+     ]
+    },
+    {
+     "id": "pareri-startup",
+     "nome": "Pareri start-up innovativa DevShare",
+     "stato": "chiuso",
+     "spiegazione": "Pareri del 28/09 su aggiornamento, personale e sito; la pagina start-up è stata archiviata il 09/10.",
+     "ultimoAggiornamento": "2026-10-09",
+     "cronologia": [
+      {
+       "data": "2026-09-28",
+       "testo": "Tre pareri preparati"
+      },
+      {
+       "data": "2026-10-09",
+       "testo": "Pagina start-up archiviata"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [],
+     "fonti": [
+      "/home/box/fiscal-patrimoniale/devshare-startup/"
+     ]
+    },
+    {
+     "id": "parere-bilancia",
+     "nome": "Parere su Bilancia",
+     "stato": "chiuso",
+     "spiegazione": "Parere del 26/09 sulle logiche economiche di Bilancia, integrato nella revisione del Fiscalista il 16/10.",
+     "ultimoAggiornamento": "2026-10-16",
+     "cronologia": [
+      {
+       "data": "2026-09-26",
+       "testo": "Parere preparato"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "Integrato nella revisione del Fiscalista"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [],
+     "fonti": [
+      "/home/box/fiscal-patrimoniale/riorganizzazione/",
+      "bilancia/REVISIONE_FISCALISTA_BILANCIA_2026-09-26.md"
      ]
     }
    ]
@@ -1613,6 +2080,67 @@
      "fonti": [
       "quadro/ALBERO_VIVO.md",
       "quadro/GRAFO_PROGETTI.md"
+     ]
+    },
+    {
+     "id": "concorsi-social",
+     "nome": "Sfide e promozioni social DevShare",
+     "stato": "in-attesa",
+     "spiegazione": "Verifica del 16/10 sulle regole dei concorsi a premio per sfide social con premio (sviluppo PWA, sito vetrina o negozio Shopify), con testo dell'art. 6 DPR 430/2001 e FAQ ministeriali. Una giuria che valuta i lavori rende di regola l'iniziativa un concorso a premio; servono regolamento e regole Meta.",
+     "ultimoAggiornamento": "2026-10-16",
+     "cronologia": [
+      {
+       "data": "2026-10-16",
+       "testo": "Verifica delle regole sui concorsi social"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "Raccolto il testo vigente dell'art. 6 e le FAQ ministeriali"
+      }
+     ],
+     "prossimiPassi": [
+      {
+       "passo": "Trovare la norma che sostituisce l'art. 30 DPR 600/1973 prima di applicare ritenute",
+       "scadenza": "da verificare"
+      }
+     ],
+     "blocchi": [
+      "Limiti di importo non trovati nelle fonti ufficiali"
+     ],
+     "daTitolare": [
+      "Decidere la forma della promozione (con o senza premio)"
+     ],
+     "fonti": [
+      "devshare-promo/"
+     ]
+    },
+    {
+     "id": "legale-bilancia",
+     "nome": "Analisi legali su Bilancia",
+     "stato": "in-attesa",
+     "spiegazione": "Dossier legali del 26 e 28/09 integrati nella revisione di Bilancia il 16/10. Non sono un parere formale: si consiglia di incaricare consulenti legali esterni.",
+     "ultimoAggiornamento": "2026-10-16",
+     "cronologia": [
+      {
+       "data": "2026-09-26",
+       "testo": "Primo dossier"
+      },
+      {
+       "data": "2026-09-28",
+       "testo": "Secondo dossier"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "Integrato nella revisione di Bilancia"
+      }
+     ],
+     "prossimiPassi": [],
+     "blocchi": [],
+     "daTitolare": [
+      "Incaricare consulenti legali esterni"
+     ],
+     "fonti": [
+      "bilancia/REVISIONE_FISCALISTA_BILANCIA_2026-09-26.md"
      ]
     }
    ]
@@ -2096,9 +2624,18 @@
        "data": "2026-10-16",
        "testo": "bozza ritoccata alle 20:57, ancora non attivata; partenza delle 12 saltata",
        "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "Bozza campagna Meta ritoccata alle 20:57; la partenza prevista alle 12 è saltata, campagna non attiva",
+       "fonte": "resoconti/RESOCONTO_2026-10-16_21.md"
       }
      ],
      "prossimiPassi": [
+      {
+       "passo": "Attivare la campagna per coprire il primo weekend (solo con il sì)",
+       "scadenza": "2026-10-17"
+      },
       {
        "passo": "Fiera, primo weekend",
        "scadenza": "2026-10-17"
@@ -2113,7 +2650,8 @@
       }
      ],
      "blocchi": [
-      "Campagna ferma senza accesso alle inserzioni e metodo di pagamento"
+      "Campagna ferma senza accesso alle inserzioni e metodo di pagamento",
+      "Un account pubblicitario risulta disabilitato (quale: da verificare)"
      ],
      "daTitolare": [
       "Sì alla campagna da 50 €",
@@ -2123,7 +2661,8 @@
      "fonti": [
       "quadro/ALBERO_VIVO.md",
       "quadro/GRAFO_PROGETTI.md",
-      "barrasso-adv/meta/"
+      "barrasso-adv/meta/",
+      "resoconti/RESOCONTO_2026-10-16_21.md"
      ]
     },
     {
