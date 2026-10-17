@@ -1,6 +1,6 @@
 {
  "versione": 1,
- "ultimoAggiornamento": "2026-10-16T21:00:00+02:00",
+ "ultimoAggiornamento": "2026-10-17T08:50:00+02:00",
  "aggiornamento": "due volte al giorno (mattina e sera)",
  "fontiGenerali": [
   "quadro/GRAFO_PROGETTI.md",
@@ -730,8 +730,8 @@
      "id": "pwa-natale",
      "nome": "PWA Natale",
      "stato": "attivo",
-     "spiegazione": "App di Natale con voce e biglietto QR. Ultima consegna nota: n. 34 (16/10). Il 16/10 parere dell'Avvocato sulla regola delle dichiarazioni della voce: soluzione minima con la frase «Voce generata al computer» e correzione della riga del biglietto QR. Anteprima obbligatoria prima di pubblicare.",
-     "ultimoAggiornamento": "2026-10-16",
+     "spiegazione": "App di Natale con voce e biglietto QR. Ultima consegna: n. 34 (16/10, manifest e funzionamento offline). Oggi 17/10 è giorno di consegna da calendario. In attesa del sì alla soluzione minima dell'Avvocato («Voce generata al computer»). Anteprima obbligatoria prima di pubblicare.",
+     "ultimoAggiornamento": "2026-10-17",
      "cronologia": [
       {
        "data": "2026-09-27",
@@ -772,11 +772,16 @@
        "data": "2026-10-16",
        "testo": "Consegna n. 34 alle 9:39: l'app funziona anche offline e sotto il percorso /pwa-natale/, con test automatici",
        "fonte": "resoconti/RESOCONTO_2026-10-16_21.md"
+      },
+      {
+       "data": "2026-10-17",
+       "testo": "Controllo delle 8:45: nessun commit nuovo dopo la consegna 34 (16/10, 9:39); oggi è il giorno di consegna previsto dal calendario; anteprima natale.devsharesrl.it raggiungibile",
+       "fonte": "pwa-natale/app (git log), pwa-natale/CALENDARIO_CONSEGNE_4GIORNI_2026-09-27.md"
       }
      ],
      "prossimiPassi": [
       {
-       "passo": "Consegna e anteprima",
+       "passo": "Consegna del 17/10 (note del controllo del 16/10) e revisione Tech Ops della 34",
        "scadenza": "2026-10-17"
       },
       {
@@ -808,7 +813,7 @@
      "nome": "Land auto (landauto.it)",
      "stato": "attivo",
      "spiegazione": "Sito ufficiale online su www.landauto.it (GitHub Pages, branch «produzione»), con ritorno alla pagina di attesa possibile in un minuto. Fatto il 15/10: solo P.IVA, sede ad Afragola, firma «Realizzato da DevShare SRL», foto non scaricabili, FAQ col testo del cliente.",
-     "ultimoAggiornamento": "2026-10-16",
+     "ultimoAggiornamento": "2026-10-17",
      "cronologia": [
       {
        "data": "2026-10-12",
@@ -839,6 +844,16 @@
        "data": "2026-10-16",
        "testo": "Sito ufficiale verificato online alle 20:58; sì esplicito e correzioni foto ancora da verificare",
        "fonte": "resoconti/RESOCONTO_2026-10-16_21.md"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "23:47: banner cookie e Google Analytics 4 con consenso pubblicati sul branch «produzione»",
+       "fonte": "landauto/ga4-lavoro (git log)"
+      },
+      {
+       "data": "2026-10-17",
+       "testo": "Verificato alle 8:45: su www.landauto.it ci sono il banner cookie e l'ID GA4 del sito; l'ok del Titolare a questa pubblicazione non risulta nei file",
+       "fonte": "controllo online"
       }
      ],
      "prossimiPassi": [
@@ -856,7 +871,8 @@
      ],
      "daTitolare": [
       "Confermare che il sito ufficiale doveva andare online",
-      "Ok alle correzioni foto di Carmine"
+      "Ok alle correzioni foto di Carmine",
+      "Confermare l'ok al banner cookie e GA4 già online su landauto.it"
      ],
      "fonti": [
       "quadro/ALBERO_VIVO.md",
@@ -871,7 +887,7 @@
      "nome": "Vetrina devsharesrl.it",
      "stato": "attivo",
      "spiegazione": "Staging del sito ricostruito in locale il 15/10 (65 file, 3 da confrontare con l'originale). Da sistemare: nomi degli asset grafici, contatti (info@, telefono, REA), testi da verificare e residui del vecchio negozio online.",
-     "ultimoAggiornamento": "2026-10-16",
+     "ultimoAggiornamento": "2026-10-17",
      "cronologia": [
       {
        "data": "2026-10-15",
@@ -887,6 +903,11 @@
        "data": "2026-10-16",
        "testo": "In prova locale i tasti dell'assistenza aprono il bot Telegram DevShare (18:47); contatti aggiornati (18:53). Online c'è ancora il sito vecchio",
        "fonte": "resoconti/RESOCONTO_2026-10-16_21.md"
+      },
+      {
+       "data": "2026-10-17",
+       "testo": "Nessuna modifica dopo il 16/10 alle 18:54; online c'è ancora il sito vecchio (verificato alle 8:45)",
+       "fonte": "devsharesrl-vetrina/, controllo online"
       }
      ],
      "prossimiPassi": [
@@ -981,7 +1002,7 @@
      "nome": "ilmondodibabypepita.it",
      "stato": "attivo",
      "spiegazione": "Pagina «Work in progress» online; anteprima della pagina di Manilla e dei libri pronta ma non pubblicata. Recuperate 637 immagini del blog (2016-2020), 21 mancanti.",
-     "ultimoAggiornamento": "2026-10-16",
+     "ultimoAggiornamento": "2026-10-17",
      "cronologia": [
       {
        "data": "2026-09-16",
@@ -1007,6 +1028,16 @@
        "data": "2026-10-16",
        "testo": "Pagina di attesa verificata online; anteprima della pagina di Manilla non pubblicata",
        "fonte": "resoconti/RESOCONTO_2026-10-16_21.md"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "23:42: banner cookie, cookie policy e GA4 solo dopo il consenso preparati in locale (branch ga4-consenso), non pubblicati",
+       "fonte": "babypepita/attesa (git log)"
+      },
+      {
+       "data": "2026-10-17",
+       "testo": "Verificato alle 8:45: online c'è la pagina «Stiamo arrivando» senza GA4",
+       "fonte": "controllo online"
       }
      ],
      "prossimiPassi": [],
@@ -1015,7 +1046,8 @@
       "Ripristino pieno del blog legato agli accessi VHosting"
      ],
      "daTitolare": [
-      "Ok alla pubblicazione dell'anteprima"
+      "Ok alla pubblicazione dell'anteprima",
+      "Ok a pubblicare il banner cookie e GA4 sulla pagina di attesa"
      ],
      "fonti": [
       "quadro/ALBERO_VIVO.md",
@@ -1369,9 +1401,9 @@
     {
      "id": "ga4",
      "nome": "GA4 contatore visite",
-     "stato": "in-attesa",
-     "spiegazione": "Scelta GA4 per i siti; cartella di preparazione ancora impostata sullo strumento precedente.",
-     "ultimoAggiornamento": "2026-10-15",
+     "stato": "attivo",
+     "spiegazione": "GA4 con banner cookie: online su landauto.it, pronto in locale per Baby Pepita, da fare su devsharesrl.it (lì c'è già iubenda, niente secondo banner). Escluso dalla PWA di Natale.",
+     "ultimoAggiornamento": "2026-10-17",
      "cronologia": [
       {
        "data": "2026-10-14",
@@ -1382,13 +1414,18 @@
        "data": "2026-10-14",
        "testo": "cartella preparazione contatore-visite-1410/ (schema ancora GoatCounter da allineare a GA4)",
        "fonte": "quadro/STORICO.md"
+      },
+      {
+       "data": "2026-10-16",
+       "testo": "Banner cookie e GA4 online su landauto.it (23:47); pronti in locale per la pagina di attesa di ilmondodibabypepita.it (23:42); devsharesrl.it ancora da fare",
+       "fonte": "landauto/ga4-lavoro, babypepita/attesa"
       }
      ],
      "prossimiPassi": [],
      "blocchi": [],
      "daTitolare": [
-      "ID «G-» per ogni sito",
-      "Banner cookie"
+      "Confermare l'ok a GA4 online su landauto.it",
+      "Ok a pubblicare GA4 su ilmondodibabypepita.it"
      ],
      "fonti": [
       "quadro/ALBERO_VIVO.md",
