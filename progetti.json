@@ -1,6 +1,6 @@
 {
   "versione": 1,
-  "ultimoAggiornamento": "2026-10-17T08:50:00+02:00",
+  "ultimoAggiornamento": "2026-10-17T20:50:00+02:00",
   "aggiornamento": "due volte al giorno (mattina e sera)",
   "fontiGenerali": [
     "quadro/GRAFO_PROGETTI.md",
@@ -762,7 +762,7 @@
           "id": "pwa-natale",
           "nome": "PWA Natale",
           "stato": "attivo",
-          "spiegazione": "App di Natale con voce e biglietto QR. Ultima consegna: n. 34 (16/10, manifest e funzionamento offline). Oggi 17/10 è giorno di consegna da calendario. In attesa del sì alla soluzione minima dell'Avvocato («Voce generata al computer»). Anteprima obbligatoria prima di pubblicare.",
+          "spiegazione": "App di Natale con voce e biglietto QR. Ultima consegna: n. 35 (17/10, 9:09-9:10, commit 01e0a35 e bdc7276, solo in locale): ogni tentativo di scaricare le voci ha il suo controllo di interruzione. Tech Ops l'ha approvata con note (356 test automatici e 53 prove sul browser passati). Prossima consegna n. 36 il 21/10. In attesa del sì alla soluzione minima dell'Avvocato («Voce generata al computer»).",
           "ultimoAggiornamento": "2026-10-17",
           "cronologia": [
             {
@@ -809,15 +809,25 @@
               "data": "2026-10-17",
               "testo": "Controllo delle 8:45: nessun commit nuovo dopo la consegna 34 (16/10, 9:39); oggi è il giorno di consegna previsto dal calendario; anteprima natale.devsharesrl.it raggiungibile",
               "fonte": "pwa-natale/app (git log), pwa-natale/CALENDARIO_CONSEGNE_4GIORNI_2026-09-27.md"
+            },
+            {
+              "data": "2026-10-17",
+              "testo": "Consegna n. 35 alle 9:10: corrette le note N1 e N2 di Tech Ops sulla 33 (interruzione per ogni tentativo e gestione del file mancante), con 4 test nuovi",
+              "fonte": "pwa-natale/app (git log), docs/consegne/35-n1-n2-tentativi.md"
+            },
+            {
+              "data": "2026-10-17",
+              "testo": "Tech Ops: consegna 35 approvata con note; per la 36 resta la nota R1 (bassa); la nota N3 sul testo del consenso aspetta l'Avvocato",
+              "fonte": "pwa-natale/app/docs/consegne/35-revisione-techops.md"
             }
           ],
           "prossimiPassi": [
             {
-              "passo": "Consegna del 17/10 (note del controllo del 16/10) e revisione Tech Ops della 34",
-              "scadenza": "2026-10-17"
+              "passo": "Consegna n. 36: sistemare la nota R1 di Tech Ops (manifest già in corso legato al tentativo)",
+              "scadenza": "2026-10-21"
             },
             {
-              "passo": "Dominio natale.devsharesrl.it e galleria definitiva",
+              "passo": "Testo del consenso (nota N3) dopo il parere dell'Avvocato",
               "scadenza": "da verificare"
             },
             {
@@ -833,10 +843,11 @@
             "Ok all'anteprima prima della pubblicazione"
           ],
           "fonti": [
+            "pwa-natale/",
+            "pwa-natale/REGISTRO_DECISIONI_LEGALI_PWA.md",
+            "pwa-natale/app/docs/consegne/35-revisione-techops.md",
             "quadro/ALBERO_VIVO.md",
             "quadro/GRAFO_PROGETTI.md",
-            "pwa-natale/REGISTRO_DECISIONI_LEGALI_PWA.md",
-            "pwa-natale/",
             "resoconti/RESOCONTO_2026-10-16_21.md"
           ]
         },
@@ -886,6 +897,11 @@
               "data": "2026-10-17",
               "testo": "Verificato alle 8:45: su www.landauto.it ci sono il banner cookie e l'ID GA4 del sito; l'ok del Titolare a questa pubblicazione non risulta nei file",
               "fonte": "controllo online"
+            },
+            {
+              "data": "2026-10-17",
+              "testo": "Controllo delle 20:47: www.landauto.it risponde con il sito ufficiale e l'ID GA4 del sito; nessun commit nuovo dopo il 16/10 alle 23:47",
+              "fonte": "landauto/produzione-repo (git log), controllo online"
             }
           ],
           "prossimiPassi": [
@@ -918,8 +934,8 @@
           "id": "vetrina-devsharesrl",
           "nome": "Vetrina devsharesrl.it",
           "stato": "attivo",
-          "spiegazione": "Staging del sito ricostruito in locale il 15/10 (65 file, 3 da confrontare con l'originale). Da sistemare: nomi degli asset grafici, contatti (info@, telefono, REA), testi da verificare e residui del vecchio negozio online.",
-          "ultimoAggiornamento": "2026-10-17",
+          "spiegazione": "Nuovo sito di devsharesrl.it ricostruito in locale. Il 16/10: tolti negozio, login e area riservata; contatti corretti (info@, telefono, P.IVA, REA); tasti di assistenza verso il bot Telegram; reCAPTCHA e iubenda solo sul dominio vero. Anteprima privata (noindex) aggiornata con push alle 18:53 (commit f8c0917). Il sito vero non è stato toccato.",
+          "ultimoAggiornamento": "2026-10-16",
           "cronologia": [
             {
               "data": "2026-10-15",
@@ -940,37 +956,42 @@
               "data": "2026-10-17",
               "testo": "Nessuna modifica dopo il 16/10 alle 18:54; online c'è ancora il sito vecchio (verificato alle 8:45)",
               "fonte": "devsharesrl-vetrina/, controllo online"
+            },
+            {
+              "data": "2026-10-16",
+              "testo": "Tolti negozio e login, contatti corretti, sezione «Il tuo percorso con DevShare» recuperata, assistenza su Telegram; anteprima aggiornata (commit fa38f29 e f8c0917)",
+              "fonte": "devsharesrl-vetrina/STATO.md"
             }
           ],
           "prossimiPassi": [
             {
-              "passo": "Rinominare e sostituire logo, logotipo e immagine principale",
+              "passo": "Il Titolare guarda l'anteprima e approva i testi",
               "scadenza": "da verificare"
             },
             {
-              "passo": "Togliere login, area riservata e residui del negozio",
+              "passo": "Controllare che il banner iubenda blocchi i cookie prima del consenso",
               "scadenza": "da verificare"
             },
             {
-              "passo": "Anteprima per il Titolare, poi pubblicazione sul server solo con ok",
+              "passo": "Backup del sito vero, poi pubblicazione su Omegasus con Antonio, solo con ok",
               "scadenza": "da verificare"
             }
           ],
           "blocchi": [
-            "Mancano gli asset grafici definitivi",
-            "3 frasi da confermare: «esperienza ventennale», «tecnici certificati Dell, Cisco, HP, Fortinet», «Dopo l'acquisto»"
+            "Logo, logotipo e foto principale sono ancora segnaposto",
+            "Frasi da confermare: «Oltre 20 anni», «Tecnici certificati», «Dopo l'acquisto»"
           ],
           "daTitolare": [
-            "Le 3 frasi: vere o da togliere",
+            "Le frasi da confermare: vere o da togliere",
             "Logo definitivo e foto con diritti d'uso",
-            "Conferma dei testi e dei contatti",
+            "Ok all'anteprima e ai testi",
             "Permesso scritto per citare clienti"
           ],
           "fonti": [
+            "devsharesrl-vetrina/DA_VERIFICARE.md",
+            "devsharesrl-vetrina/STATO.md",
             "quadro/ALBERO_VIVO.md",
             "quadro/GRAFO_PROGETTI.md",
-            "devsharesrl-vetrina/STATO.md",
-            "devsharesrl-vetrina/DA_VERIFICARE.md",
             "resoconti/RESOCONTO_2026-10-16_21.md"
           ]
         },
@@ -1033,7 +1054,7 @@
           "id": "babypepita",
           "nome": "ilmondodibabypepita.it",
           "stato": "attivo",
-          "spiegazione": "Pagina «Work in progress» online; anteprima della pagina di Manilla e dei libri pronta ma non pubblicata. Recuperate 637 immagini del blog (2016-2020), 21 mancanti.",
+          "spiegazione": "Online su ilmondodibabypepita.it dal 17/10 alle 20:32, su ordine «Pubblica» del Titolare: pagina «Stiamo arrivando», nuove pagine «Poesie e opere di Manilla» e la poesia premiata «Figli di Napoli», cookie policy e banner cookie con GA4 attivo solo dopo il consenso, caratteri caricati in locale. Recuperate 637 immagini del blog (2016-2020), 21 mancanti.",
           "ultimoAggiornamento": "2026-10-17",
           "cronologia": [
             {
@@ -1070,23 +1091,41 @@
               "data": "2026-10-17",
               "testo": "Verificato alle 8:45: online c'è la pagina «Stiamo arrivando» senza GA4",
               "fonte": "controllo online"
+            },
+            {
+              "data": "2026-10-17",
+              "testo": "Preparate le pagine «Figli di Napoli» (19:29) e «Poesie e opere di Manilla» (20:24)",
+              "fonte": "babypepita/attesa (git log)"
+            },
+            {
+              "data": "2026-10-17",
+              "testo": "20:32: pubblicato il commit 9276c27 (pagine nuove, cookie policy, banner con GA4 G-HYYZ6MDRPR dopo il consenso). Verificato online alle 20:47: le tre pagine rispondono. Ritorno indietro possibile al commit e0d0c13",
+              "fonte": "wip-babypepita (git log), controllo online"
             }
           ],
-          "prossimiPassi": [],
+          "prossimiPassi": [
+            {
+              "passo": "Controllare nei prossimi giorni che le visite arrivino su GA4 solo dopo il consenso",
+              "scadenza": "da verificare"
+            },
+            {
+              "passo": "Ripristino pieno del blog dal backup VHosting (scadenza VHosting verso il 26/10)",
+              "scadenza": "da verificare"
+            }
+          ],
           "blocchi": [
-            "Mancano copertina «Oltre il confine…», conferma firmacopie e ritratto",
             "Ripristino pieno del blog legato agli accessi VHosting"
           ],
           "daTitolare": [
-            "Ok alla pubblicazione dell'anteprima",
-            "Ok a pubblicare il banner cookie e GA4 sulla pagina di attesa"
+            "Materiali mancanti: copertina «Oltre il confine…», conferma firmacopie e ritratto"
           ],
           "fonti": [
+            "babypepita-recupero/",
+            "babypepita/attesa/",
             "quadro/ALBERO_VIVO.md",
             "quadro/GRAFO_PROGETTI.md",
-            "babypepita/attesa/",
-            "babypepita-recupero/",
-            "resoconti/RESOCONTO_2026-10-16_21.md"
+            "resoconti/RESOCONTO_2026-10-16_21.md",
+            "wip-babypepita/"
           ]
         },
         {
