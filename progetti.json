@@ -1,6 +1,6 @@
 {
   "versione": 1,
-  "ultimoAggiornamento": "2026-10-18T08:50:00+02:00",
+  "ultimoAggiornamento": "2026-10-18T20:52:00+02:00",
   "aggiornamento": "due volte al giorno (mattina e sera)",
   "fontiGenerali": [
     "quadro/GRAFO_PROGETTI.md",
@@ -661,11 +661,16 @@
           "nome": "Meta Facebook/Instagram (DevShare e clienti)",
           "stato": "in-attesa",
           "spiegazione": "Audit di 28 giorni (18/09-15/10): Al Miracolo del Mare è la pagina che rende di più, HandiMap su Facebook va bene, DevShare è la più debole. Bio DevShare e piano contenuti 19/10-01/11 in bozza.",
-          "ultimoAggiornamento": "2026-10-16",
+          "ultimoAggiornamento": "2026-10-18",
           "cronologia": [
             {
               "data": "2026-10-16",
               "testo": "Audit di 28 giorni e piano contenuti in bozza"
+            },
+            {
+              "data": "2026-10-18",
+              "testo": "Resoconto Comms 20:40: ok del Titolare ai post FB/IG dal 19/10 (solo post); pronti il 19/10 «Computer Senza Paura» (con e senza link, per il limite Meta dei post con link) e il 20/10 meme «batteria al 2%». Da decidere quale versione del 19/10 pubblicare",
+              "fonte": "devshare-campagne/resoconti_comms/RESOCONTO_COMMS_2026-10-18_2045.md"
             }
           ],
           "prossimiPassi": [
@@ -824,6 +829,11 @@
               "data": "2026-10-18",
               "testo": "Controllo delle 8:45: nessun commit nuovo dopo la consegna 35 del 17/10; la n. 36 resta prevista il 21/10",
               "fonte": "pwa-natale/app (git log)"
+            },
+            {
+              "data": "2026-10-18",
+              "testo": "Controllo delle 20:51: nessun commit nuovo dopo la consegna 35 del 17/10 (branch sviluppo/scrivania-qr); la n. 36 resta prevista il 21/10",
+              "fonte": "pwa-natale/app (git)"
             }
           ],
           "prossimiPassi": [
@@ -912,6 +922,11 @@
               "data": "2026-10-18",
               "testo": "Controllo delle 8:47: www.landauto.it risponde 200; nessun commit nuovo dopo il 16/10 alle 23:47",
               "fonte": "landauto/produzione-repo (git log), controllo online"
+            },
+            {
+              "data": "2026-10-18",
+              "testo": "Controllo delle 20:51: www.landauto.it risponde 200; nessun commit nuovo dopo il 16/10 alle 23:47",
+              "fonte": "landauto/produzione-repo (git), curl"
             }
           ],
           "prossimiPassi": [
@@ -981,6 +996,11 @@
               "data": "2026-10-18",
               "testo": "Controllo online: sitemap.xml e robots.txt mancano (404), /blog/ e /servizi/ non rispondono, tutte le pagine hanno lo stesso titolo. 8:38: pronto in locale il lavoro SEO (branch «seo», commit 18c147b) che risolve questi punti, provato su Apache e su telefono",
               "fonte": "devsharesrl-vetrina/STATO.md, git log"
+            },
+            {
+              "data": "2026-10-18",
+              "testo": "9:41-9:43: script di pubblicazione rivisto (branch deploy-script, commit 05f2f9d ed ec6a859): prende la build dal repository privato devsharesrl-sorgente via git; workflow GitHub Actions spento, solo avvio manuale. Controllo delle 20:51: sito 200, sitemap.xml ancora 404 (la versione SEO non è online)",
+              "fonte": "devsharesrl-vetrina (git), curl"
             }
           ],
           "prossimiPassi": [
@@ -1017,7 +1037,7 @@
           "nome": "Gestionale Bar Universal",
           "stato": "attivo",
           "spiegazione": "Gestionale per il bar: Tappa 1 completata sul dispositivo il 14/10 (magazzino con carico, scarto e inventario; ordini a stecche con ritiri e pagamenti; lista spesa; riepilogo). Solo in locale, nessun contatto col cliente.",
-          "ultimoAggiornamento": "2026-10-14",
+          "ultimoAggiornamento": "2026-10-18",
           "cronologia": [
             {
               "data": "2026-09-26",
@@ -1042,6 +1062,11 @@
               "data": "2026-10-14",
               "testo": "Tappa 1 completata sul dispositivo (magazzino, ordini, lista spesa, riepilogo), solo locale; restano sincronizzazione (T6) e decisione «pagamenti e da pagare»",
               "fonte": "quadro/STORICO.md"
+            },
+            {
+              "data": "2026-10-18",
+              "testo": "Controllo del 18/10 sera: nessun lavoro nuovo dal 14/10; repository locali senza commit nuovi",
+              "fonte": "bar-universal (git)"
             }
           ],
           "prossimiPassi": [
@@ -1128,6 +1153,11 @@
               "data": "2026-10-18",
               "testo": "Pronti in locale: pannello di scrittura per Manilla in /admin (Decap CMS, non attivo, commit 90aa749) e dicitura completa del Premio «Ali e Radici» sulla poesia (commit fca40ab)",
               "fonte": "wip-babypepita (branch pannello-manilla e poesia-premio)"
+            },
+            {
+              "data": "2026-10-18",
+              "testo": "Controllo delle 20:51: sito 200; pannello /admin non online (404), come previsto; dicitura del Premio «Ali e Radici» (fca40ab) ancora solo sul suo branch, non online",
+              "fonte": "wip-babypepita (git), curl"
             }
           ],
           "prossimiPassi": [
@@ -1669,12 +1699,17 @@
           "nome": "Fatture Luna e bilancio 2025",
           "stato": "in-attesa",
           "spiegazione": "Bozza v2 del messaggio a Luna (14/10) con fatture aperte, differenza di liquidità e acconti CIT-8 (1.143 PLN). Invio da verificare.",
-          "ultimoAggiornamento": "2026-10-15",
+          "ultimoAggiornamento": "2026-10-18",
           "cronologia": [
             {
               "data": "2026-09-25",
               "testo": "controllo \"lista bianca\" polacca",
               "fonte": "quadro/STORICO.md"
+            },
+            {
+              "data": "2026-10-18",
+              "testo": "Resoconto CCDL sera: Luna ancora senza risposta (ultima del 30/09); il testo per Luna va corretto perché chiede di saldare la FS 663, già pagata il 12/10",
+              "fonte": "ccdl-mimmo/resoconto-ccdl-2026-10-18-sera.md"
             }
           ],
           "prossimiPassi": [],
@@ -2581,7 +2616,7 @@
           "nome": "Margine per valuta Santo Domingo",
           "stato": "in-attesa",
           "spiegazione": "Proposta del 14/10 (sola lettura): conti in dollari obiettivo ~8% lordo, conti in pesos ~12%. Ultimi 30 giorni: USD 20,2%, pesos 13,5%. v2 dei file aggiunta il 15/10. Backup e rollback pronti.",
-          "ultimoAggiornamento": "2026-10-15",
+          "ultimoAggiornamento": "2026-10-18",
           "cronologia": [
             {
               "data": "2026-10-14",
@@ -2597,6 +2632,11 @@
               "data": "2026-10-15",
               "testo": "v2 dei file schedule aggiunta (20:36)",
               "fonte": "quadro/STORICO.md"
+            },
+            {
+              "data": "2026-10-18",
+              "testo": "Resoconto Virtuali 20:45: nessuna novità; segnalati 4 profili VPN ancora salvati sul computer condiviso, da decidere se toglierli",
+              "fonte": "risultati/resoconti/RESOCONTO_VIRTUALI_2026-10-18_2045.md"
             }
           ],
           "prossimiPassi": [],
