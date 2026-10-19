@@ -1,6 +1,6 @@
 {
   "versione": 1,
-  "ultimoAggiornamento": "2026-10-18T20:52:00+02:00",
+  "ultimoAggiornamento": "2026-10-19T08:43:00+02:00",
   "aggiornamento": "due volte al giorno (mattina e sera)",
   "fontiGenerali": [
     "quadro/GRAFO_PROGETTI.md",
@@ -661,7 +661,7 @@
           "nome": "Meta Facebook/Instagram (DevShare e clienti)",
           "stato": "in-attesa",
           "spiegazione": "Audit di 28 giorni (18/09-15/10): Al Miracolo del Mare è la pagina che rende di più, HandiMap su Facebook va bene, DevShare è la più debole. Bio DevShare e piano contenuti 19/10-01/11 in bozza.",
-          "ultimoAggiornamento": "2026-10-18",
+          "ultimoAggiornamento": "2026-10-19",
           "cronologia": [
             {
               "data": "2026-10-16",
@@ -671,6 +671,11 @@
               "data": "2026-10-18",
               "testo": "Resoconto Comms 20:40: ok del Titolare ai post FB/IG dal 19/10 (solo post); pronti il 19/10 «Computer Senza Paura» (con e senza link, per il limite Meta dei post con link) e il 20/10 meme «batteria al 2%». Da decidere quale versione del 19/10 pubblicare",
               "fonte": "devshare-campagne/resoconti_comms/RESOCONTO_COMMS_2026-10-18_2045.md"
+            },
+            {
+              "data": "2026-10-19",
+              "testo": "Resoconto Comms 8:35: oggi si usa la versione SENZA LINK del post «Computer Senza Paura» (feed 18:30 IG e FB, storia 19:00), corretta come chiesto dal Capo alle 8:30. Pronti il meme del 20/10 e «Backup 3-2-1» del 21/10. Nuovo piano «4 al giorno» dal 20 al 26/10 in bozza: serve il via libera di Capo o Titolare e la risposta di Tech Ops sul carico",
+              "fonte": "devshare-campagne/resoconti_comms/RESOCONTO_COMMS_2026-10-19_0845.md"
             }
           ],
           "prossimiPassi": [
@@ -768,7 +773,7 @@
           "nome": "PWA Natale",
           "stato": "attivo",
           "spiegazione": "App di Natale con voce e biglietto QR. Ultima consegna: n. 35 (17/10, 9:09-9:10, commit 01e0a35 e bdc7276, solo in locale): ogni tentativo di scaricare le voci ha il suo controllo di interruzione. Tech Ops l'ha approvata con note (356 test automatici e 53 prove sul browser passati). Prossima consegna n. 36 il 21/10. In attesa del sì alla soluzione minima dell'Avvocato («Voce generata al computer»).",
-          "ultimoAggiornamento": "2026-10-18",
+          "ultimoAggiornamento": "2026-10-19",
           "cronologia": [
             {
               "data": "2026-09-27",
@@ -834,6 +839,11 @@
               "data": "2026-10-18",
               "testo": "Controllo delle 20:51: nessun commit nuovo dopo la consegna 35 del 17/10 (branch sviluppo/scrivania-qr); la n. 36 resta prevista il 21/10",
               "fonte": "pwa-natale/app (git)"
+            },
+            {
+              "data": "2026-10-19",
+              "testo": "Controllo delle 08:43: nessun commit nuovo dopo la consegna 35 del 17/10 (branch sviluppo/scrivania-qr); la n. 36 (nota R1) resta prevista il 21/10, la nota N3 aspetta ancora l'Avvocato",
+              "fonte": "pwa-natale/app (git), docs/consegne/35-revisione-techops.md"
             }
           ],
           "prossimiPassi": [
@@ -871,7 +881,7 @@
           "nome": "Land auto (landauto.it)",
           "stato": "attivo",
           "spiegazione": "Sito ufficiale online su www.landauto.it (GitHub Pages, branch «produzione»), con ritorno alla pagina di attesa possibile in un minuto. Fatto il 15/10: solo P.IVA, sede ad Afragola, firma «Realizzato da DevShare SRL», foto non scaricabili, FAQ col testo del cliente.",
-          "ultimoAggiornamento": "2026-10-18",
+          "ultimoAggiornamento": "2026-10-19",
           "cronologia": [
             {
               "data": "2026-10-12",
@@ -927,6 +937,11 @@
               "data": "2026-10-18",
               "testo": "Controllo delle 20:51: www.landauto.it risponde 200; nessun commit nuovo dopo il 16/10 alle 23:47",
               "fonte": "landauto/produzione-repo (git), curl"
+            },
+            {
+              "data": "2026-10-19",
+              "testo": "Controllo delle 08:43: www.landauto.it risponde 200; nessun commit nuovo dopo il 16/10 alle 23:47",
+              "fonte": "landauto/produzione-repo (git), curl"
             }
           ],
           "prossimiPassi": [
@@ -960,7 +975,7 @@
           "nome": "Vetrina devsharesrl.it",
           "stato": "attivo",
           "spiegazione": "Nuovo sito di devsharesrl.it online su Omegasus dal 17/10 alle 23:35 (commit a0903cd, pubblicato dal PC del Titolare): blog statico con 3 articoli, modulo contatti verso info@devsharesrl.it, GA4 solo dopo il consenso iubenda. Il 18/10 alle 8:38 pronto in locale il lavoro SEO (branch «seo», commit 18c147b): indirizzi veri con pagine statiche, sitemap, robots, .htaccess. Non ancora online.",
-          "ultimoAggiornamento": "2026-10-18",
+          "ultimoAggiornamento": "2026-10-19",
           "cronologia": [
             {
               "data": "2026-10-15",
@@ -1001,6 +1016,11 @@
               "data": "2026-10-18",
               "testo": "9:41-9:43: script di pubblicazione rivisto (branch deploy-script, commit 05f2f9d ed ec6a859): prende la build dal repository privato devsharesrl-sorgente via git; workflow GitHub Actions spento, solo avvio manuale. Controllo delle 20:51: sito 200, sitemap.xml ancora 404 (la versione SEO non è online)",
               "fonte": "devsharesrl-vetrina (git), curl"
+            },
+            {
+              "data": "2026-10-19",
+              "testo": "Controllo delle 08:43: sito online, ma www.devsharesrl.it/sitemap.xml dà ancora 404 e /blog/ 403; la versione SEO (18c147b) resta solo in locale",
+              "fonte": "devsharesrl-vetrina (git), curl"
             }
           ],
           "prossimiPassi": [
@@ -1037,7 +1057,7 @@
           "nome": "Gestionale Bar Universal",
           "stato": "attivo",
           "spiegazione": "Gestionale per il bar: Tappa 1 completata sul dispositivo il 14/10 (magazzino con carico, scarto e inventario; ordini a stecche con ritiri e pagamenti; lista spesa; riepilogo). Solo in locale, nessun contatto col cliente.",
-          "ultimoAggiornamento": "2026-10-18",
+          "ultimoAggiornamento": "2026-10-19",
           "cronologia": [
             {
               "data": "2026-09-26",
@@ -1066,6 +1086,11 @@
             {
               "data": "2026-10-18",
               "testo": "Controllo del 18/10 sera: nessun lavoro nuovo dal 14/10; repository locali senza commit nuovi",
+              "fonte": "bar-universal (git)"
+            },
+            {
+              "data": "2026-10-19",
+              "testo": "Controllo del 19/10 mattina: nessun lavoro nuovo dal 14/10; repository locali senza commit nuovi",
               "fonte": "bar-universal (git)"
             }
           ],
@@ -1097,7 +1122,7 @@
           "nome": "ilmondodibabypepita.it",
           "stato": "attivo",
           "spiegazione": "Online su ilmondodibabypepita.it. Il 18/10 tra 00:33 e 01:49 sono andati online la pagina «Premi, riconoscimenti e pubblicazioni letterarie», le schede «Poesie e opere» e «Premi» in home, la SEO completa (sitemap con 296 indirizzi) e il blog con 285 articoli dal vecchio WordPress più 5 dal vecchio Blogspot (ultimo commit online 14c624a). Pronti in locale, non online: il pannello per far scrivere Manilla (Decap CMS, commit 90aa749) e la dicitura completa del Premio «Ali e Radici» (commit fca40ab, 8:41).",
-          "ultimoAggiornamento": "2026-10-18",
+          "ultimoAggiornamento": "2026-10-19",
           "cronologia": [
             {
               "data": "2026-09-16",
@@ -1158,6 +1183,11 @@
               "data": "2026-10-18",
               "testo": "Controllo delle 20:51: sito 200; pannello /admin non online (404), come previsto; dicitura del Premio «Ali e Radici» (fca40ab) ancora solo sul suo branch, non online",
               "fonte": "wip-babypepita (git), curl"
+            },
+            {
+              "data": "2026-10-19",
+              "testo": "8:16: pannello di Manilla preparato con permessi minimi (Manilla86 solo scrittura, bozze con approvazione, protezione del ramo main, controllo dei file toccati, CODEOWNERS), script di attivazione e checklist (commit 2f74652, branch pannello-manilla). Non attivo: /admin dà 404 come previsto",
+              "fonte": "wip-babypepita (git), tools/PANNELLO.md, curl"
             }
           ],
           "prossimiPassi": [
@@ -1179,10 +1209,10 @@
             }
           ],
           "blocchi": [
-            "Pannello di Manilla: serve il suo nome utente GitHub e l'account Cloudflare del Titolare"
+            "Pannello di Manilla: manca l'account Cloudflare del Titolare (il nome utente GitHub di Manilla, Manilla86, è arrivato il 18/10 alle 22:39)"
           ],
           "daTitolare": [
-            "Nome utente GitHub di Manilla",
+            "Sì esplicito all'accensione del pannello di Manilla, dopo l'account Cloudflare",
             "Accesso o creazione dell'account Cloudflare sul computer di Grok Bot",
             "Se la lettera del Papa va pubblicata per intero",
             "Ok alla dicitura del Premio «Ali e Radici»"
