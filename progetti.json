@@ -1,6 +1,6 @@
 {
   "versione": 1,
-  "ultimoAggiornamento": "2026-10-19T08:43:00+02:00",
+  "ultimoAggiornamento": "2026-10-19T20:50:00+02:00",
   "aggiornamento": "due volte al giorno (mattina e sera)",
   "fontiGenerali": [
     "quadro/GRAFO_PROGETTI.md",
@@ -676,6 +676,11 @@
               "data": "2026-10-19",
               "testo": "Resoconto Comms 8:35: oggi si usa la versione SENZA LINK del post «Computer Senza Paura» (feed 18:30 IG e FB, storia 19:00), corretta come chiesto dal Capo alle 8:30. Pronti il meme del 20/10 e «Backup 3-2-1» del 21/10. Nuovo piano «4 al giorno» dal 20 al 26/10 in bozza: serve il via libera di Capo o Titolare e la risposta di Tech Ops sul carico",
               "fonte": "devshare-campagne/resoconti_comms/RESOCONTO_COMMS_2026-10-19_0845.md"
+            },
+            {
+              "data": "2026-10-19",
+              "testo": "Resoconto Comms 20:35: non risulta se il post delle 18:30 e la storia delle 19:00 di oggi sono usciti (manca il link, serve conferma da Tech Ops). Pronti il meme del 20/10 e «Backup 3-2-1» del 21/10; piano «4 al giorno» 20-26/10 ancora senza ok di Tech Ops sul carico. Nuovi: 3 articoli del blog ampliati e 3 post Telegram, in bozza. Offerta «Sviluppo a 0 €» e bio v3 aspettano il sì del Titolare",
+              "fonte": "devshare-campagne/resoconti_comms/RESOCONTO_COMMS_2026-10-19_2045.md"
             }
           ],
           "prossimiPassi": [
@@ -844,6 +849,11 @@
               "data": "2026-10-19",
               "testo": "Controllo delle 08:43: nessun commit nuovo dopo la consegna 35 del 17/10 (branch sviluppo/scrivania-qr); la n. 36 (nota R1) resta prevista il 21/10, la nota N3 aspetta ancora l'Avvocato",
               "fonte": "pwa-natale/app (git), docs/consegne/35-revisione-techops.md"
+            },
+            {
+              "data": "2026-10-19",
+              "testo": "Controllo delle 20:45: nessun commit nuovo dopo la consegna 35 del 17/10 (branch sviluppo/scrivania-qr); la n. 36 (nota R1) resta prevista il 21/10, la nota N3 aspetta ancora l'Avvocato",
+              "fonte": "pwa-natale/app (git), docs/consegne/35-revisione-techops.md"
             }
           ],
           "prossimiPassi": [
@@ -942,6 +952,11 @@
               "data": "2026-10-19",
               "testo": "Controllo delle 08:43: www.landauto.it risponde 200; nessun commit nuovo dopo il 16/10 alle 23:47",
               "fonte": "landauto/produzione-repo (git), curl"
+            },
+            {
+              "data": "2026-10-19",
+              "testo": "Controllo delle 20:45: www.landauto.it risponde 200; nessun commit nuovo dopo il 16/10 alle 23:47",
+              "fonte": "landauto/produzione-repo (git), curl"
             }
           ],
           "prossimiPassi": [
@@ -1021,19 +1036,28 @@
               "data": "2026-10-19",
               "testo": "Controllo delle 08:43: sito online, ma www.devsharesrl.it/sitemap.xml dà ancora 404 e /blog/ 403; la versione SEO (18c147b) resta solo in locale",
               "fonte": "devsharesrl-vetrina (git), curl"
+            },
+            {
+              "data": "2026-10-19",
+              "testo": "9:40: la versione SEO (18c147b) copiata sul ramo di pubblicazione dist-brochure-staging (commit 8a03345, decisione del Capo). 12:03-12:08: blog con illustrazioni e testi ampliati di Comms e pulsante «Scrivici su WhatsApp» in Contatti, home e footer (sorgente d383632, build 7ba2914), anteprima noindex su GitHub Pages (200). Controllo delle 20:45: online c'è ancora la versione del 17/10 (sitemap.xml 404, /blog/ 403): niente è stato caricato sul server",
+              "fonte": "devsharesrl-vetrina (git), blog-sorgente, blog-grafiche, anteprima-blog (git 92be44c), curl"
             }
           ],
           "prossimiPassi": [
             {
-              "passo": "Anteprima SEO e revisione Tech Ops",
+              "passo": "Revisione Tech Ops dell'anteprima (SEO, blog con grafiche, pulsante WhatsApp)",
               "scadenza": "da verificare"
             },
             {
-              "passo": "Pubblicare la build «dist-seo» dal PC del Titolare con lo script di pubblicazione, solo con suo ok",
+              "passo": "Pubblicare la build dal PC del Titolare con lo script di pubblicazione, solo con il suo ok",
               "scadenza": "da verificare"
             },
             {
               "passo": "Inviare la sitemap a Google Search Console",
+              "scadenza": "da verificare"
+            },
+            {
+              "passo": "Togliere indirizzo e città dalle pagine (richiesta segnalata da Comms), con anteprima",
               "scadenza": "da verificare"
             }
           ],
@@ -1041,7 +1065,7 @@
             "La versione online non è leggibile bene da Google finché non va su la versione SEO"
           ],
           "daTitolare": [
-            "Ok a pubblicare la versione SEO (la carica lui dal suo PC)",
+            "Ok all'anteprima (SEO, blog con grafiche, pulsante WhatsApp) e caricamento dal suo PC",
             "Logo e immagini vere, se vuole sostituire quelle attuali"
           ],
           "fonti": [
@@ -1091,6 +1115,11 @@
             {
               "data": "2026-10-19",
               "testo": "Controllo del 19/10 mattina: nessun lavoro nuovo dal 14/10; repository locali senza commit nuovi",
+              "fonte": "bar-universal (git)"
+            },
+            {
+              "data": "2026-10-19",
+              "testo": "Controllo del 19/10 sera: nessun lavoro nuovo dal 14/10 (ultimo commit df7a15d in sviluppo/); repository locali senza commit nuovi",
               "fonte": "bar-universal (git)"
             }
           ],
@@ -1188,32 +1217,32 @@
               "data": "2026-10-19",
               "testo": "8:16: pannello di Manilla preparato con permessi minimi (Manilla86 solo scrittura, bozze con approvazione, protezione del ramo main, controllo dei file toccati, CODEOWNERS), script di attivazione e checklist (commit 2f74652, branch pannello-manilla). Non attivo: /admin dà 404 come previsto",
               "fonte": "wip-babypepita (git), tools/PANNELLO.md, curl"
+            },
+            {
+              "data": "2026-10-19",
+              "testo": "10:49-10:52: pannello di scrittura di Manilla acceso (merge 72bc49a, 272aa94, 1e9349c su main): ponte di accesso gratuito su Cloudflare attivo, invito GitHub a Manilla86 con permesso di scrittura inviato (scade dopo 7 giorni se non accettato). Verificato: ilmondodibabypepita.it/admin/ risponde 200 e «Accedi con GitHub» apre il login. Controllo delle 20:45: sito e /admin/ 200",
+              "fonte": "wip-babypepita (git), tools/PANNELLO.md, curl"
             }
           ],
           "prossimiPassi": [
+            {
+              "passo": "Manilla accetta l'invito GitHub (entro 7 giorni dal 19/10) e fa una prova guidata: bozza, «Pronto», «Pubblica»",
+              "scadenza": "2026-10-26"
+            },
             {
               "passo": "Anteprima della dicitura del Premio «Ali e Radici» e pubblicazione con ok",
               "scadenza": "da verificare"
             },
             {
-              "passo": "Attivare il pannello di Manilla dopo che lei crea l'account GitHub e il ponte gratuito Cloudflare è pronto",
-              "scadenza": "da verificare"
-            },
-            {
               "passo": "Pagina Premi: foto e video mancanti e lettera del Papa dal materiale già inviato",
-              "scadenza": "da verificare"
-            },
-            {
-              "passo": "Controllare che le visite arrivino su GA4 solo dopo il consenso",
               "scadenza": "da verificare"
             }
           ],
           "blocchi": [
-            "Pannello di Manilla: manca l'account Cloudflare del Titolare (il nome utente GitHub di Manilla, Manilla86, è arrivato il 18/10 alle 22:39)"
+            "Il pannello è acceso, ma Manilla non ha ancora accettato l'invito GitHub (da verificare)"
           ],
           "daTitolare": [
-            "Sì esplicito all'accensione del pannello di Manilla, dopo l'account Cloudflare",
-            "Accesso o creazione dell'account Cloudflare sul computer di Grok Bot",
+            "Girare a Manilla il link del pannello (ilmondodibabypepita.it/admin/) e ricordarle di accettare l'invito GitHub",
             "Se la lettera del Papa va pubblicata per intero",
             "Ok alla dicitura del Premio «Ali e Radici»"
           ],
@@ -1729,7 +1758,7 @@
           "nome": "Fatture Luna e bilancio 2025",
           "stato": "in-attesa",
           "spiegazione": "Bozza v2 del messaggio a Luna (14/10) con fatture aperte, differenza di liquidità e acconti CIT-8 (1.143 PLN). Invio da verificare.",
-          "ultimoAggiornamento": "2026-10-18",
+          "ultimoAggiornamento": "2026-10-19",
           "cronologia": [
             {
               "data": "2026-09-25",
@@ -1740,6 +1769,11 @@
               "data": "2026-10-18",
               "testo": "Resoconto CCDL sera: Luna ancora senza risposta (ultima del 30/09); il testo per Luna va corretto perché chiede di saldare la FS 663, già pagata il 12/10",
               "fonte": "ccdl-mimmo/resoconto-ccdl-2026-10-18-sera.md"
+            },
+            {
+              "data": "2026-10-19",
+              "testo": "Resoconto CCDL sera: nessuna novità; Luna non risponde dal 30/09; testo Luna v3 corretto pronto, non inviato (serve il sì del Titolare)",
+              "fonte": "ccdl-mimmo/resoconto-ccdl-2026-10-19-sera.md"
             }
           ],
           "prossimiPassi": [],
@@ -2465,7 +2499,7 @@
           "nome": "Lamborghini per Antonio",
           "stato": "in-attesa",
           "spiegazione": "Vocale v2 approvato nel testo; il 14/10 cinque alternative con prezzo verificato (13,85-249,99 €). Nessun acquisto.",
-          "ultimoAggiornamento": "2026-10-14",
+          "ultimoAggiornamento": "2026-10-19",
           "cronologia": [
             {
               "data": "2026-10-09",
@@ -2476,6 +2510,11 @@
               "data": "2026-10-14",
               "testo": "5 nuove alternative con prezzi verificati (13,85-249,99 €), nessun acquisto",
               "fonte": "quadro/STORICO.md"
+            },
+            {
+              "data": "2026-10-19",
+              "testo": "Resoconto Personale 20:35: nessuna novità; restano le due Bburago 1:24 e la cavalcabile Garvee, serve la scelta e il budget",
+              "fonte": "personale-resoconti/RESOCONTO_PERSONALE_2026-10-19_2030.md"
             }
           ],
           "prossimiPassi": [],
