@@ -1,6 +1,6 @@
 {
   "versione": 1,
-  "ultimoAggiornamento": "2026-10-20T08:50:00+02:00",
+  "ultimoAggiornamento": "2026-10-20T20:50:00+02:00",
   "aggiornamento": "due volte al giorno (mattina e sera)",
   "fontiGenerali": [
     "quadro/GRAFO_PROGETTI.md",
@@ -110,7 +110,7 @@
           "nome": "Backup VHosting",
           "stato": "bloccato",
           "spiegazione": "Dopo l'incidente del 05/10 salvati in locale gli export (10 caselle, 4.116 mail, 16 database). Mancano i file dei siti (circa 8 GB) e gli accessi live.",
-          "ultimoAggiornamento": "2026-10-12",
+          "ultimoAggiornamento": "2026-10-20",
           "cronologia": [
             {
               "data": "2026-10-05",
@@ -126,6 +126,11 @@
               "data": "2026-10-12",
               "testo": "salvati in locale export JetBackup 05/10 (10 caselle/4.116 mail, 16 DB); accessi live ancora bloccati; rinnovo 26/10",
               "fonte": "quadro/STORICO.md"
+            },
+            {
+              "data": "2026-10-20",
+              "testo": "Report Tech Ops 20:45: scadenza lunedì 26/10 (6 giorni); accessi del Titolare ancora mancanti. Salvato solo l'export JetBackup del 05/10 (10 caselle, 16 database); mancano file dei siti (circa 8 GB), posta dopo il 05/10, 11ª casella e configurazione dei domini",
+              "fonte": "resoconti-techops/REPORT_TECHOPS_2026-10-20_2045.md"
             }
           ],
           "prossimiPassi": [
@@ -686,6 +691,11 @@
               "data": "2026-10-20",
               "testo": "Resoconto Comms 8:35: ancora nessun link dei post FB/IG di ieri (feed 18:30, storia 19:00). Oggi alle 19:00 il meme batteria 4:5 è pronto; mer 21/10 «Backup 3-2-1». Piano «4 al giorno» ancora senza risposta di Tech Ops: oggi solo il post delle 19:00. Offerta «Sviluppo a 0 €» e bio v3 aspettano il sì del Titolare",
               "fonte": "devshare-campagne/resoconti_comms/RESOCONTO_COMMS_2026-10-20_0845.md"
+            },
+            {
+              "data": "2026-10-20",
+              "testo": "Resoconto Comms 20:35: i 3 articoli del blog di devsharesrl.it ora rispondono 200; ancora nessun link dei post FB/IG del 19/10 e del meme di oggi alle 19:00; «Backup 3-2-1» pronto per domani alle 19:00; proposta campagna «Rete DevShare» 21/10-03/11 (2-3 post al giorno) in attesa del sì. Tech Ops 20:45: App Review Meta approvata alle 11:22 e app «DevShare SRL Assistenza» Live alle 11:40 con il sì del Titolare",
+              "fonte": "devshare-campagne/resoconti_comms/RESOCONTO_COMMS_2026-10-20_2045.md, resoconti-techops/REPORT_TECHOPS_2026-10-20_2045.md"
             }
           ],
           "prossimiPassi": [
@@ -864,6 +874,11 @@
               "data": "2026-10-20",
               "testo": "Controllo delle 08:47: nessun commit nuovo dopo la consegna 35 del 17/10 (branch sviluppo/scrivania-qr); la n. 36 (nota R1) resta prevista domani 21/10, la nota N3 aspetta ancora l'Avvocato; natale.devsharesrl.it risponde 200",
               "fonte": "pwa-natale/app (git), docs/consegne/35-revisione-techops.md, curl"
+            },
+            {
+              "data": "2026-10-20",
+              "testo": "Controllo delle 20:45: nessun commit nuovo dopo la consegna 35 del 17/10 (branch sviluppo/scrivania-qr); la n. 36 (nota R1) è prevista domani 21/10, la nota N3 aspetta ancora l'Avvocato; natale.devsharesrl.it risponde 200",
+              "fonte": "pwa-natale/app (git), docs/consegne/35-revisione-techops.md, curl"
             }
           ],
           "prossimiPassi": [
@@ -972,6 +987,11 @@
               "data": "2026-10-20",
               "testo": "Controllo delle 08:47: www.landauto.it risponde 200; nessun commit nuovo dopo il 16/10 alle 23:47",
               "fonte": "landauto/produzione-repo (git), curl"
+            },
+            {
+              "data": "2026-10-20",
+              "testo": "Controllo delle 20:45: www.landauto.it risponde 200; nessun commit nuovo dopo il 16/10 alle 23:47",
+              "fonte": "landauto/produzione-repo (git), curl"
             }
           ],
           "prossimiPassi": [
@@ -1061,6 +1081,11 @@
               "data": "2026-10-20",
               "testo": "19/10 22:31: footer con soli dati legali e riquadro «Supporto tecnico» (Telegram, WhatsApp, email, PEC), nuova build SEO (commit 3650500, branch seo). Verificato il 20/10 alle 08:48: la versione SEO è ONLINE su www.devsharesrl.it dal 19/10 alle 22:56 circa (ora di Roma, last-modified del server): sitemap.xml, robots.txt, /blog/ e /servizi/ rispondono 200, la home usa la stessa build di dist-seo. Chi l'ha caricata e il sì del Titolare non risultano nei file",
               "fonte": "devsharesrl-vetrina (git 3650500), curl"
+            },
+            {
+              "data": "2026-10-20",
+              "testo": "9:00-9:10, con il sì del Titolare del 19/10 alle 23:40: «Come funziona» con form, email, WhatsApp o Telegram e invia.php con l'ora di Roma caricati online (commit f932bf8), backup del sito prima del caricamento, mail di prova arrivata. 15:34-20:23: immagine di anteprima per i social (og:image) rifatta con il logo esteso <DevShare/> e senza «Afragola (NA)»; intestazione con il solo logo esteso, come da regola del Titolare del 20/10 sul logo (commit 433f77b-8eaec78). Verificato alle 20:45: home e og-devshare.png aggiornate sul server alle 20:24-20:25 (ora di Roma), sito 200. Chi ha caricato quest'ultima modifica non è scritto in STATO.md. Il titolo della home dice ancora «Afragola (NA)»",
+              "fonte": "devsharesrl-vetrina (git, STATO.md), curl"
             }
           ],
           "prossimiPassi": [
@@ -1082,7 +1107,7 @@
             }
           ],
           "blocchi": [
-            "Non risulta chi ha caricato la versione SEO online il 19/10 sera né il sì del Titolare"
+            "Il caricamento delle 20:24 (intestazione e immagine social) non è registrato in STATO.md: da confermare chi l'ha fatto"
           ],
           "daTitolare": [
             "Confermare che la versione SEO doveva andare online (caricata il 19/10 verso le 22:56)",
@@ -1148,6 +1173,11 @@
               "data": "2026-10-20",
               "testo": "Controllo del 20/10 mattina: nessun lavoro nuovo dal 14/10 (ultimo commit df7a15d in sviluppo/)",
               "fonte": "bar-universal (git)"
+            },
+            {
+              "data": "2026-10-20",
+              "testo": "Controllo del 20/10 sera: nessun lavoro nuovo dal 14/10 (ultimo commit df7a15d in sviluppo/)",
+              "fonte": "bar-universal (git)"
             }
           ],
           "prossimiPassi": [
@@ -1177,7 +1207,7 @@
           "id": "babypepita",
           "nome": "ilmondodibabypepita.it",
           "stato": "attivo",
-          "spiegazione": "Online su ilmondodibabypepita.it. Il 18/10 tra 00:33 e 01:49 sono andati online la pagina «Premi, riconoscimenti e pubblicazioni letterarie», le schede «Poesie e opere» e «Premi» in home, la SEO completa (sitemap con 296 indirizzi) e il blog con 285 articoli dal vecchio WordPress più 5 dal vecchio Blogspot (ultimo commit online 14c624a). Pronti in locale, non online: il pannello per far scrivere Manilla (Decap CMS, commit 90aa749) e la dicitura completa del Premio «Ali e Radici» (commit fca40ab, 8:41).",
+          "spiegazione": "Online su ilmondodibabypepita.it. Il 18/10 tra 00:33 e 01:49 sono andati online la pagina «Premi, riconoscimenti e pubblicazioni letterarie», le schede «Poesie e opere» e «Premi» in home, la SEO completa (sitemap con 296 indirizzi) e il blog con 285 articoli dal vecchio WordPress più 5 dal vecchio Blogspot (ultimo commit online 14c624a). Pronti in locale, non online: il pannello per far scrivere Manilla (Decap CMS, commit 90aa749) e la dicitura completa del Premio «Ali e Radici» (commit fca40ab, 8:41). Il 20/10 pronte in locale (branch lettera-vaticano, non online) la lettera intera della Segreteria di Stato con trascrizione e la foto e il video mancanti nella pagina Premi.",
           "ultimoAggiornamento": "2026-10-20",
           "cronologia": [
             {
@@ -1254,27 +1284,31 @@
               "data": "2026-10-20",
               "testo": "19/10 23:11-23:53: pagina «I libri di Manilla» (/libri.html) con copertine e pulsante WhatsApp per ogni libro, scheda in home e sitemap (commit 957ee9b, merge 3de0ffd). Verificato il 20/10 alle 08:48: /libri.html e /admin/ rispondono 200",
               "fonte": "wip-babypepita (git), curl"
+            },
+            {
+              "data": "2026-10-20",
+              "testo": "10:48-11:23: pagina Premi con la lettera intera della Segreteria di Stato e la trascrizione (8a65d58), foto di Teverola per «Destino» e video de «La Ritmica dell'anima» (711db85), solo in locale sul branch lettera-vaticano: online c'è ancora main 3de0ffd. Verificato alle 20:45 su GitHub: Manilla86 risulta tra i collaboratori del sito, quindi l'invito al pannello è stato accettato",
+              "fonte": "wip-babypepita (git), GitHub collaboratori, curl"
             }
           ],
           "prossimiPassi": [
             {
-              "passo": "Manilla accetta l'invito GitHub (entro 7 giorni dal 19/10) e fa una prova guidata: bozza, «Pronto», «Pubblica»",
-              "scadenza": "2026-10-26"
+              "passo": "Prova guidata di Manilla nel pannello: bozza, «Pronto», «Pubblica»",
+              "scadenza": "da verificare"
             },
             {
               "passo": "Anteprima della dicitura del Premio «Ali e Radici» e pubblicazione con ok",
               "scadenza": "da verificare"
             },
             {
-              "passo": "Pagina Premi: foto e video mancanti e lettera del Papa dal materiale già inviato",
+              "passo": "Pagina Premi: anteprima della lettera intera e di foto e video (branch lettera-vaticano), online solo con ok",
               "scadenza": "da verificare"
             }
           ],
           "blocchi": [
-            "Il pannello è acceso, ma non risulta se Manilla ha accettato l'invito GitHub (scade il 26/10)"
+            "La lettera intera nella pagina Premi aspetta il sì del Titolare a pubblicarla"
           ],
           "daTitolare": [
-            "Girare a Manilla il link del pannello (ilmondodibabypepita.it/admin/) e ricordarle di accettare l'invito GitHub",
             "Se la lettera del Papa va pubblicata per intero",
             "Ok alla dicitura del Premio «Ali e Radici»"
           ],
@@ -1485,7 +1519,7 @@
           "nome": "devshare.it (WIP e vetrina)",
           "stato": "attivo",
           "spiegazione": "Pagina «Work in progress» online con HTTPS; vetrina locale con 14 attività. Manca il CNAME www; il vecchio WordPress compromesso è da spegnere.",
-          "ultimoAggiornamento": "2026-10-16",
+          "ultimoAggiornamento": "2026-10-20",
           "cronologia": [
             {
               "data": "2026-09-23",
@@ -1541,6 +1575,11 @@
               "data": "2026-10-16",
               "testo": "Online la pagina «Le nostre attività»; mancano il CNAME www e lo spegnimento del vecchio WordPress",
               "fonte": "resoconti/RESOCONTO_2026-10-16_21.md"
+            },
+            {
+              "data": "2026-10-20",
+              "testo": "Report Tech Ops 20:45: www.devshare.it ha ancora l'HTTPS sbagliato (serve il certificato di GitHub). Bozza di ticket a GitHub pronta, non inviata: serve il sì",
+              "fonte": "resoconti-techops/REPORT_TECHOPS_2026-10-20_2045.md"
             }
           ],
           "prossimiPassi": [],
@@ -1548,7 +1587,8 @@
             "Esito dell'anteprima privata da verificare"
           ],
           "daTitolare": [
-            "Ok alla vetrina dopo l'anteprima"
+            "Ok alla vetrina dopo l'anteprima",
+            "Sì a inviare il ticket a GitHub per l'HTTPS di www.devshare.it"
           ],
           "fonti": [
             "quadro/ALBERO_VIVO.md",
