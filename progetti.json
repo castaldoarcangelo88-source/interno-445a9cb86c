@@ -1,6 +1,6 @@
 {
   "versione": 1,
-  "ultimoAggiornamento": "2026-10-21T08:55:00+02:00",
+  "ultimoAggiornamento": "2026-10-21T20:55:00+02:00",
   "aggiornamento": "due volte al giorno (mattina e sera)",
   "fontiGenerali": [
     "quadro/GRAFO_PROGETTI.md",
@@ -894,12 +894,21 @@
               "data": "2026-10-21",
               "testo": "Controllo delle 08:50: nessun commit nuovo dopo la consegna 35 del 17/10 (branch sviluppo/scrivania-qr); la consegna 36 (nota R1) è prevista oggi e non è ancora fatta; la nota N3 aspetta l'Avvocato; natale.devsharesrl.it risponde 200",
               "fonte": "pwa-natale/app (git), docs/consegne/35-revisione-techops.md, curl"
+            },
+            {
+              "data": "2026-10-21",
+              "testo": "Controllo delle 20:50: la consegna 36 (nota R1) non è ancora fatta; l'unico lavoro nuovo è il commit 2e204fb delle 13:25 sul branch collegamenti-servizi (riga «Un servizio di DevShare SRL» con logo verso www.devsharesrl.it), solo in locale e non ancora passato da Tech Ops; natale.devsharesrl.it risponde 200",
+              "fonte": "pwa-natale/app (git), curl"
             }
           ],
           "prossimiPassi": [
             {
               "passo": "Consegna n. 36: sistemare la nota R1 di Tech Ops (manifest già in corso legato al tentativo)",
-              "scadenza": "2026-10-21"
+              "scadenza": "da verificare"
+            },
+            {
+              "passo": "Revisione Tech Ops della riga «Un servizio di DevShare SRL» (commit 2e204fb)",
+              "scadenza": "da verificare"
             },
             {
               "passo": "Testo del consenso (nota N3) dopo il parere dell'Avvocato",
@@ -1012,6 +1021,11 @@
               "data": "2026-10-21",
               "testo": "Controllo delle 08:50: www.landauto.it risponde 200; nessun commit nuovo dopo il 16/10 alle 23:47",
               "fonte": "landauto/produzione-repo (git), curl"
+            },
+            {
+              "data": "2026-10-21",
+              "testo": "Il Titolare ha confermato (tramite il Capo, ore 9:00) il sito ufficiale di landauto.it con GA4, online dal 16/10: la pagina di attesa non va rimessa. Controllo delle 20:50: www.landauto.it risponde 200, nessun commit nuovo",
+              "fonte": "memoria condivisa (ordine Titolare 21/10), curl"
             }
           ],
           "prossimiPassi": [
@@ -1024,13 +1038,9 @@
               "scadenza": "da verificare"
             }
           ],
-          "blocchi": [
-            "Il sì esplicito al passaggio online non risulta registrato"
-          ],
+          "blocchi": [],
           "daTitolare": [
-            "Confermare che il sito ufficiale doveva andare online",
-            "Ok alle correzioni foto di Carmine",
-            "Confermare l'ok al banner cookie e GA4 già online su landauto.it"
+            "Ok alle correzioni foto di Carmine"
           ],
           "fonti": [
             "quadro/ALBERO_VIVO.md",
@@ -1111,9 +1121,18 @@
               "data": "2026-10-21",
               "testo": "Controllo delle 08:50: nessun commit nuovo dopo il 20/10 alle 20:26 (branch seo); www.devsharesrl.it risponde 200",
               "fonte": "devsharesrl-vetrina (git), curl"
+            },
+            {
+              "data": "2026-10-21",
+              "testo": "Mattina: online la home senza «Afragola» nel titolo e l'indirizzo breve /wa verso WhatsApp (STATO del 21/10, 09:48). Pomeriggio, solo in locale sul branch velocita-mobile (b31add1, non caricato su GitHub né online): banner cookie avviato subito per la velocità su telefono, blocco «I nostri servizi» in home e /servizi/, pulsanti Chiama e WhatsApp nel primo schermo, «Solo su appuntamento», orari lun-ven 9-13 e 15-19. Verificato alle 20:50: il sito online è ancora la versione del mattino",
+              "fonte": "devsharesrl-vetrina (git), confronto curl con dist-seo"
             }
           ],
           "prossimiPassi": [
+            {
+              "passo": "Revisione Tech Ops del branch velocita-mobile e pubblicazione con pubblica.bat dal PC del Titolare, solo con suo ok",
+              "scadenza": "da verificare"
+            },
             {
               "passo": "Inviare la sitemap a Google Search Console",
               "scadenza": "da verificare"
@@ -1125,19 +1144,12 @@
             {
               "passo": "Blog con grafiche e pulsante WhatsApp (anteprima noindex pronta), online solo con ok",
               "scadenza": "da verificare"
-            },
-            {
-              "passo": "Togliere indirizzo e città dalle pagine (richiesta segnalata da Comms; il titolo della home cita ancora «Afragola (NA)»), con anteprima",
-              "scadenza": "da verificare"
             }
           ],
-          "blocchi": [
-            "Il caricamento delle 20:24 (intestazione e immagine social) non è registrato in STATO.md: da confermare chi l'ha fatto"
-          ],
+          "blocchi": [],
           "daTitolare": [
-            "Confermare che la versione SEO doveva andare online (caricata il 19/10 verso le 22:56)",
+            "Ok a pubblicare il lavoro del 21/10 pomeriggio (servizi, contatti, orari, velocità)",
             "Ok all'anteprima del blog con grafiche e pulsante WhatsApp",
-            "Sì a togliere indirizzo e città dal sito",
             "Logo e immagini vere, se vuole sostituire quelle attuali"
           ],
           "fonti": [
@@ -1208,6 +1220,11 @@
               "data": "2026-10-21",
               "testo": "Controllo del 21/10 mattina: nessun lavoro nuovo dal 14/10 (ultimo commit df7a15d in sviluppo/)",
               "fonte": "bar-universal (git)"
+            },
+            {
+              "data": "2026-10-21",
+              "testo": "Controllo delle 20:50: nessun lavoro nuovo dal 14/10 (ultimo commit df7a15d)",
+              "fonte": "bar-universal/sviluppo (git)"
             }
           ],
           "prossimiPassi": [
@@ -1324,9 +1341,18 @@
               "data": "2026-10-21",
               "testo": "20/10 23:42: unito il branch lettera-vaticano (ec5a8b2) e aggiunte targa e cofanetto per «Piccoli fari nella notte» (46a5173), pubblicati su main. Verificato il 21/10 alle 08:50: /premi.html risponde 200 e mostra le novità. Il sì del Titolare a questa pubblicazione non risulta nei file (la nota del 20/10 22:12 diceva «solo anteprima»)",
               "fonte": "wip-babypepita (git), curl"
+            },
+            {
+              "data": "2026-10-21",
+              "testo": "14:03 online su main il footer con «Contatti (DevShare SRL)» e link alti 48px (51ef374). 18:53-20:09 in anteprima (branch anteprima-presentazioni, 3b3b423) la nuova sezione «Presentazioni» con pagina, scheda in home e sitemap; non online (presentazioni.html risponde 404 sul sito)",
+              "fonte": "wip-babypepita (git), curl"
             }
           ],
           "prossimiPassi": [
+            {
+              "passo": "Mostrare al Titolare l'anteprima «Presentazioni» e pubblicarla solo con il suo sì",
+              "scadenza": "da verificare"
+            },
             {
               "passo": "Prova guidata di Manilla nel pannello: bozza, «Pronto», «Pubblica»",
               "scadenza": "da verificare"
@@ -1344,6 +1370,7 @@
             "La pubblicazione della pagina Premi del 20/10 alle 23:42 non ha un sì del Titolare registrato"
           ],
           "daTitolare": [
+            "Sì o no alla sezione «Presentazioni» (anteprima pronta)",
             "Confermare che la pagina Premi con la lettera intera del Papa doveva andare online (lo è dal 20/10 alle 23:42), oppure chiedere di tornare indietro",
             "Ok alla dicitura del Premio «Ali e Radici»"
           ],
