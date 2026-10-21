@@ -1,6 +1,6 @@
 {
   "versione": 1,
-  "ultimoAggiornamento": "2026-10-20T20:50:00+02:00",
+  "ultimoAggiornamento": "2026-10-21T08:55:00+02:00",
   "aggiornamento": "due volte al giorno (mattina e sera)",
   "fontiGenerali": [
     "quadro/GRAFO_PROGETTI.md",
@@ -110,7 +110,7 @@
           "nome": "Backup VHosting",
           "stato": "bloccato",
           "spiegazione": "Dopo l'incidente del 05/10 salvati in locale gli export (10 caselle, 4.116 mail, 16 database). Mancano i file dei siti (circa 8 GB) e gli accessi live.",
-          "ultimoAggiornamento": "2026-10-20",
+          "ultimoAggiornamento": "2026-10-21",
           "cronologia": [
             {
               "data": "2026-10-05",
@@ -131,6 +131,11 @@
               "data": "2026-10-20",
               "testo": "Report Tech Ops 20:45: scadenza lunedì 26/10 (6 giorni); accessi del Titolare ancora mancanti. Salvato solo l'export JetBackup del 05/10 (10 caselle, 16 database); mancano file dei siti (circa 8 GB), posta dopo il 05/10, 11ª casella e configurazione dei domini",
               "fonte": "resoconti-techops/REPORT_TECHOPS_2026-10-20_2045.md"
+            },
+            {
+              "data": "2026-10-21",
+              "testo": "Report Tech Ops 8:45: VHosting scade lunedì 26/10 (5 giorni); accessi del Titolare ancora mancanti; salvati solo gli export del 05/10 (10 caselle, 16 database), mancano i file dei siti (circa 8 GB) e la posta dopo il 05/10",
+              "fonte": "resoconti-techops/REPORT_TECHOPS_2026-10-21_0845.md"
             }
           ],
           "prossimiPassi": [
@@ -666,7 +671,7 @@
           "nome": "Meta Facebook/Instagram (DevShare e clienti)",
           "stato": "in-attesa",
           "spiegazione": "Audit di 28 giorni (18/09-15/10): Al Miracolo del Mare è la pagina che rende di più, HandiMap su Facebook va bene, DevShare è la più debole. Bio DevShare e piano contenuti 19/10-01/11 in bozza.",
-          "ultimoAggiornamento": "2026-10-20",
+          "ultimoAggiornamento": "2026-10-21",
           "cronologia": [
             {
               "data": "2026-10-16",
@@ -696,6 +701,11 @@
               "data": "2026-10-20",
               "testo": "Resoconto Comms 20:35: i 3 articoli del blog di devsharesrl.it ora rispondono 200; ancora nessun link dei post FB/IG del 19/10 e del meme di oggi alle 19:00; «Backup 3-2-1» pronto per domani alle 19:00; proposta campagna «Rete DevShare» 21/10-03/11 (2-3 post al giorno) in attesa del sì. Tech Ops 20:45: App Review Meta approvata alle 11:22 e app «DevShare SRL Assistenza» Live alle 11:40 con il sì del Titolare",
               "fonte": "devshare-campagne/resoconti_comms/RESOCONTO_COMMS_2026-10-20_2045.md, resoconti-techops/REPORT_TECHOPS_2026-10-20_2045.md"
+            },
+            {
+              "data": "2026-10-21",
+              "testo": "Resoconto Comms 8:38: oggi alle 19:00 post «Backup 3-2-1» 4:5 pronto; nuova proposta «Iscritti con consenso» con 4 grafiche e piano tecnico di Tech Ops (pagina /iscriviti/ non ancora online); niente pubblicato senza il sì del Titolare",
+              "fonte": "devshare-campagne/resoconti_comms/RESOCONTO_COMMS_2026-10-21_0845.md"
             }
           ],
           "prossimiPassi": [
@@ -793,7 +803,7 @@
           "nome": "PWA Natale",
           "stato": "attivo",
           "spiegazione": "App di Natale con voce e biglietto QR. Ultima consegna: n. 35 (17/10, 9:09-9:10, commit 01e0a35 e bdc7276, solo in locale): ogni tentativo di scaricare le voci ha il suo controllo di interruzione. Tech Ops l'ha approvata con note (356 test automatici e 53 prove sul browser passati). Prossima consegna n. 36 il 21/10. In attesa del sì alla soluzione minima dell'Avvocato («Voce generata al computer»).",
-          "ultimoAggiornamento": "2026-10-20",
+          "ultimoAggiornamento": "2026-10-21",
           "cronologia": [
             {
               "data": "2026-09-27",
@@ -879,6 +889,11 @@
               "data": "2026-10-20",
               "testo": "Controllo delle 20:45: nessun commit nuovo dopo la consegna 35 del 17/10 (branch sviluppo/scrivania-qr); la n. 36 (nota R1) è prevista domani 21/10, la nota N3 aspetta ancora l'Avvocato; natale.devsharesrl.it risponde 200",
               "fonte": "pwa-natale/app (git), docs/consegne/35-revisione-techops.md, curl"
+            },
+            {
+              "data": "2026-10-21",
+              "testo": "Controllo delle 08:50: nessun commit nuovo dopo la consegna 35 del 17/10 (branch sviluppo/scrivania-qr); la consegna 36 (nota R1) è prevista oggi e non è ancora fatta; la nota N3 aspetta l'Avvocato; natale.devsharesrl.it risponde 200",
+              "fonte": "pwa-natale/app (git), docs/consegne/35-revisione-techops.md, curl"
             }
           ],
           "prossimiPassi": [
@@ -916,7 +931,7 @@
           "nome": "Land auto (landauto.it)",
           "stato": "attivo",
           "spiegazione": "Sito ufficiale online su www.landauto.it (GitHub Pages, branch «produzione»), con ritorno alla pagina di attesa possibile in un minuto. Fatto il 15/10: solo P.IVA, sede ad Afragola, firma «Realizzato da DevShare SRL», foto non scaricabili, FAQ col testo del cliente.",
-          "ultimoAggiornamento": "2026-10-20",
+          "ultimoAggiornamento": "2026-10-21",
           "cronologia": [
             {
               "data": "2026-10-12",
@@ -992,6 +1007,11 @@
               "data": "2026-10-20",
               "testo": "Controllo delle 20:45: www.landauto.it risponde 200; nessun commit nuovo dopo il 16/10 alle 23:47",
               "fonte": "landauto/produzione-repo (git), curl"
+            },
+            {
+              "data": "2026-10-21",
+              "testo": "Controllo delle 08:50: www.landauto.it risponde 200; nessun commit nuovo dopo il 16/10 alle 23:47",
+              "fonte": "landauto/produzione-repo (git), curl"
             }
           ],
           "prossimiPassi": [
@@ -1025,7 +1045,7 @@
           "nome": "Vetrina devsharesrl.it",
           "stato": "attivo",
           "spiegazione": "Sito devsharesrl.it su Omegasus. Online dal 17/10 alle 23:35 la prima versione (commit a0903cd); dal 19/10 alle 22:56 circa è online la versione SEO (branch «seo», ultimo commit 3650500): indirizzi veri con pagine statiche, sitemap, robots, .htaccess, blog statico con 3 articoli, modulo contatti verso info@devsharesrl.it, GA4 solo dopo il consenso iubenda, footer con dati legali e «Supporto tecnico».",
-          "ultimoAggiornamento": "2026-10-20",
+          "ultimoAggiornamento": "2026-10-21",
           "cronologia": [
             {
               "data": "2026-10-15",
@@ -1086,6 +1106,11 @@
               "data": "2026-10-20",
               "testo": "9:00-9:10, con il sì del Titolare del 19/10 alle 23:40: «Come funziona» con form, email, WhatsApp o Telegram e invia.php con l'ora di Roma caricati online (commit f932bf8), backup del sito prima del caricamento, mail di prova arrivata. 15:34-20:23: immagine di anteprima per i social (og:image) rifatta con il logo esteso <DevShare/> e senza «Afragola (NA)»; intestazione con il solo logo esteso, come da regola del Titolare del 20/10 sul logo (commit 433f77b-8eaec78). Verificato alle 20:45: home e og-devshare.png aggiornate sul server alle 20:24-20:25 (ora di Roma), sito 200. Chi ha caricato quest'ultima modifica non è scritto in STATO.md. Il titolo della home dice ancora «Afragola (NA)»",
               "fonte": "devsharesrl-vetrina (git, STATO.md), curl"
+            },
+            {
+              "data": "2026-10-21",
+              "testo": "Controllo delle 08:50: nessun commit nuovo dopo il 20/10 alle 20:26 (branch seo); www.devsharesrl.it risponde 200",
+              "fonte": "devsharesrl-vetrina (git), curl"
             }
           ],
           "prossimiPassi": [
@@ -1128,7 +1153,7 @@
           "nome": "Gestionale Bar Universal",
           "stato": "attivo",
           "spiegazione": "Gestionale per il bar: Tappa 1 completata sul dispositivo il 14/10 (magazzino con carico, scarto e inventario; ordini a stecche con ritiri e pagamenti; lista spesa; riepilogo). Solo in locale, nessun contatto col cliente.",
-          "ultimoAggiornamento": "2026-10-20",
+          "ultimoAggiornamento": "2026-10-21",
           "cronologia": [
             {
               "data": "2026-09-26",
@@ -1178,6 +1203,11 @@
               "data": "2026-10-20",
               "testo": "Controllo del 20/10 sera: nessun lavoro nuovo dal 14/10 (ultimo commit df7a15d in sviluppo/)",
               "fonte": "bar-universal (git)"
+            },
+            {
+              "data": "2026-10-21",
+              "testo": "Controllo del 21/10 mattina: nessun lavoro nuovo dal 14/10 (ultimo commit df7a15d in sviluppo/)",
+              "fonte": "bar-universal (git)"
             }
           ],
           "prossimiPassi": [
@@ -1207,8 +1237,8 @@
           "id": "babypepita",
           "nome": "ilmondodibabypepita.it",
           "stato": "attivo",
-          "spiegazione": "Online su ilmondodibabypepita.it. Il 18/10 tra 00:33 e 01:49 sono andati online la pagina «Premi, riconoscimenti e pubblicazioni letterarie», le schede «Poesie e opere» e «Premi» in home, la SEO completa (sitemap con 296 indirizzi) e il blog con 285 articoli dal vecchio WordPress più 5 dal vecchio Blogspot (ultimo commit online 14c624a). Pronti in locale, non online: il pannello per far scrivere Manilla (Decap CMS, commit 90aa749) e la dicitura completa del Premio «Ali e Radici» (commit fca40ab, 8:41). Il 20/10 pronte in locale (branch lettera-vaticano, non online) la lettera intera della Segreteria di Stato con trascrizione e la foto e il video mancanti nella pagina Premi.",
-          "ultimoAggiornamento": "2026-10-20",
+          "spiegazione": "Online su ilmondodibabypepita.it. Il 18/10 tra 00:33 e 01:49 sono andati online la pagina «Premi, riconoscimenti e pubblicazioni letterarie», le schede «Poesie e opere» e «Premi» in home, la SEO completa (sitemap con 296 indirizzi) e il blog con 285 articoli dal vecchio WordPress più 5 dal vecchio Blogspot (ultimo commit online 14c624a). Pronti in locale, non online: il pannello per far scrivere Manilla (Decap CMS, commit 90aa749) e la dicitura completa del Premio «Ali e Radici» (commit fca40ab, 8:41). Dal 20/10 alle 23:42 è online la pagina Premi aggiornata: lettera intera della Segreteria di Stato con trascrizione, foto di «Destino», video de «La Ritmica dell'anima», targa e cofanetto di «Piccoli fari nella notte» (main 46a5173).",
+          "ultimoAggiornamento": "2026-10-21",
           "cronologia": [
             {
               "data": "2026-09-16",
@@ -1289,6 +1319,11 @@
               "data": "2026-10-20",
               "testo": "10:48-11:23: pagina Premi con la lettera intera della Segreteria di Stato e la trascrizione (8a65d58), foto di Teverola per «Destino» e video de «La Ritmica dell'anima» (711db85), solo in locale sul branch lettera-vaticano: online c'è ancora main 3de0ffd. Verificato alle 20:45 su GitHub: Manilla86 risulta tra i collaboratori del sito, quindi l'invito al pannello è stato accettato",
               "fonte": "wip-babypepita (git), GitHub collaboratori, curl"
+            },
+            {
+              "data": "2026-10-21",
+              "testo": "20/10 23:42: unito il branch lettera-vaticano (ec5a8b2) e aggiunte targa e cofanetto per «Piccoli fari nella notte» (46a5173), pubblicati su main. Verificato il 21/10 alle 08:50: /premi.html risponde 200 e mostra le novità. Il sì del Titolare a questa pubblicazione non risulta nei file (la nota del 20/10 22:12 diceva «solo anteprima»)",
+              "fonte": "wip-babypepita (git), curl"
             }
           ],
           "prossimiPassi": [
@@ -1301,15 +1336,15 @@
               "scadenza": "da verificare"
             },
             {
-              "passo": "Pagina Premi: anteprima della lettera intera e di foto e video (branch lettera-vaticano), online solo con ok",
+              "passo": "Lavorare la bozza del panel «FESTIVAL Open House Napoli» arrivata da Manilla nella notte (00:12), se richiesto",
               "scadenza": "da verificare"
             }
           ],
           "blocchi": [
-            "La lettera intera nella pagina Premi aspetta il sì del Titolare a pubblicarla"
+            "La pubblicazione della pagina Premi del 20/10 alle 23:42 non ha un sì del Titolare registrato"
           ],
           "daTitolare": [
-            "Se la lettera del Papa va pubblicata per intero",
+            "Confermare che la pagina Premi con la lettera intera del Papa doveva andare online (lo è dal 20/10 alle 23:42), oppure chiedere di tornare indietro",
             "Ok alla dicitura del Premio «Ali e Radici»"
           ],
           "fonti": [
@@ -1830,7 +1865,7 @@
           "nome": "Fatture Luna e bilancio 2025",
           "stato": "in-attesa",
           "spiegazione": "Bozza v2 del messaggio a Luna (14/10) con fatture aperte, differenza di liquidità e acconti CIT-8 (1.143 PLN). Invio da verificare.",
-          "ultimoAggiornamento": "2026-10-20",
+          "ultimoAggiornamento": "2026-10-21",
           "cronologia": [
             {
               "data": "2026-09-25",
@@ -1851,6 +1886,11 @@
               "data": "2026-10-20",
               "testo": "Resoconto CCDL mattina: nessuna novità; Luna non risponde dal 30/09; testo Luna v3 pronto, non inviato; da decidere il sollecito a VGC",
               "fonte": "ccdl-mimmo/resoconto-ccdl-2026-10-20-mattina.md"
+            },
+            {
+              "data": "2026-10-21",
+              "testo": "Resoconto CCDL del mattino: nessuna risposta di Luna (ultima del 30/09), nessuna mail nuova; serve il sì al testo per Luna",
+              "fonte": "ccdl-mimmo/resoconto-ccdl-2026-10-21-mattina.md"
             }
           ],
           "prossimiPassi": [],
@@ -2576,7 +2616,7 @@
           "nome": "Lamborghini per Antonio",
           "stato": "in-attesa",
           "spiegazione": "Vocale v2 approvato nel testo; il 14/10 cinque alternative con prezzo verificato (13,85-249,99 €). Nessun acquisto.",
-          "ultimoAggiornamento": "2026-10-19",
+          "ultimoAggiornamento": "2026-10-21",
           "cronologia": [
             {
               "data": "2026-10-09",
@@ -2592,6 +2632,11 @@
               "data": "2026-10-19",
               "testo": "Resoconto Personale 20:35: nessuna novità; restano le due Bburago 1:24 e la cavalcabile Garvee, serve la scelta e il budget",
               "fonte": "personale-resoconti/RESOCONTO_PERSONALE_2026-10-19_2030.md"
+            },
+            {
+              "data": "2026-10-21",
+              "testo": "Resoconto Personale 8:30: nessuna novità; serve la scelta tra modellino in metallo (14-20 €) o cavalcabile (circa 250 €)",
+              "fonte": "personale-resoconti/RESOCONTO_PERSONALE_2026-10-21_0830.md"
             }
           ],
           "prossimiPassi": [],
