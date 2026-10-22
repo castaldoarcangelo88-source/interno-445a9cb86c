@@ -1,6 +1,6 @@
 {
   "versione": 1,
-  "ultimoAggiornamento": "2026-10-21T20:55:00+02:00",
+  "ultimoAggiornamento": "2026-10-22T08:55:00+02:00",
   "aggiornamento": "due volte al giorno (mattina e sera)",
   "fontiGenerali": [
     "quadro/GRAFO_PROGETTI.md",
@@ -803,7 +803,7 @@
           "nome": "PWA Natale",
           "stato": "attivo",
           "spiegazione": "App di Natale con voce e biglietto QR. Ultima consegna: n. 35 (17/10, 9:09-9:10, commit 01e0a35 e bdc7276, solo in locale): ogni tentativo di scaricare le voci ha il suo controllo di interruzione. Tech Ops l'ha approvata con note (356 test automatici e 53 prove sul browser passati). Prossima consegna n. 36 il 21/10. In attesa del sì alla soluzione minima dell'Avvocato («Voce generata al computer»).",
-          "ultimoAggiornamento": "2026-10-21",
+          "ultimoAggiornamento": "2026-10-22",
           "cronologia": [
             {
               "data": "2026-09-27",
@@ -899,6 +899,11 @@
               "data": "2026-10-21",
               "testo": "Controllo delle 20:50: la consegna 36 (nota R1) non è ancora fatta; l'unico lavoro nuovo è il commit 2e204fb delle 13:25 sul branch collegamenti-servizi (riga «Un servizio di DevShare SRL» con logo verso www.devsharesrl.it), solo in locale e non ancora passato da Tech Ops; natale.devsharesrl.it risponde 200",
               "fonte": "pwa-natale/app (git), curl"
+            },
+            {
+              "data": "2026-10-22",
+              "testo": "Controllo delle 08:50: nessun commit nuovo dopo il 2e204fb del 21/10 alle 13:25 (branch collegamenti-servizi, solo in locale); consegna 36 (nota R1) non ancora fatta; nota N3 sempre in attesa dell'Avvocato; natale.devsharesrl.it risponde 200",
+              "fonte": "git, curl"
             }
           ],
           "prossimiPassi": [
@@ -940,7 +945,7 @@
           "nome": "Land auto (landauto.it)",
           "stato": "attivo",
           "spiegazione": "Sito ufficiale online su www.landauto.it (GitHub Pages, branch «produzione»), con ritorno alla pagina di attesa possibile in un minuto. Fatto il 15/10: solo P.IVA, sede ad Afragola, firma «Realizzato da DevShare SRL», foto non scaricabili, FAQ col testo del cliente.",
-          "ultimoAggiornamento": "2026-10-21",
+          "ultimoAggiornamento": "2026-10-22",
           "cronologia": [
             {
               "data": "2026-10-12",
@@ -1026,6 +1031,11 @@
               "data": "2026-10-21",
               "testo": "Il Titolare ha confermato (tramite il Capo, ore 9:00) il sito ufficiale di landauto.it con GA4, online dal 16/10: la pagina di attesa non va rimessa. Controllo delle 20:50: www.landauto.it risponde 200, nessun commit nuovo",
               "fonte": "memoria condivisa (ordine Titolare 21/10), curl"
+            },
+            {
+              "data": "2026-10-22",
+              "testo": "Controllo delle 08:50: www.landauto.it risponde 200 con il sito ufficiale; nessun commit nuovo dopo il c00c4cc del 16/10 alle 23:47",
+              "fonte": "git, curl"
             }
           ],
           "prossimiPassi": [
@@ -1055,7 +1065,7 @@
           "nome": "Vetrina devsharesrl.it",
           "stato": "attivo",
           "spiegazione": "Sito devsharesrl.it su Omegasus. Online dal 17/10 alle 23:35 la prima versione (commit a0903cd); dal 19/10 alle 22:56 circa è online la versione SEO (branch «seo», ultimo commit 3650500): indirizzi veri con pagine statiche, sitemap, robots, .htaccess, blog statico con 3 articoli, modulo contatti verso info@devsharesrl.it, GA4 solo dopo il consenso iubenda, footer con dati legali e «Supporto tecnico».",
-          "ultimoAggiornamento": "2026-10-21",
+          "ultimoAggiornamento": "2026-10-22",
           "cronologia": [
             {
               "data": "2026-10-15",
@@ -1126,6 +1136,11 @@
               "data": "2026-10-21",
               "testo": "Mattina: online la home senza «Afragola» nel titolo e l'indirizzo breve /wa verso WhatsApp (STATO del 21/10, 09:48). Pomeriggio, solo in locale sul branch velocita-mobile (b31add1, non caricato su GitHub né online): banner cookie avviato subito per la velocità su telefono, blocco «I nostri servizi» in home e /servizi/, pulsanti Chiama e WhatsApp nel primo schermo, «Solo su appuntamento», orari lun-ven 9-13 e 15-19. Verificato alle 20:50: il sito online è ancora la versione del mattino",
               "fonte": "devsharesrl-vetrina (git), confronto curl con dist-seo"
+            },
+            {
+              "data": "2026-10-22",
+              "testo": "Controllo delle 08:50: www.devsharesrl.it risponde 200, ma è ancora la versione del 21/10 mattina (ultima modifica sul server 21/10 alle 09:47); il lavoro del pomeriggio (b31add1, servizi, contatti, orari) resta solo in locale in attesa dell'ok",
+              "fonte": "git, curl"
             }
           ],
           "prossimiPassi": [
@@ -1165,7 +1180,7 @@
           "nome": "Gestionale Bar Universal",
           "stato": "attivo",
           "spiegazione": "Gestionale per il bar: Tappa 1 completata sul dispositivo il 14/10 (magazzino con carico, scarto e inventario; ordini a stecche con ritiri e pagamenti; lista spesa; riepilogo). Solo in locale, nessun contatto col cliente.",
-          "ultimoAggiornamento": "2026-10-21",
+          "ultimoAggiornamento": "2026-10-22",
           "cronologia": [
             {
               "data": "2026-09-26",
@@ -1225,6 +1240,11 @@
               "data": "2026-10-21",
               "testo": "Controllo delle 20:50: nessun lavoro nuovo dal 14/10 (ultimo commit df7a15d)",
               "fonte": "bar-universal/sviluppo (git)"
+            },
+            {
+              "data": "2026-10-22",
+              "testo": "Controllo delle 08:50: nessun lavoro nuovo dal 14/10 (ultimo commit df7a15d in sviluppo/)",
+              "fonte": "git, curl"
             }
           ],
           "prossimiPassi": [
@@ -1255,7 +1275,7 @@
           "nome": "ilmondodibabypepita.it",
           "stato": "attivo",
           "spiegazione": "Online su ilmondodibabypepita.it. Il 18/10 tra 00:33 e 01:49 sono andati online la pagina «Premi, riconoscimenti e pubblicazioni letterarie», le schede «Poesie e opere» e «Premi» in home, la SEO completa (sitemap con 296 indirizzi) e il blog con 285 articoli dal vecchio WordPress più 5 dal vecchio Blogspot (ultimo commit online 14c624a). Pronti in locale, non online: il pannello per far scrivere Manilla (Decap CMS, commit 90aa749) e la dicitura completa del Premio «Ali e Radici» (commit fca40ab, 8:41). Dal 20/10 alle 23:42 è online la pagina Premi aggiornata: lettera intera della Segreteria di Stato con trascrizione, foto di «Destino», video de «La Ritmica dell'anima», targa e cofanetto di «Piccoli fari nella notte» (main 46a5173).",
-          "ultimoAggiornamento": "2026-10-21",
+          "ultimoAggiornamento": "2026-10-22",
           "cronologia": [
             {
               "data": "2026-09-16",
@@ -1346,6 +1366,11 @@
               "data": "2026-10-21",
               "testo": "14:03 online su main il footer con «Contatti (DevShare SRL)» e link alti 48px (51ef374). 18:53-20:09 in anteprima (branch anteprima-presentazioni, 3b3b423) la nuova sezione «Presentazioni» con pagina, scheda in home e sitemap; non online (presentazioni.html risponde 404 sul sito)",
               "fonte": "wip-babypepita (git), curl"
+            },
+            {
+              "data": "2026-10-22",
+              "testo": "Controllo delle 08:50: il sito risponde 200 e /premi.html 200; la sezione «Presentazioni» (3b3b423, branch anteprima-presentazioni) resta in anteprima e non è online (presentazioni.html 404); main fermo al 51ef374 del 21/10",
+              "fonte": "git, curl"
             }
           ],
           "prossimiPassi": [
