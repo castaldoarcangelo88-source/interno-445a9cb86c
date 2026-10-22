@@ -1,6 +1,6 @@
 {
   "versione": 1,
-  "ultimoAggiornamento": "2026-10-22T08:55:00+02:00",
+  "ultimoAggiornamento": "2026-10-22T20:55:00+02:00",
   "aggiornamento": "due volte al giorno (mattina e sera)",
   "fontiGenerali": [
     "quadro/GRAFO_PROGETTI.md",
@@ -904,6 +904,11 @@
               "data": "2026-10-22",
               "testo": "Controllo delle 08:50: nessun commit nuovo dopo il 2e204fb del 21/10 alle 13:25 (branch collegamenti-servizi, solo in locale); consegna 36 (nota R1) non ancora fatta; nota N3 sempre in attesa dell'Avvocato; natale.devsharesrl.it risponde 200",
               "fonte": "git, curl"
+            },
+            {
+              "data": "2026-10-22",
+              "testo": "Controllo delle 20:50: nessun commit nuovo dopo il 2e204fb del 21/10 alle 13:25 (branch collegamenti-servizi, solo in locale); consegna 36 (nota R1) non ancora fatta; nota N3 sempre in attesa dell'Avvocato; natale.devsharesrl.it risponde 200",
+              "fonte": "git, curl"
             }
           ],
           "prossimiPassi": [
@@ -1036,6 +1041,11 @@
               "data": "2026-10-22",
               "testo": "Controllo delle 08:50: www.landauto.it risponde 200 con il sito ufficiale; nessun commit nuovo dopo il c00c4cc del 16/10 alle 23:47",
               "fonte": "git, curl"
+            },
+            {
+              "data": "2026-10-22",
+              "testo": "Controllo delle 20:50: www.landauto.it risponde 200 con il sito ufficiale; nessun commit nuovo dopo il c00c4cc del 16/10 alle 23:47",
+              "fonte": "git, curl"
             }
           ],
           "prossimiPassi": [
@@ -1141,6 +1151,11 @@
               "data": "2026-10-22",
               "testo": "Controllo delle 08:50: www.devsharesrl.it risponde 200, ma è ancora la versione del 21/10 mattina (ultima modifica sul server 21/10 alle 09:47); il lavoro del pomeriggio (b31add1, servizi, contatti, orari) resta solo in locale in attesa dell'ok",
               "fonte": "git, curl"
+            },
+            {
+              "data": "2026-10-22",
+              "testo": "Controllo delle 20:50: www.devsharesrl.it risponde 200 e sul server risulta un nuovo caricamento oggi alle 19:14 (ora di Roma), ma la pagina contatti online non contiene ancora gli orari «su appuntamento» del lavoro b31add1 del 21/10: chi ha caricato e quale versione è da verificare",
+              "fonte": "git, curl"
             }
           ],
           "prossimiPassi": [
@@ -1244,6 +1259,11 @@
             {
               "data": "2026-10-22",
               "testo": "Controllo delle 08:50: nessun lavoro nuovo dal 14/10 (ultimo commit df7a15d in sviluppo/)",
+              "fonte": "git, curl"
+            },
+            {
+              "data": "2026-10-22",
+              "testo": "Controllo delle 20:50: nessun lavoro nuovo dal 14/10 (ultimo commit df7a15d in sviluppo/)",
               "fonte": "git, curl"
             }
           ],
@@ -1371,13 +1391,14 @@
               "data": "2026-10-22",
               "testo": "Controllo delle 08:50: il sito risponde 200 e /premi.html 200; la sezione «Presentazioni» (3b3b423, branch anteprima-presentazioni) resta in anteprima e non è online (presentazioni.html 404); main fermo al 51ef374 del 21/10",
               "fonte": "git, curl"
+            },
+            {
+              "data": "2026-10-22",
+              "testo": "Controllo delle 20:50: la sezione «Presentazioni» è online dalle 12:49 di oggi (merge 2989e85 su main, presentazioni.html risponde 200); sito e /premi.html rispondono 200",
+              "fonte": "git, curl"
             }
           ],
           "prossimiPassi": [
-            {
-              "passo": "Mostrare al Titolare l'anteprima «Presentazioni» e pubblicarla solo con il suo sì",
-              "scadenza": "da verificare"
-            },
             {
               "passo": "Prova guidata di Manilla nel pannello: bozza, «Pronto», «Pubblica»",
               "scadenza": "da verificare"
