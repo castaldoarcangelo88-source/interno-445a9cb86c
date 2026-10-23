@@ -1,6 +1,6 @@
 {
   "versione": 1,
-  "ultimoAggiornamento": "2026-10-23T08:50:00+02:00",
+  "ultimoAggiornamento": "2026-10-23T20:50:00+02:00",
   "aggiornamento": "due volte al giorno (mattina e sera)",
   "fontiGenerali": [
     "quadro/GRAFO_PROGETTI.md",
@@ -110,7 +110,7 @@
           "nome": "Backup VHosting",
           "stato": "bloccato",
           "spiegazione": "Dopo l'incidente del 05/10 salvati in locale gli export (10 caselle, 4.116 mail, 16 database). Mancano i file dei siti (circa 8 GB) e gli accessi live.",
-          "ultimoAggiornamento": "2026-10-21",
+          "ultimoAggiornamento": "2026-10-23",
           "cronologia": [
             {
               "data": "2026-10-05",
@@ -136,6 +136,11 @@
               "data": "2026-10-21",
               "testo": "Report Tech Ops 8:45: VHosting scade lunedì 26/10 (5 giorni); accessi del Titolare ancora mancanti; salvati solo gli export del 05/10 (10 caselle, 16 database), mancano i file dei siti (circa 8 GB) e la posta dopo il 05/10",
               "fonte": "resoconti-techops/REPORT_TECHOPS_2026-10-21_0845.md"
+            },
+            {
+              "data": "2026-10-23",
+              "testo": "Report Tech Ops 20:45: VHosting scade lunedì 26/10 (3 giorni); accessi del Titolare ancora mancanti; server raggiungibile, backup del 05/10 integro, script di export incrementale pronto. Rischio concreto di perdere dati se gli accessi non arrivano entro domenica.",
+              "fonte": "resoconti-techops/REPORT_TECHOPS_2026-10-23_2045.md"
             }
           ],
           "prossimiPassi": [
@@ -914,6 +919,11 @@
               "data": "2026-10-23",
               "testo": "Controllo delle 08:45: nessun commit nuovo dopo il 2e204fb del 21/10 alle 13:25 (branch collegamenti-servizi, solo in locale); consegna 36 (nota R1) non ancora fatta; nota N3 sempre in attesa dell'Avvocato; natale.devsharesrl.it risponde 200",
               "fonte": "git, curl"
+            },
+            {
+              "data": "2026-10-23",
+              "testo": "Controllo delle 20:45: nessun commit nuovo dopo il 2e204fb del 21/10 alle 13:25 (branch collegamenti-servizi); revisioni Tech Ops 33 e 35 presenti in docs/consegne ma non ancora salvate in git; natale.devsharesrl.it risponde 200. Esito della consegna successiva e nota N3 dell'Avvocato da verificare.",
+              "fonte": "pwa-natale/app, resoconti-techops/REPORT_TECHOPS_2026-10-23_2045.md"
             }
           ],
           "prossimiPassi": [
@@ -1056,6 +1066,11 @@
               "data": "2026-10-23",
               "testo": "Controllo delle 08:45: www.landauto.it risponde 200 con il sito ufficiale; nessun commit nuovo dopo il c00c4cc del 16/10 alle 23:47",
               "fonte": "git, curl"
+            },
+            {
+              "data": "2026-10-23",
+              "testo": "Controllo delle 20:45: www.landauto.it risponde 200 con il sito ufficiale (certificato valido); nessun lavoro nuovo. API Evita Multe sconsigliata in produzione senza termini, DPA e SLA (Tech Ops).",
+              "fonte": "resoconti-techops/REPORT_TECHOPS_2026-10-23_2045.md"
             }
           ],
           "prossimiPassi": [
@@ -1171,6 +1186,11 @@
               "data": "2026-10-23",
               "testo": "Controllo delle 08:45: www.devsharesrl.it risponde 200, ultimo caricamento sul server sempre il 22/10 alle 19:14; la pagina contatti online non contiene ancora gli orari «su appuntamento» del lavoro b31add1: quale versione è online resta da verificare",
               "fonte": "git, curl"
+            },
+            {
+              "data": "2026-10-23",
+              "testo": "Controllo delle 20:45: www.devsharesrl.it risponde 200, ultimo caricamento sul server il 22/10 alle 19:14. La pagina contatti online non mostra ancora gli orari lun-ven 9-13 e 15-19 su appuntamento: il commit b31add1 del 21/10 è nel branch orari-wa-da-main su GitHub, da portare su main e pubblicare con il workflow del Titolare.",
+              "fonte": "devsharesrl-vetrina/"
             }
           ],
           "prossimiPassi": [
@@ -1285,6 +1305,11 @@
               "data": "2026-10-23",
               "testo": "Controllo delle 08:45: nessun lavoro nuovo dal 14/10 (ultimo commit df7a15d in sviluppo/)",
               "fonte": "git, curl"
+            },
+            {
+              "data": "2026-10-23",
+              "testo": "Controllo delle 20:45: nessun lavoro nuovo dal 14/10.",
+              "fonte": "bar-universal/"
             }
           ],
           "prossimiPassi": [
@@ -1421,6 +1446,11 @@
               "data": "2026-10-23",
               "testo": "Controllo delle 08:45: sito, /premi.html e /presentazioni.html rispondono 200; main fermo al merge 2989e85 del 22/10 alle 12:49",
               "fonte": "git, curl"
+            },
+            {
+              "data": "2026-10-23",
+              "testo": "Controllo delle 20:45: ilmondodibabypepita.it risponde 200; main fermo al merge 2989e85 del 22/10 alle 12:49 (Presentazioni). Invito GitHub al pannello del blog per Manilla previsto entro il 26/10.",
+              "fonte": "wip-babypepita/"
             }
           ],
           "prossimiPassi": [
@@ -1568,6 +1598,52 @@
             "quadro/ALBERO_VIVO.md",
             "quadro/GRAFO_PROGETTI.md"
           ]
+        },
+        {
+          "id": "gestionale-csa",
+          "nome": "Gestionale CSA (PHP)",
+          "stato": "in-attesa",
+          "spiegazione": "Gestionale in PHP da mettere in sicurezza e portare su un dominio separato su Omegasus o su una VPS. Analisi del codice fatta, patch per i 2 problemi critici pronte in locale, non applicate sul server.",
+          "ultimoAggiornamento": "2026-10-23",
+          "cronologia": [
+            {
+              "data": "2026-10-23",
+              "testo": "Mattina: analisi del codice, 20 problemi di cui 2 critici; stime 40 ore più 50-70 ore, spostamento 12-16 ore.",
+              "fonte": "resoconti-pwa/CSA_resoconto_ABC.md"
+            },
+            {
+              "data": "2026-10-23",
+              "testo": "Sera (20:21-20:24): pronte in locale le patch per i 2 problemi critici (blocco via web di backup, log e configurazione; login e controllo anti-falsificazione sulla pagina categorie del magazzino, sintassi PHP verificata) e lo schema SQL ricostruito per le 5 tabelle che mancano dal backup. Nulla caricato sul server.",
+              "fonte": "resoconti-pwa/csa-patch-critiche/LEGGIMI_APPLICAZIONE.md, resoconti-pwa/CSA_5_tabelle_mancanti.sql"
+            }
+          ],
+          "prossimiPassi": [
+            {
+              "passo": "Revisione Tech Ops delle patch critiche e applicazione sul server con il sì del Titolare",
+              "scadenza": "da verificare"
+            },
+            {
+              "passo": "Togliere il backup del database dalla cartella pubblica e cambiare le password del database e degli utenti",
+              "scadenza": "da verificare"
+            },
+            {
+              "passo": "Scegliere dove ospitarlo (Omegasus, seconda VPS o VPS dedicata)",
+              "scadenza": "da verificare"
+            }
+          ],
+          "blocchi": [
+            "Accesso al server del gestionale per applicare le patch: da verificare",
+            "BlueVPS non adatta; dati della seconda VPS mancanti"
+          ],
+          "daTitolare": [
+            "Sì ad applicare le patch critiche e chi le carica",
+            "Dati della seconda VPS o ok a una VPS dedicata",
+            "Nome del dominio separato su Omegasus"
+          ],
+          "fonti": [
+            "resoconti-pwa/",
+            "resoconti-techops/INVENTARIO_VPS_CSA_2026-10-22.md"
+          ]
         }
       ]
     },
@@ -1652,7 +1728,7 @@
           "nome": "devshare.it (WIP e vetrina)",
           "stato": "attivo",
           "spiegazione": "Pagina «Work in progress» online con HTTPS; vetrina locale con 14 attività. Manca il CNAME www; il vecchio WordPress compromesso è da spegnere.",
-          "ultimoAggiornamento": "2026-10-20",
+          "ultimoAggiornamento": "2026-10-23",
           "cronologia": [
             {
               "data": "2026-09-23",
@@ -1713,6 +1789,11 @@
               "data": "2026-10-20",
               "testo": "Report Tech Ops 20:45: www.devshare.it ha ancora l'HTTPS sbagliato (serve il certificato di GitHub). Bozza di ticket a GitHub pronta, non inviata: serve il sì",
               "fonte": "resoconti-techops/REPORT_TECHOPS_2026-10-20_2045.md"
+            },
+            {
+              "data": "2026-10-23",
+              "testo": "Report Tech Ops 20:45: www.devshare.it ha ancora l'HTTPS sbagliato (certificato di github.io); devshare.it senza www funziona. Bozza di ticket a GitHub pronta, non inviata: serve il sì del Titolare.",
+              "fonte": "resoconti-techops/REPORT_TECHOPS_2026-10-23_2045.md"
             }
           ],
           "prossimiPassi": [],
