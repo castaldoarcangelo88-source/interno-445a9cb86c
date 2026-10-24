@@ -1,6 +1,6 @@
 {
   "versione": 1,
-  "ultimoAggiornamento": "2026-10-24T08:50:00+02:00",
+  "ultimoAggiornamento": "2026-10-24T20:50:00+02:00",
   "aggiornamento": "due volte al giorno (mattina e sera)",
   "fontiGenerali": [
     "quadro/GRAFO_PROGETTI.md",
@@ -146,6 +146,11 @@
               "data": "2026-10-24",
               "testo": "Report Tech Ops 8:45: VHosting scade lunedì 26/10 (2 giorni); accessi del Titolare ancora mancanti; server raggiungibile alle 8:35, script di export incrementale pronto. Mancano i file dei siti (circa 8 GB), la posta dopo il 05/10 e l'11ª casella. Rischio concreto di perdere dati se gli accessi non arrivano entro domenica.",
               "fonte": "resoconti-techops/REPORT_TECHOPS_2026-10-24_0845.md"
+            },
+            {
+              "data": "2026-10-24",
+              "testo": "Report Tech Ops 20:45: VHosting scade lunedì 26/10; accessi del Titolare ancora mancanti; rischio di perdere file dei siti (circa 8 GB) e posta se non arrivano entro domani.",
+              "fonte": "resoconti-techops/REPORT_TECHOPS_2026-10-24_2045.md"
             }
           ],
           "prossimiPassi": [
@@ -934,6 +939,11 @@
               "data": "2026-10-24",
               "testo": "Controllo delle 08:45: nessun commit nuovo dopo il 2e204fb del 21/10 alle 13:25 (branch collegamenti-servizi, solo in locale); revisioni Tech Ops 33 e 35 ancora non salvate in git; esito della consegna 36 mancante; nota N3 in attesa dell'Avvocato; natale.devsharesrl.it risponde 200.",
               "fonte": "git, curl, resoconti-techops/REPORT_TECHOPS_2026-10-24_0845.md"
+            },
+            {
+              "data": "2026-10-24",
+              "testo": "Controllo delle 20:45: nessun commit nuovo dopo il 2e204fb del 21/10 (branch collegamenti-servizi, solo in locale); revisioni Tech Ops 33 e 35 ancora fuori da git; esito della consegna 36 mancante; N3 in attesa dell'Avvocato; natale.devsharesrl.it risponde 200.",
+              "fonte": "git, curl, resoconti-techops/REPORT_TECHOPS_2026-10-24_2045.md"
             }
           ],
           "prossimiPassi": [
@@ -1086,6 +1096,11 @@
               "data": "2026-10-24",
               "testo": "Controllo delle 08:45: www.landauto.it risponde 200 con il sito ufficiale; nessun lavoro nuovo. API Evita Multe sconsigliata in produzione senza termini, DPA e SLA (Tech Ops).",
               "fonte": "curl, resoconti-techops/REPORT_TECHOPS_2026-10-24_0845.md"
+            },
+            {
+              "data": "2026-10-24",
+              "testo": "Controllo delle 20:45: www.landauto.it risponde 200 con il sito ufficiale; nessun lavoro nuovo.",
+              "fonte": "curl"
             }
           ],
           "prossimiPassi": [
@@ -1211,6 +1226,11 @@
               "data": "2026-10-24",
               "testo": "Controllo delle 08:45: www.devsharesrl.it risponde 200, ultimo caricamento sul server il 22/10 alle 19:14; la pagina contatti online non mostra ancora gli orari su appuntamento del commit b31add1, da portare su main e pubblicare con il workflow del Titolare.",
               "fonte": "git, curl"
+            },
+            {
+              "data": "2026-10-24",
+              "testo": "Controllo delle 20:45: www.devsharesrl.it risponde 200; nessun commit nuovo; gli orari su appuntamento (b31add1) sono ancora solo sul branch velocita-mobile, da portare su main e pubblicare con il workflow del Titolare.",
+              "fonte": "git, curl"
             }
           ],
           "prossimiPassi": [
@@ -1334,6 +1354,11 @@
             {
               "data": "2026-10-24",
               "testo": "Controllo delle 08:45: nessun lavoro nuovo dal 14/10 (ultimo commit df7a15d in sviluppo/).",
+              "fonte": "git"
+            },
+            {
+              "data": "2026-10-24",
+              "testo": "Controllo delle 20:45: nessun lavoro nuovo dal 14/10.",
               "fonte": "git"
             }
           ],
@@ -1481,6 +1506,11 @@
               "data": "2026-10-24",
               "testo": "Controllo delle 08:45: ilmondodibabypepita.it risponde 200; materiale FESTIVAL Open House non ancora lavorato; invito GitHub per il pannello del blog di Manilla da fare entro il 26/10 (Tech Ops).",
               "fonte": "curl, resoconti-techops/REPORT_TECHOPS_2026-10-24_0845.md"
+            },
+            {
+              "data": "2026-10-24",
+              "testo": "Oggi: online su main la sezione «Interviste e articoli» (8 articoli più La Voce del Nisseno, commit f6b5dbb; interviste-articoli.html risponde 200). Preparato il branch dominio-manillacastaldo (75828f0) per usare manillacastaldo.it come dominio principale, non pubblicato: il dominio risulta registrato a un'altra società (Register.it), non a DevShare, e va confermato l'accesso al pannello prima di toccare DNS o Pages.",
+              "fonte": "git, curl, resoconti-techops/REPORT_TECHOPS_2026-10-24_2045.md"
             }
           ],
           "prossimiPassi": [
@@ -1498,12 +1528,14 @@
             }
           ],
           "blocchi": [
-            "La pubblicazione della pagina Premi del 20/10 alle 23:42 non ha un sì del Titolare registrato"
+            "La pubblicazione della pagina Premi del 20/10 alle 23:42 non ha un sì del Titolare registrato",
+            "manillacastaldo.it non è registrato a DevShare: serve l'accesso al pannello del dominio"
           ],
           "daTitolare": [
             "Sì o no alla sezione «Presentazioni» (anteprima pronta)",
             "Confermare che la pagina Premi con la lettera intera del Papa doveva andare online (lo è dal 20/10 alle 23:42), oppure chiedere di tornare indietro",
-            "Ok alla dicitura del Premio «Ali e Radici»"
+            "Ok alla dicitura del Premio «Ali e Radici»",
+            "Accesso al pannello di manillacastaldo.it (o conferma di chi lo gestisce) per collegarlo al blog"
           ],
           "fonti": [
             "babypepita-recupero/",
