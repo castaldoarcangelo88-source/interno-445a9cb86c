@@ -1,6 +1,6 @@
 {
   "versione": 1,
-  "ultimoAggiornamento": "2026-10-24T20:50:00+02:00",
+  "ultimoAggiornamento": "2026-10-25T08:55:00+01:00",
   "aggiornamento": "due volte al giorno (mattina e sera)",
   "fontiGenerali": [
     "quadro/GRAFO_PROGETTI.md",
@@ -110,7 +110,7 @@
           "nome": "Backup VHosting",
           "stato": "bloccato",
           "spiegazione": "Dopo l'incidente del 05/10 salvati in locale gli export (10 caselle, 4.116 mail, 16 database). Mancano i file dei siti (circa 8 GB) e gli accessi live.",
-          "ultimoAggiornamento": "2026-10-24",
+          "ultimoAggiornamento": "2026-10-25",
           "cronologia": [
             {
               "data": "2026-10-05",
@@ -151,6 +151,11 @@
               "data": "2026-10-24",
               "testo": "Report Tech Ops 20:45: VHosting scade lunedì 26/10; accessi del Titolare ancora mancanti; rischio di perdere file dei siti (circa 8 GB) e posta se non arrivano entro domani.",
               "fonte": "resoconti-techops/REPORT_TECHOPS_2026-10-24_2045.md"
+            },
+            {
+              "data": "2026-10-25",
+              "testo": "VHosting scade domani, lunedì 26/10: accessi del Titolare ancora mancanti, nessun file nuovo nel backup dopo il 24/10 alle 18:19. Mancano i file dei siti (circa 8 GB), la posta dopo il 05/10 e l'11ª casella. Senza accessi oggi c'è rischio di perdere dati.",
+              "fonte": "Report Tech Ops 08:45 resoconti-techops/REPORT_TECHOPS_2026-10-25_0845.md"
             }
           ],
           "prossimiPassi": [
@@ -818,7 +823,7 @@
           "nome": "PWA Natale",
           "stato": "attivo",
           "spiegazione": "App di Natale con voce e biglietto QR. Ultima consegna: n. 35 (17/10, 9:09-9:10, commit 01e0a35 e bdc7276, solo in locale): ogni tentativo di scaricare le voci ha il suo controllo di interruzione. Tech Ops l'ha approvata con note (356 test automatici e 53 prove sul browser passati). Prossima consegna n. 36 il 21/10. In attesa del sì alla soluzione minima dell'Avvocato («Voce generata al computer»).",
-          "ultimoAggiornamento": "2026-10-24",
+          "ultimoAggiornamento": "2026-10-25",
           "cronologia": [
             {
               "data": "2026-09-27",
@@ -944,6 +949,11 @@
               "data": "2026-10-24",
               "testo": "Controllo delle 20:45: nessun commit nuovo dopo il 2e204fb del 21/10 (branch collegamenti-servizi, solo in locale); revisioni Tech Ops 33 e 35 ancora fuori da git; esito della consegna 36 mancante; N3 in attesa dell'Avvocato; natale.devsharesrl.it risponde 200.",
               "fonte": "git, curl, resoconti-techops/REPORT_TECHOPS_2026-10-24_2045.md"
+            },
+            {
+              "data": "2026-10-25",
+              "testo": "Controllo delle 08:45: nessun commit nuovo dopo il 2e204fb del 21/10 (branch collegamenti-servizi, solo in locale); revisioni Tech Ops 33 e 35 ancora fuori da git; esito della consegna 36 mancante; N3 in attesa dell'Avvocato; natale.devsharesrl.it risponde 200.",
+              "fonte": "git, curl, resoconti-techops/REPORT_TECHOPS_2026-10-25_0845.md"
             }
           ],
           "prossimiPassi": [
@@ -985,7 +995,7 @@
           "nome": "Land auto (landauto.it)",
           "stato": "attivo",
           "spiegazione": "Sito ufficiale online su www.landauto.it (GitHub Pages, branch «produzione»), con ritorno alla pagina di attesa possibile in un minuto. Fatto il 15/10: solo P.IVA, sede ad Afragola, firma «Realizzato da DevShare SRL», foto non scaricabili, FAQ col testo del cliente.",
-          "ultimoAggiornamento": "2026-10-24",
+          "ultimoAggiornamento": "2026-10-25",
           "cronologia": [
             {
               "data": "2026-10-12",
@@ -1101,6 +1111,11 @@
               "data": "2026-10-24",
               "testo": "Controllo delle 20:45: www.landauto.it risponde 200 con il sito ufficiale; nessun lavoro nuovo.",
               "fonte": "curl"
+            },
+            {
+              "data": "2026-10-25",
+              "testo": "Controllo delle 08:45: www.landauto.it risponde 200 con il sito ufficiale; nessun lavoro nuovo.",
+              "fonte": "curl"
             }
           ],
           "prossimiPassi": [
@@ -1130,7 +1145,7 @@
           "nome": "Vetrina devsharesrl.it",
           "stato": "attivo",
           "spiegazione": "Sito devsharesrl.it su Omegasus. Online dal 17/10 alle 23:35 la prima versione (commit a0903cd); dal 19/10 alle 22:56 circa è online la versione SEO (branch «seo», ultimo commit 3650500): indirizzi veri con pagine statiche, sitemap, robots, .htaccess, blog statico con 3 articoli, modulo contatti verso info@devsharesrl.it, GA4 solo dopo il consenso iubenda, footer con dati legali e «Supporto tecnico».",
-          "ultimoAggiornamento": "2026-10-24",
+          "ultimoAggiornamento": "2026-10-25",
           "cronologia": [
             {
               "data": "2026-10-15",
@@ -1231,6 +1246,11 @@
               "data": "2026-10-24",
               "testo": "Controllo delle 20:45: www.devsharesrl.it risponde 200; nessun commit nuovo; gli orari su appuntamento (b31add1) sono ancora solo sul branch velocita-mobile, da portare su main e pubblicare con il workflow del Titolare.",
               "fonte": "git, curl"
+            },
+            {
+              "data": "2026-10-25",
+              "testo": "Controllo delle 08:45: www.devsharesrl.it risponde 200, ultimo caricamento sul server ancora il 22/10 alle 19:14; gli orari su appuntamento (b31add1) sono ancora solo sul branch velocita-mobile, da portare su main e pubblicare con il workflow del Titolare.",
+              "fonte": "git, curl"
             }
           ],
           "prossimiPassi": [
@@ -1270,7 +1290,7 @@
           "nome": "Gestionale Bar Universal",
           "stato": "attivo",
           "spiegazione": "Gestionale per il bar: Tappa 1 completata sul dispositivo il 14/10 (magazzino con carico, scarto e inventario; ordini a stecche con ritiri e pagamenti; lista spesa; riepilogo). Solo in locale, nessun contatto col cliente.",
-          "ultimoAggiornamento": "2026-10-24",
+          "ultimoAggiornamento": "2026-10-25",
           "cronologia": [
             {
               "data": "2026-09-26",
@@ -1360,6 +1380,11 @@
               "data": "2026-10-24",
               "testo": "Controllo delle 20:45: nessun lavoro nuovo dal 14/10.",
               "fonte": "git"
+            },
+            {
+              "data": "2026-10-25",
+              "testo": "Controllo delle 08:45: nessun lavoro nuovo dal 14/10.",
+              "fonte": "git"
             }
           ],
           "prossimiPassi": [
@@ -1390,7 +1415,7 @@
           "nome": "ilmondodibabypepita.it",
           "stato": "attivo",
           "spiegazione": "Online su ilmondodibabypepita.it. Il 18/10 tra 00:33 e 01:49 sono andati online la pagina «Premi, riconoscimenti e pubblicazioni letterarie», le schede «Poesie e opere» e «Premi» in home, la SEO completa (sitemap con 296 indirizzi) e il blog con 285 articoli dal vecchio WordPress più 5 dal vecchio Blogspot (ultimo commit online 14c624a). Pronti in locale, non online: il pannello per far scrivere Manilla (Decap CMS, commit 90aa749) e la dicitura completa del Premio «Ali e Radici» (commit fca40ab, 8:41). Dal 20/10 alle 23:42 è online la pagina Premi aggiornata: lettera intera della Segreteria di Stato con trascrizione, foto di «Destino», video de «La Ritmica dell'anima», targa e cofanetto di «Piccoli fari nella notte» (main 46a5173).",
-          "ultimoAggiornamento": "2026-10-24",
+          "ultimoAggiornamento": "2026-10-25",
           "cronologia": [
             {
               "data": "2026-09-16",
@@ -1511,6 +1536,11 @@
               "data": "2026-10-24",
               "testo": "Oggi: online su main la sezione «Interviste e articoli» (8 articoli più La Voce del Nisseno, commit f6b5dbb; interviste-articoli.html risponde 200). Preparato il branch dominio-manillacastaldo (75828f0) per usare manillacastaldo.it come dominio principale, non pubblicato: il dominio risulta registrato a un'altra società (Register.it), non a DevShare, e va confermato l'accesso al pannello prima di toccare DNS o Pages.",
               "fonte": "git, curl, resoconti-techops/REPORT_TECHOPS_2026-10-24_2045.md"
+            },
+            {
+              "data": "2026-10-25",
+              "testo": "Controllo delle 08:45: ilmondodibabypepita.it risponde 200; nessun commit nuovo dopo il 24/10; branch dominio-manillacastaldo (75828f0) pronto ma non pubblicato: serve conferma dell'accesso al pannello di manillacastaldo.it (registrato tramite Register.it a un'altra società); invito GitHub per il pannello del blog entro il 26/10.",
+              "fonte": "git, curl, resoconti-techops/REPORT_TECHOPS_2026-10-25_0845.md"
             }
           ],
           "prossimiPassi": [
