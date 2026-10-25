@@ -1,6 +1,6 @@
 {
   "versione": 1,
-  "ultimoAggiornamento": "2026-10-25T08:55:00+01:00",
+  "ultimoAggiornamento": "2026-10-25T20:50:00+01:00",
   "aggiornamento": "due volte al giorno (mattina e sera)",
   "fontiGenerali": [
     "quadro/GRAFO_PROGETTI.md",
@@ -954,6 +954,11 @@
               "data": "2026-10-25",
               "testo": "Controllo delle 08:45: nessun commit nuovo dopo il 2e204fb del 21/10 (branch collegamenti-servizi, solo in locale); revisioni Tech Ops 33 e 35 ancora fuori da git; esito della consegna 36 mancante; N3 in attesa dell'Avvocato; natale.devsharesrl.it risponde 200.",
               "fonte": "git, curl, resoconti-techops/REPORT_TECHOPS_2026-10-25_0845.md"
+            },
+            {
+              "data": "2026-10-25",
+              "testo": "Controllo delle 20:45: nessun commit nuovo dopo il 2e204fb del 21/10 (branch collegamenti-servizi, solo in locale); revisioni Tech Ops 33 e 35 ancora fuori da git; esito della consegna 36 mancante; N3 in attesa dell'Avvocato; natale.devsharesrl.it risponde 200.",
+              "fonte": "git, curl, resoconti-techops/REPORT_TECHOPS_2026-10-25_2045.md"
             }
           ],
           "prossimiPassi": [
@@ -1116,6 +1121,11 @@
               "data": "2026-10-25",
               "testo": "Controllo delle 08:45: www.landauto.it risponde 200 con il sito ufficiale; nessun lavoro nuovo.",
               "fonte": "curl"
+            },
+            {
+              "data": "2026-10-25",
+              "testo": "Controllo delle 20:45: www.landauto.it risponde 200 con il sito ufficiale; nessun lavoro nuovo.",
+              "fonte": "curl"
             }
           ],
           "prossimiPassi": [
@@ -1144,7 +1154,7 @@
           "id": "vetrina-devsharesrl",
           "nome": "Vetrina devsharesrl.it",
           "stato": "attivo",
-          "spiegazione": "Sito devsharesrl.it su Omegasus. Online dal 17/10 alle 23:35 la prima versione (commit a0903cd); dal 19/10 alle 22:56 circa è online la versione SEO (branch «seo», ultimo commit 3650500): indirizzi veri con pagine statiche, sitemap, robots, .htaccess, blog statico con 3 articoli, modulo contatti verso info@devsharesrl.it, GA4 solo dopo il consenso iubenda, footer con dati legali e «Supporto tecnico».",
+          "spiegazione": "Sito devsharesrl.it su Omegasus. Unica fonte il ramo main di devsharesrl-sorgente, pubblicato con il workflow «Pubblica devsharesrl.it». Ultima pubblicazione 25/10 alle 16:11 (commit d0594fd): pagine statiche SEO, sitemap, blog, pagina «Lavori», orari su appuntamento, contatti WhatsApp, Telegram, email e PEC senza numero di telefono in chiaro, GA4 solo dopo il consenso iubenda.",
           "ultimoAggiornamento": "2026-10-25",
           "cronologia": [
             {
@@ -1251,11 +1261,16 @@
               "data": "2026-10-25",
               "testo": "Controllo delle 08:45: www.devsharesrl.it risponde 200, ultimo caricamento sul server ancora il 22/10 alle 19:14; gli orari su appuntamento (b31add1) sono ancora solo sul branch velocita-mobile, da portare su main e pubblicare con il workflow del Titolare.",
               "fonte": "git, curl"
+            },
+            {
+              "data": "2026-10-25",
+              "testo": "Oggi due pubblicazioni con il workflow «Pubblica devsharesrl.it» dal ramo main (alle 13:44 e alle 16:11, entrambe riuscite). Unite su main la PR 4 (orari su appuntamento, servizi collegati, /wa), la PR 5 (nuova pagina «Lavori» /lavori/, risponde 200) e la PR 6 (footer più leggero su mobile; tolti numero di telefono in chiaro, pulsante Chiama e link tel:, restano WhatsApp, Telegram, email e PEC). Ultimo commit d0594fd. Controllo delle 20:45: la pagina Contatti mostra gli orari lun-ven 9-13 e 15-19 su appuntamento.",
+              "fonte": "GitHub devsharesrl-sorgente (PR 4, 5, 6), curl"
             }
           ],
           "prossimiPassi": [
             {
-              "passo": "Revisione Tech Ops del branch velocita-mobile e pubblicazione con pubblica.bat dal PC del Titolare, solo con suo ok",
+              "passo": "Revisione Tech Ops della versione online del 25/10 (pagina Lavori, footer mobile, contatti senza telefono)",
               "scadenza": "da verificare"
             },
             {
@@ -1273,7 +1288,6 @@
           ],
           "blocchi": [],
           "daTitolare": [
-            "Ok a pubblicare il lavoro del 21/10 pomeriggio (servizi, contatti, orari, velocità)",
             "Ok all'anteprima del blog con grafiche e pulsante WhatsApp",
             "Logo e immagini vere, se vuole sostituire quelle attuali"
           ],
@@ -1384,6 +1398,11 @@
             {
               "data": "2026-10-25",
               "testo": "Controllo delle 08:45: nessun lavoro nuovo dal 14/10.",
+              "fonte": "git"
+            },
+            {
+              "data": "2026-10-25",
+              "testo": "Controllo delle 20:45: nessun lavoro nuovo dal 14/10.",
               "fonte": "git"
             }
           ],
@@ -1541,6 +1560,11 @@
               "data": "2026-10-25",
               "testo": "Controllo delle 08:45: ilmondodibabypepita.it risponde 200; nessun commit nuovo dopo il 24/10; branch dominio-manillacastaldo (75828f0) pronto ma non pubblicato: serve conferma dell'accesso al pannello di manillacastaldo.it (registrato tramite Register.it a un'altra società); invito GitHub per il pannello del blog entro il 26/10.",
               "fonte": "git, curl, resoconti-techops/REPORT_TECHOPS_2026-10-25_0845.md"
+            },
+            {
+              "data": "2026-10-25",
+              "testo": "Oggi alle 15:50 circa, con l'ok di Manilla, pubblicata la sezione «Incontri ed eventi» (commit 9a84fde): la home la mostra, ultimo caricamento alle 15:51. Controllo delle 20:45: ilmondodibabypepita.it risponde 200; il branch dominio-manillacastaldo (75828f0) resta non pubblicato in attesa dell'accesso al pannello di manillacastaldo.it; invito GitHub per il pannello del blog entro il 26/10.",
+              "fonte": "curl, git, curl, resoconti-techops/REPORT_TECHOPS_2026-10-25_2045.md"
             }
           ],
           "prossimiPassi": [
