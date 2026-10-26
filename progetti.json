@@ -1,6 +1,6 @@
 {
   "versione": 1,
-  "ultimoAggiornamento": "2026-10-26T08:50:00+01:00",
+  "ultimoAggiornamento": "2026-10-26T20:50:00+01:00",
   "aggiornamento": "due volte al giorno (mattina e sera)",
   "fontiGenerali": [
     "quadro/GRAFO_PROGETTI.md",
@@ -963,6 +963,11 @@
             {
               "data": "2026-10-26",
               "testo": "Controllo delle 08:45: nessun commit nuovo dopo il 2e204fb del 21/10 (branch collegamenti-servizi, solo in locale); revisioni Tech Ops 33 e 35 ancora fuori da git; esito della consegna 36 mancante. natale.devsharesrl.it risponde 200."
+            },
+            {
+              "data": "2026-10-26",
+              "testo": "Controllo delle 20:45: nessun commit nuovo dopo il 2e204fb del 21/10 (branch collegamenti-servizi, solo in locale); revisioni Tech Ops 33 e 35 ancora fuori da git; esito della consegna 36 mancante; N3 in attesa dell'Avvocato (resoconto Tech Ops delle 20:45). natale.devsharesrl.it risponde 200.",
+              "fonte": "git, curl, resoconti-techops/REPORT_TECHOPS_2026-10-26_2045.md"
             }
           ],
           "prossimiPassi": [
@@ -1134,6 +1139,11 @@
             {
               "data": "2026-10-26",
               "testo": "Controllo delle 08:45: www.landauto.it risponde 200 con il sito ufficiale; nessun lavoro nuovo."
+            },
+            {
+              "data": "2026-10-26",
+              "testo": "Controllo delle 20:45: www.landauto.it risponde 200 con il sito ufficiale; nessun lavoro nuovo.",
+              "fonte": "git, curl, resoconti-techops/REPORT_TECHOPS_2026-10-26_2045.md"
             }
           ],
           "prossimiPassi": [
@@ -1278,6 +1288,11 @@
             {
               "data": "2026-10-26",
               "testo": "Ieri sera alle 21:55 e 21:57 due pubblicazioni riuscite con il workflow «Pubblica devsharesrl.it» dal ramo main: online l'articolo del blog «Spazio cloud pieno? Come liberare iCloud e Google Drive» (PR 7 unita alle 21:42), verificato su /blog/. Stamattina alle 08:11 pronta l'anteprima del footer compatto (PR 8, commit 1cf3272, da non unire senza il sì del Titolare). Il sito risponde 200."
+            },
+            {
+              "data": "2026-10-26",
+              "testo": "Controllo delle 20:45: nessuna pubblicazione nuova oggi (ultima ieri alle 21:57); la PR 8 (footer compatto) è ancora aperta e non unita, in attesa del sì del Titolare. Il sito risponde 200.",
+              "fonte": "git, curl, resoconti-techops/REPORT_TECHOPS_2026-10-26_2045.md"
             }
           ],
           "prossimiPassi": [
@@ -1421,6 +1436,11 @@
             {
               "data": "2026-10-26",
               "testo": "Controllo delle 08:45: nessun lavoro nuovo dal 14/10."
+            },
+            {
+              "data": "2026-10-26",
+              "testo": "Controllo delle 20:45: nessun lavoro nuovo dal 14/10.",
+              "fonte": "git, curl, resoconti-techops/REPORT_TECHOPS_2026-10-26_2045.md"
             }
           ],
           "prossimiPassi": [
@@ -1586,6 +1606,11 @@
             {
               "data": "2026-10-26",
               "testo": "Controllo delle 08:45: ilmondodibabypepita.it risponde 200; nessun commit nuovo dopo la sezione «Incontri ed eventi» del 25/10; branch dominio-manillacastaldo ancora non pubblicato."
+            },
+            {
+              "data": "2026-10-26",
+              "testo": "Controllo delle 20:45: ilmondodibabypepita.it risponde 200. Secondo il resoconto Tech Ops delle 20:45 l'esito dell'invito GitHub per il pannello del blog (scadenza oggi) e la conferma dell'accesso al pannello di manillacastaldo.it sono ancora da verificare.",
+              "fonte": "git, curl, resoconti-techops/REPORT_TECHOPS_2026-10-26_2045.md"
             }
           ],
           "prossimiPassi": [
