@@ -1,6 +1,6 @@
 {
   "versione": 1,
-  "ultimoAggiornamento": "2026-10-28T08:30:00+01:00",
+  "ultimoAggiornamento": "2026-10-28T20:30:00+01:00",
   "aggiornamento": "due volte al giorno (mattina e sera)",
   "fontiGenerali": [
     "quadro/GRAFO_PROGETTI.md",
@@ -166,6 +166,11 @@
               "data": "2026-10-28",
               "testo": "Tech Ops (27/10 20:45): VHosting scaduto il 26/10, export non eseguito; serve la decisione del Titolare su rinnovo o proroga.",
               "fonte": "git, curl, resoconti-techops/REPORT_TECHOPS_2026-10-27_2045.md"
+            },
+            {
+              "data": "2026-10-28",
+              "testo": "Tech Ops (28/10 08:45): VHosting scaduto il 26/10, export non eseguito; serve ancora la decisione del Titolare su rinnovo o proroga.",
+              "fonte": "git, curl, resoconti-techops/REPORT_TECHOPS_2026-10-28_0845.md"
             }
           ],
           "prossimiPassi": [
@@ -988,6 +993,11 @@
               "data": "2026-10-28",
               "testo": "Controllo delle 08:25: nessun commit nuovo dopo il 2e204fb del 21/10 (branch collegamenti-servizi, solo in locale); revisioni Tech Ops 33 e 35 ancora fuori da git; esito della consegna 36 mancante; N3 ancora in attesa dell'Avvocato. natale.devsharesrl.it risponde 200.",
               "fonte": "git, curl, resoconti-techops/REPORT_TECHOPS_2026-10-27_2045.md"
+            },
+            {
+              "data": "2026-10-28",
+              "testo": "Controllo delle 20:25: nessun commit nuovo dopo il 2e204fb del 21/10 (branch collegamenti-servizi, solo in locale); revisioni Tech Ops 33 e 35 ancora fuori da git; esito della consegna 36 mancante; N3 ancora in attesa dell'Avvocato. natale.devsharesrl.it risponde 200.",
+              "fonte": "git, curl, resoconti-techops/REPORT_TECHOPS_2026-10-28_0845.md"
             }
           ],
           "prossimiPassi": [
@@ -1174,6 +1184,11 @@
               "data": "2026-10-28",
               "testo": "Controllo delle 08:25: www.landauto.it risponde 200 con il sito ufficiale; nessun lavoro nuovo.",
               "fonte": "git, curl, resoconti-techops/REPORT_TECHOPS_2026-10-27_2045.md"
+            },
+            {
+              "data": "2026-10-28",
+              "testo": "Controllo delle 20:25: www.landauto.it risponde 200 con il sito ufficiale; nessun lavoro nuovo.",
+              "fonte": "git, curl, resoconti-techops/REPORT_TECHOPS_2026-10-28_0845.md"
             }
           ],
           "prossimiPassi": [
