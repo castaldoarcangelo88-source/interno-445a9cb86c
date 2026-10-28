@@ -1,6 +1,6 @@
 {
   "versione": 1,
-  "ultimoAggiornamento": "2026-10-27T20:45:00+01:00",
+  "ultimoAggiornamento": "2026-10-28T08:30:00+01:00",
   "aggiornamento": "due volte al giorno (mattina e sera)",
   "fontiGenerali": [
     "quadro/GRAFO_PROGETTI.md",
@@ -110,7 +110,7 @@
           "nome": "Backup VHosting",
           "stato": "bloccato",
           "spiegazione": "Dopo l'incidente del 05/10 salvati in locale gli export (10 caselle, 4.116 mail, 16 database). Mancano i file dei siti (circa 8 GB) e gli accessi live.",
-          "ultimoAggiornamento": "2026-10-27",
+          "ultimoAggiornamento": "2026-10-28",
           "cronologia": [
             {
               "data": "2026-10-05",
@@ -161,6 +161,11 @@
               "data": "2026-10-27",
               "testo": "Secondo Tech Ops (27/10 08:45) VHosting è scaduto il 26/10 e l'ultima copia non risulta fatta; serve la decisione del Titolare su rinnovo o proroga.",
               "fonte": "git, curl, resoconti-techops/REPORT_TECHOPS_2026-10-27_0845.md"
+            },
+            {
+              "data": "2026-10-28",
+              "testo": "Tech Ops (27/10 20:45): VHosting scaduto il 26/10, export non eseguito; serve la decisione del Titolare su rinnovo o proroga.",
+              "fonte": "git, curl, resoconti-techops/REPORT_TECHOPS_2026-10-27_2045.md"
             }
           ],
           "prossimiPassi": [
@@ -828,7 +833,7 @@
           "nome": "PWA Natale",
           "stato": "attivo",
           "spiegazione": "App di Natale con voce e biglietto QR. Ultima consegna: n. 35 (17/10, 9:09-9:10, commit 01e0a35 e bdc7276, solo in locale): ogni tentativo di scaricare le voci ha il suo controllo di interruzione. Tech Ops l'ha approvata con note (356 test automatici e 53 prove sul browser passati). Prossima consegna n. 36 il 21/10. In attesa del sì alla soluzione minima dell'Avvocato («Voce generata al computer»).",
-          "ultimoAggiornamento": "2026-10-27",
+          "ultimoAggiornamento": "2026-10-28",
           "cronologia": [
             {
               "data": "2026-09-27",
@@ -978,6 +983,11 @@
               "data": "2026-10-27",
               "testo": "Controllo delle 20:30: nessun commit nuovo dopo il 2e204fb del 21/10 (branch collegamenti-servizi, solo in locale); revisioni Tech Ops 33 e 35 ancora fuori da git; esito della consegna 36 mancante; N3 ancora in attesa dell'Avvocato. natale.devsharesrl.it risponde 200.",
               "fonte": "git, curl, resoconti-techops/REPORT_TECHOPS_2026-10-27_0845.md"
+            },
+            {
+              "data": "2026-10-28",
+              "testo": "Controllo delle 08:25: nessun commit nuovo dopo il 2e204fb del 21/10 (branch collegamenti-servizi, solo in locale); revisioni Tech Ops 33 e 35 ancora fuori da git; esito della consegna 36 mancante; N3 ancora in attesa dell'Avvocato. natale.devsharesrl.it risponde 200.",
+              "fonte": "git, curl, resoconti-techops/REPORT_TECHOPS_2026-10-27_2045.md"
             }
           ],
           "prossimiPassi": [
@@ -1019,7 +1029,7 @@
           "nome": "Land auto (landauto.it)",
           "stato": "attivo",
           "spiegazione": "Sito ufficiale online su www.landauto.it (GitHub Pages, branch «produzione»), con ritorno alla pagina di attesa possibile in un minuto. Fatto il 15/10: solo P.IVA, sede ad Afragola, firma «Realizzato da DevShare SRL», foto non scaricabili, FAQ col testo del cliente.",
-          "ultimoAggiornamento": "2026-10-27",
+          "ultimoAggiornamento": "2026-10-28",
           "cronologia": [
             {
               "data": "2026-10-12",
@@ -1159,6 +1169,11 @@
               "data": "2026-10-27",
               "testo": "Controllo delle 20:30: www.landauto.it risponde 200 con il sito ufficiale; nessun lavoro nuovo.",
               "fonte": "git, curl, resoconti-techops/REPORT_TECHOPS_2026-10-27_0845.md"
+            },
+            {
+              "data": "2026-10-28",
+              "testo": "Controllo delle 08:25: www.landauto.it risponde 200 con il sito ufficiale; nessun lavoro nuovo.",
+              "fonte": "git, curl, resoconti-techops/REPORT_TECHOPS_2026-10-27_2045.md"
             }
           ],
           "prossimiPassi": [
@@ -1188,7 +1203,7 @@
           "nome": "Vetrina devsharesrl.it",
           "stato": "attivo",
           "spiegazione": "Sito devsharesrl.it su Omegasus. Unica fonte il ramo main di devsharesrl-sorgente, pubblicato con il workflow «Pubblica devsharesrl.it». Ultima pubblicazione 25/10 alle 16:11 (commit d0594fd): pagine statiche SEO, sitemap, blog, pagina «Lavori», orari su appuntamento, contatti WhatsApp, Telegram, email e PEC senza numero di telefono in chiaro, GA4 solo dopo il consenso iubenda.",
-          "ultimoAggiornamento": "2026-10-27",
+          "ultimoAggiornamento": "2026-10-28",
           "cronologia": [
             {
               "data": "2026-10-15",
@@ -1313,6 +1328,11 @@
               "data": "2026-10-27",
               "testo": "Controllo delle 20:30: nessuna pubblicazione nuova (ultima il 25/10 alle 21:57); la PR 8 (footer compatto) è ancora aperta e non unita, in attesa del sì del Titolare. Il sito risponde 200.",
               "fonte": "git, curl, resoconti-techops/REPORT_TECHOPS_2026-10-27_0845.md"
+            },
+            {
+              "data": "2026-10-28",
+              "testo": "Controllo delle 08:25: www.devsharesrl.it risponde 200; PR 8 (footer compatto, anteprima) ancora aperta in attesa del sì del Titolare; nessuna pubblicazione nuova.",
+              "fonte": "git, curl, resoconti-techops/REPORT_TECHOPS_2026-10-27_2045.md"
             }
           ],
           "prossimiPassi": [
