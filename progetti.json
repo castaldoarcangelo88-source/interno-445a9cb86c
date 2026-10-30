@@ -1,6 +1,6 @@
 {
   "versione": 1,
-  "ultimoAggiornamento": "2026-10-30T08:30:00+01:00",
+  "ultimoAggiornamento": "2026-10-30T20:30:00+01:00",
   "aggiornamento": "due volte al giorno (mattina e sera)",
   "fontiGenerali": [
     "quadro/GRAFO_PROGETTI.md",
@@ -1018,6 +1018,11 @@
               "data": "2026-10-30",
               "testo": "Controllo delle 08:25: nessun commit nuovo dopo il 2e204fb del 21/10 (branch collegamenti-servizi, solo in locale); revisioni Tech Ops 33 e 35 ancora fuori da git; esito della consegna 36 mancante; N3 ancora in attesa dell'Avvocato. natale.devsharesrl.it risponde 200.",
               "fonte": "git, curl, gh, quadro/STORICO.md"
+            },
+            {
+              "data": "2026-10-30",
+              "testo": "Controllo delle 20:20: nessun commit nuovo dopo il 2e204fb del 21/10 (branch collegamenti-servizi, solo in locale); revisioni Tech Ops 33 e 35 ancora fuori da git; esito della consegna 36 mancante; N3 ancora in attesa dell'Avvocato. natale.devsharesrl.it risponde 200.",
+              "fonte": "git, curl, gh, quadro/STORICO.md"
             }
           ],
           "prossimiPassi": [
@@ -1224,6 +1229,11 @@
               "data": "2026-10-30",
               "testo": "Controllo delle 08:25: www.landauto.it risponde 200 con il sito ufficiale; nessun lavoro nuovo.",
               "fonte": "git, curl, gh, quadro/STORICO.md"
+            },
+            {
+              "data": "2026-10-30",
+              "testo": "Controllo delle 20:20: www.landauto.it risponde 200 con il sito ufficiale; nessun lavoro nuovo.",
+              "fonte": "git, curl, gh, quadro/STORICO.md"
             }
           ],
           "prossimiPassi": [
@@ -1392,6 +1402,11 @@
             {
               "data": "2026-10-30",
               "testo": "Controllo delle 08:25: www.devsharesrl.it risponde 200; PR 8 (footer compatto, anteprima) ancora aperta in attesa del sì del Titolare. Secondo il resoconto DevShare del 29/10 sera, la Search Console ha verificato devsharesrl.it come proprietà Dominio verso le 11:32 del 29/10.",
+              "fonte": "git, curl, gh, quadro/STORICO.md"
+            },
+            {
+              "data": "2026-10-30",
+              "testo": "Controllo delle 20:20: www.devsharesrl.it risponde 200; PR 8 (footer compatto, anteprima) ancora aperta in attesa del sì del Titolare. Banner ho. Mobile: il Capo ha fermato alle 15:56 il ramo di anteprima di Sviluppo PWA perché è già online la versione di Tech Ops su devshare.it; il ramo non va unito.",
               "fonte": "git, curl, gh, quadro/STORICO.md"
             }
           ],
