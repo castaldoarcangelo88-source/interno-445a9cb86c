@@ -1,6 +1,6 @@
 {
   "versione": 1,
-  "ultimoAggiornamento": "2026-10-30T20:30:00+01:00",
+  "ultimoAggiornamento": "2026-10-31T08:30:00+01:00",
   "aggiornamento": "due volte al giorno (mattina e sera)",
   "fontiGenerali": [
     "quadro/GRAFO_PROGETTI.md",
@@ -1023,6 +1023,11 @@
               "data": "2026-10-30",
               "testo": "Controllo delle 20:20: nessun commit nuovo dopo il 2e204fb del 21/10 (branch collegamenti-servizi, solo in locale); revisioni Tech Ops 33 e 35 ancora fuori da git; esito della consegna 36 mancante; N3 ancora in attesa dell'Avvocato. natale.devsharesrl.it risponde 200.",
               "fonte": "git, curl, gh, quadro/STORICO.md"
+            },
+            {
+              "data": "2026-10-31",
+              "testo": "Controllo delle 08:25 del 31/10: nessun commit nuovo dopo il 2e204fb del 21/10 (branch collegamenti-servizi, solo in locale); revisioni Tech Ops 33 e 35 ancora fuori da git; esito della consegna 36 mancante; N3 ancora in attesa dell'Avvocato. natale.devsharesrl.it risponde 200.",
+              "fonte": "git, curl, gh, quadro/STORICO.md"
             }
           ],
           "prossimiPassi": [
@@ -1234,6 +1239,11 @@
               "data": "2026-10-30",
               "testo": "Controllo delle 20:20: www.landauto.it risponde 200 con il sito ufficiale; nessun lavoro nuovo.",
               "fonte": "git, curl, gh, quadro/STORICO.md"
+            },
+            {
+              "data": "2026-10-31",
+              "testo": "Controllo delle 08:25 del 31/10: www.landauto.it risponde 200 con il sito ufficiale; nessun lavoro nuovo.",
+              "fonte": "git, curl, gh, quadro/STORICO.md"
             }
           ],
           "prossimiPassi": [
@@ -1407,6 +1417,11 @@
             {
               "data": "2026-10-30",
               "testo": "Controllo delle 20:20: www.devsharesrl.it risponde 200; PR 8 (footer compatto, anteprima) ancora aperta in attesa del sì del Titolare. Banner ho. Mobile: il Capo ha fermato alle 15:56 il ramo di anteprima di Sviluppo PWA perché è già online la versione di Tech Ops su devshare.it; il ramo non va unito.",
+              "fonte": "git, curl, gh, quadro/STORICO.md"
+            },
+            {
+              "data": "2026-10-31",
+              "testo": "Controllo delle 08:25 del 31/10: www.devsharesrl.it risponde 200; PR 8 (footer compatto, anteprima) ancora aperta in attesa del sì del Titolare, nessuna modifica dal 26/10. Il ramo del banner ho. Mobile resta fermo come chiesto dal Capo.",
               "fonte": "git, curl, gh, quadro/STORICO.md"
             }
           ],
